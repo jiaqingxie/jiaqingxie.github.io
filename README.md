@@ -1,4 +1,3 @@
-# Rishi's Personal Website
+# Jiaqing Xie's Personal Website
 
-This is the code for my website: https://rishibommasani.github.io/.  
-If you find errors on my website or would like to reuse it for your own purposes, contact me at rishibommasani@gmail.com.
+This is the code adapted from this website: https://rishibommasani.github.io/.  
