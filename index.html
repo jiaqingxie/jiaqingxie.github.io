@@ -1,387 +1,150 @@
-<!DOCTYPE html>
+
 <html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <meta name="google-site-verification" content="P3xX2YVbtW3Yiet-ccDmYTKLLi5IB5QL803BaZkxGtA" />
-
-    <link rel="icon" href="favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300|Roboto:300,500" rel="stylesheet">
-    
-    <style>
-    
-    /* Vanilla HTML/CSS. How quaint. */
-    
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-        background: white;
-    }
-    
-    .container {
-        padding: 30px 30px 100px 30px;
-        max-width: 800px;
-    }
-    
-    .me, .me a {
-        color: #555;
-        font-weight: 100;
-    }
-    .me {
-        margin-top: 0;
-        margin-bottom: 5px;
-        font-family: 'Roboto Slab', serif;
-        font-size: 250%;
-    }
-    
-    .headblock {
-        margin-bottom: 25px;
-    }
-    
-    .contact {
-        font-family: monospace, 'Lucida Console';
-        color: #999;
-        font-weight: 100;
-        font-size: 14px;
-    }
-    
-    .contact > div {
-        margin-left: 10px;
-        margin-right: 10px;
-        display: inline;
-    }
-    
-    .contact > div:first-child {
-        margin-left: 0;
-    }
-
-    li {
-        margin: 0 0 8px 0;
-    }
-    
-    h2, h2 a {
-        color: #555;
-        font-weight: 300;
-    }
-    h2 {
-        margin-top: 70px;
-        font-size: 150%;
-    }
-    
-    .bio p , ul {
-        color: #555;
-        font-weight: 300;
-        line-height: 1.3;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .bio a, .pub a, strong {
-        color: #333;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .bio a:hover, h2 a:hover, .pub a:hover, h1 a:hover {
-        opacity: 0.5;
-    }
-    
-    .pub {
-        color: #555;
-        font-weight: 300;
-        margin-bottom: 15px;
-        line-height: 1.3;
-    }
-    
-    .bio a.princeton {
-        color: #de7c00;
-    }
-    
-    .bio a.yale {
-        color: #005bb8;
-    }
-
-    .email::before {
-        content: "jiaxie@student.ethz.ch";
-    }
-    .email::after {
-        content: " ";
-    }
-    
-    .phone::before {
-        content: "";
-    }
-
-    @media only screen and (max-device-width: 800px) {
-        body {
-            font-size: 40px;
-        }
-        
-        .container {
-            padding: 50px 50px 100px 50px;
-            max-width: none;
-        }
-        
-        .me, .me a {
-            font-weight: 300;
-        }
-        
-        .me {
-            font-size: 200%;
-        }
-        
-        h2 {
-            margin-top: 150px;
-            font-size: 150%;
-        }
-        
-        .pub {
-            margin-bottom: 40px;
-            line-height: 1.1;
-        }
-
-        .contact {
-            font-size: 100%;
-        }
-
-        .email::after {
-            content: "";
-        }
-
-        .email {
-            display: block;
-        }
-        
-    }
-    
-    
-    </style>
-
-    <title>Jiaqing Xie</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="headblock">
-            <h1 class="me"><a href="https://jiaqingxie.github.io">Jiaqing Xie</a></h1>
-            <div class="contact">
-                <span style="display:block;">(he/him/they/them)</span>
-                <span class="email"></span><span class="phone"></span>
-            </div>
-        </div>
-        
-        <div class="bio">
-            <p>Hi! I'm a MSc CS student @ <a href="https://ethz.ch/de.html">ETH Zurich</a>. My broad research interests lie in Theoretical Machine Learning, which include:
-            </p>
-
-            <ul>
-                <li><strong>Graph Neural Networks</strong> expressiveness, robustness and theories of graph neural networks, learning graph representation on natural sciences (GraphAI4Science).
-                </li>
-                <li><strong>Optimization and Learning Theory </strong> explorations on traditional machine learning algorithms, gradient descent variants on convex/non-convex/convex-convace optimization problems.
-                </li>
-                <li><strong>Robotics and SLAM</strong> An investigation of GNN and learning theory into robotics and slam field, such as feature matching, PGO with GNN. 
-                </li>
-            </ul>
-
-        
-            
-            <!-- <p>I recently completed my Ph.D. in Computer Science at <a class="princeton" href="https://www.princeton.edu/">Princeton</a>, under the supervision of Prof. <a href="https://www.cs.princeton.edu/~ehazan/">Elad Hazan</a>. For the latter half of that wonderful adventure, I was a student researcher at <a href="https://ai.google/research/">Google AI</a>. Before that, I completed a B.S. in Computer Science at <a class="yale" href="https://www.yale.edu/">Yale</a>, and grew up in Toronto.</p> -->
-            
-            <p><strong></strong></p>
-        </div>
-    
-        
-
-        <h2>Education</h2>
-
-        <ul>
-            <li>ETH Zurich, MSCS, Major: Theoretical Computer Science, 2022 - present
-            </li>
-            <li>University of Edinburgh, B.Eng. (Hons) in Electronics & Computer Science, 2019 - 2022
-            </li>
-            <li>Huazhong University of Science and Technology,  B.Eng. in Electronic Science and Tech, 2017 - 2019, Transferred
-            </li>
-        </ul>
-
-
-
-        <h2>Publications (* = equal contribution)</h2>
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="">
-                    Graph Structure Learning via Lottery Hypothesis at Scale</a> </div>
-                [ <a href="">ACML23</a> ]  [<a href="">Code (To be released)</a>][<a href="">PMLR 222</a>] <br>
-                Yuxin Wang, Zhangyue Yin*,  <strong>Jiaqing Xie*</strong>, Xiannian Hu*, Yunhua Zhou, Xipeng Qiu , Xuanjing Huang 
-                
-            </div>
-        </div> 
-
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="">
-                    Fea2Fea: Exploring Structural Feature Correlations via Graph Neural Networks</a> </div>
-                [ <a href="">ECML-PKDD21</a> ]  [<a href="">Code (To be released)</a>][Poster]  <br>
-                <strong> Jiaqing Xie</strong> , Rex Ying
-            </div>
-        </div> 
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="">
-                    Variational Autoencoder for Anti-Cancer Drug Response Prediction</a> </div>
-                [ <a href="">ICLR21 AI for Public Health</a> ]  [<a href="">Code (To be released)</a>][Poster] <br>
-                <strong> Jiaqing Xie *</strong> , Hongyuan Dong *, Zhi Jing, Dexin Ren
-            </div>
-        </div> 
-
-
-
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="">
-                    Improved Autoguides for Probabilistic Programs</a> </div>
-                [ <a href="graduate_projs/Improved_Autoguides_for_Probabilistic_Programs.pdf">UG Thesis</a> ] <br>
-            </div>
-        </div> 
-
-
-
-
-
-
-
-
-        <h2>Graduate Projects (Name in Alphabetical Order)</h2>
-        
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="https://arxiv.org/pdf/2301.08849.pdf">CADA-GAN: Context-Aware GAN with Data Augmentation</a> </div>
-                [ <a href="https://arxiv.org/pdf/2301.08849.pdf">Deep Learning Project 2023</a> ]  [<a href="https://github.com/IvanSunjg/CADA-GAN">Code</a>] <br>
-                Sofie Daniels*, Jiugeng Sun*, Jiaqing Xie*
-            </div>
-        </div> 
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="graduate_projs/38_report.pdf">SFM-Opt: Improvement on Social Force Model with Code-level Optimization</a> </div>
-                [ <a href="graduate_projs/38_report.pdf">Advanced System Lab 2023</a> ]  [<a href="https://github.com/jiaqingxie/SFM-Opt">Code</a>] <br>
-                Jiajun Jiang*, Kehong Liu*, Jiaqing Xie*, Peiyuan Xie*
-            </div>
-        </div> 
-
-
-        <div class="pubs">
-
-            
-            <div class="pub">
-                <div class="pub-title"><a href="https://github.com/jiaqingxie/infosec-lab">Information Security Lab</a> </div>
-                [ <a href="https://github.com/jiaqingxie/infosec-lab">Code Base</a> ] <br>
-            </div>
-        </div> 
-
-
-
-
-        <h2>Collections of ETH Zurich Notes, Tutorials, and Exercises</h2>
-    
-        <div class="pubs">
-
-
-            <div class="pub">
-                <div class="pub-title"><a href="https://ti.inf.ethz.ch/ew/courses/ODS22/index.html">Optimization for Data Science FS 2023</a> </div>
-                [ <a href="graduate_projs/ODS.pdf">Graded Proofs: 37 / 40 </a> ] [ <a href="notes/ODS_cheatsheet_master.pdf">Cheatsheet</a> ] [ <a href="graduate_projs/notes_eth.pdf">Lecture Notes</a> ]<br>
-            </div>
-
-            <div class="pub">
-                <div class="pub-title"><a href="">Statistical Learning Theory FS 2023</a> </div>
-                [ <a href="https://github.com/jiaqingxie/Statistical-Learning-Theory-ETHZ">Projects</a> ] [ <a href="notes/SLT_cheatsheet_master.pdf">Cheatsheet</a> ] [ <a href="notes/slt_script.pdf">Lecture Notes</a> ]  <br>
-            </div>
-
-            <div class="pub">
-                <div class="pub-title"><a href="">Natural Language Processing HS 2023</a> </div>
-                [ <a href="">Cheatsheet</a> ] [ <a href="">Lecture Notes</a> ]  <br>
-            </div>
-
-            <div class="pub">
-                <div class="pub-title"><a href="">Guarantees for Machine Learning HS 2023</a> </div>
-                [ <a href="">Exercises</a> ][ <a href="">Cheatsheet</a> ] [ <a href="">Lecture Notes</a> ]  <br>
-            </div>
-
-            <div class="pub">
-                <div class="pub-title"><a href="">Graph Neural Networks HS 2023</a> </div>
-                [ <a href="">Cheatsheet</a> ] [ <a href="">Lecture Notes</a> ]  <br>
-            </div>
-
-            <div class="pub">
-                <div class="pub-title"><a href="">Linear and Combinatorial Optimization HS 2023</a> </div>
-                [ <a href="">Cheatsheet</a> ] [ <a href="">Lecture Notes</a> ]  <br>
-            </div>
-
-
-        </div> 
-
-
-        <h2>Academic Service</h2>
-        Reviewer:
-        <ul>
-            <li> NeurIPS Temporal Graph Learning Workshop 2023, Paper * 2 </li>
-        </ul>
-        
-
-
-        <h2>Useful Links</h2>
-
-
-        Learning Vision and SLAM;
-        Matrix Cookbook;
-        Mathematics for ML
-
-        <!-- </div>  -->
-
-
-
+<head>
+<title> Jiaqing Xie's homepage</title>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" /> 
+</head>        
+<body>
+
+<div id="container">
+
+<table style="page-break-before: always" border="0" cellpadding="20" cellspacing="0">
+  <tr>
+    <td valign="bottom" rowspan=2>
+      <img src="xjq.jpg" height="300" width="225">
+    </td>
+    <td valign="top">
+      <h1> Jiaqing Xie </h1>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      
+      Wannerstrasse 22<br>
+      8045 Zurich<br>
+      jiaxie [at] ethz [dot] ch<br>
+    </td>
+  </tr>
+</table>
+
+
+<p>
+    Hi! I'm a second year CS Master student @ ETH Zurich. My broad research interests lie in Theoretical Machine Learning, which include:
+    <ol>
+        <li>Theories of graph neural networks, Learning graph representation on natural sciences (GraphAI4Science).</p>
+        <li>Optimization and learning theory, Gradient descents on optimization problems, Differential privacy*</p>
+        <li> An investigation of GNN and learning theory into robotics/slam field</p>
+    </ol>
+
+
+
+<br>
+
+<br>
+
+<h2>
+Teaching
+<hr>
+</h2>
+<!-- 
+<p>CS 332, Theory of Computation: <a href="https://cs-people.bu.edu/mbun/courses/332_F22">Fall 2022</a> <a href="https://cs-people.bu.edu/mbun/courses/332_F21">Fall 2021</a> <a href="https://cs-people.bu.edu/mbun/courses/332_S21">Spring 2021</a> <a href="https://cs-people.bu.edu/mbun/courses/332_S20">Spring 2020</a></p>
+<p>CS 535, Complexity Theory: <a href="https://cs-people.bu.edu/mbun/courses/535_F23">Fall 2023</a> <a href="https://cs-people.bu.edu/mbun/courses/535_F20">Fall 2020</a></p>
+<p>CS 591 B1, Communication Complexity: <a href="https://cs-people.bu.edu/mbun/courses/591_F19/">Fall 2019</a></p>
+<p>CS 599 B1, Math for TCS: <a href="https://cs-people.bu.edu/mbun/courses/599_S22/">Spring 2022</a></p> -->
+To be announced
+
+<br>
+
+<h2>
+Research Papers
+<hr>
+</h2>
+
+<ul>
+  <li><p>
+    RNA-Diff: Neural Graph Diffusion on scRNA-seq Dropout Imputation [In submission]<br>
+<p></li>
+
+
+  <li><p>
+    SyntaxBERT++: Syntax Tree Augmentation by GNN on Pretrained Transformers [In preparation]<br>
+<p></li>
   
-
-        <h2>Blog</h2>
-
-        Visual Odometry
-
-        <h2>Travel</h2>
-
-        <ul>
-            <li>Mainland China: Nanjing, Suzhou, Beijing, Tianjin, Zhangjiajie, Shaoxing, Hangzhou, Ningbo, Guangzhou, Changsha, Wuhan, Qingdao, Penglai, Yantai</li>
-            <li>Egypt: Cairo, Alexander, Aswan, Luxor</li>
-            <li>France: Paris  </li>
-            <li>German: Singen </li>
-            <li>Italy: Milano </li>
-            <li>Netherland: Amsterdam, The Hague, Rotterdam</li>
-            <li>Switzerland: Zurich </li>
-            <li>United Kingdom: Edinburgh, Cambridge, London</li>
-            <li>USA: Charlotte, Berkeley</li>
-            <li>Sweden, Finland, Denmark (2024)</li>
-            <li>Portugal, Spain (2024)</li>
-        </ul>
-
-        
-        
+ 
+  <li><p>
+    Yuxin Wang, Zhangyue Yin*,  <strong>Jiaqing Xie*</strong>, Xiannian Hu*, Yunhua Zhou, Xipeng Qiu , Xuanjing Huang. <br>
+    Graph Structure Learning via Lottery Hypothesis at Scale. <br> 
+    ACML'23, PMLR 222 <br>
+<p></li>
+<li><p>
+    <strong> Jiaqing Xie</strong> , Rex Ying. <br>
+    Fea2Fea: Exploring Structural Feature Correlations via Graph Neural Networks. </a> <br>
+   ECML-PKDD'21 GEM, In Proceedings<br>
     
-        </div>
+</p>
+</li>
 
-  </body>
+</ul>
+
+<br>
+
+<h2>
+Other Manuscripts
+<hr>
+</h2>
+<ul>
+<li><p>
+  Sofie Daniels*, Jiugeng Sun*, Jiaqing Xie* <br>
+  CADA-GAN: Context-Aware GAN with Data Augmentation <br>
+  DL'22 @ ETH Zurich
+<p></li>
+<li><p>
+  Jiajun Jiang*, Kehong Liu*, Jiaqing Xie*, Peiyuan Xie* <br>
+  SFM-Opt: Improvement on Social Force Model with Code-level Optimization <br>
+  ASL'23 @ ETH Zurich
+<p></li>
+<li><p>
+	Undergraduate Thesis <br>
+    Improved Autoguides for Probabilistic Programs
+<p></li>
+  
+</ul>
+
+<br>
+
+<h2>
+Notes und Presentations
+<hr>
+</h2>
+<ul>
+<li><p>
+  Robust Graph Network Simulators [to be released]
+<p></li>
+<li><p>
+  Design Space for Graph Neural Networks <br>
+  Ziheng Chi, Jiaqing Xie
+<p></li>
+<li><p>
+  GNTK: Current Progress on Graph Neural Tangent Kernels
+<p></li>
+  
+</ul>
+
+<br>
+
+<h2>
+Professional Activities
+<hr>
+</h2>
+
+<h3>
+Reviewer for:
+</h3>
+<ul>
+<li><a href="https://sites.google.com/view/tglworkshop-2023/home">NeurIPS 2023 TGL</a></li>
+</ul>
+
+
+This page last updated:  October 22nd, 2023
+</div>
 </html>
