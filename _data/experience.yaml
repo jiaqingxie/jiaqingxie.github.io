@@ -1,16 +1,18 @@
 experiences:
 
-- place: "Texas A&M University"
-  time: "April 2025 - Current"
-  title: "Research Intern"
-  subtitle: "Protein Design"
-  category: "school"
+
 
 - place: "Shanghai Artificial Intelligence Laboratory"
-  time: "Jun 2025 - Current"
+  time: "June 2025 - June 2026"
   title: "AI for Science Intern"
   subtitle: "Foundation Models"
   category: "work"
+
+- place: "Texas A&M University"
+  time: "April 2025 - April 2026s"
+  title: "Research Intern"
+  subtitle: "Protein Design"
+  category: "school"
 
 - place: "Swiss Federal Institute Technology Zurich"
   time: "2022 - 2025"
