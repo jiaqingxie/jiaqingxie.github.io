@@ -9,10 +9,11 @@ papers:
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
     authors: "<b>Jiaqing Xie<sup>‡</sup></b> and Tianfan Fu"
-    venue: "Bioinformatics"
+    venue: "Bioinformatics, Oxford Press"
     paper_pdf: "https://arxiv.org/pdf/2410.02023"
     code: "https://github.com/jiaqingxie/DeepProtein"
     selected: y
+
 
   # - title: "Projecting Molecules into Synthesizable Chemical Spaces"
   #   authors: "Shitong Luo<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Zuofan Wu<sup>‡</sup>, Jian Peng, Connor W. Coley and Jianzhu Ma"
