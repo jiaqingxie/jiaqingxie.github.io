@@ -1,0 +1,142 @@
+papers:
+
+  - title: "Re-Evaluating Positional Encodings for GNNs"
+    authors: "Florian Grotschla, <b>Jiaqing Xie</b> and Roger Wattenhofer"
+    venue: "Arxiv"
+    paper_pdf: 
+    code: 
+    selected: y
+
+  - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
+    authors: "<b>Jiaqing Xie<sup>‡</sup></b> and Tianfan Fu"
+    venue: "Bioinformatics"
+    paper_pdf: "https://arxiv.org/pdf/2410.02023"
+    code: "https://github.com/jiaqingxie/DeepProtein"
+    selected: y
+
+  # - title: "Projecting Molecules into Synthesizable Chemical Spaces"
+  #   authors: "Shitong Luo<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Zuofan Wu<sup>‡</sup>, Jian Peng, Connor W. Coley and Jianzhu Ma"
+  #   venue: "ICML 2024"
+  #   paper_pdf: "assets/publications/2024_ChemProjector_ICML/paper.pdf"
+  #   code: "https://github.com/luost26/ChemProjector"
+  #   selected: y
+
+  # - title: "Double-Ended Synthesis Planning with Goal-Constrained Bidirectional Search"
+  #   authors: "Kevin Yu, Jihye Roh, Ziang Li, <b>Wenhao Gao</b>, Runzhong Wang and Connor W Coley"
+  #   venue: "NeurIPS 2024 (Spotlight)"
+  #   paper_pdf: "assets/publications/2024_DESP_NeurIPS/paper.pdf"
+  #   code: "https://github.com/coleygroup/desp"
+  #   selected: y
+
+  # - title: "Efficient Evolutionary Search over Chemical Space with Large Language Models"
+  #   authors: "Haorui Wang, Marta Skreta, Yuanqi Du, <b>Wenhao Gao</b>, Lingkai Kong, Cher Tian Ser, Felix Strieth-Kalthoff, Chenru Duan, Yuchen Zhuang, Yue Yu, Yanqiao Zhu, Alan Aspuru-Guzik, Kirill Neklyudov and Chao Zhang"
+  #   venue: "ICLR 2025"
+  #   paper_pdf: "assets/publications/2024_moleo/paper.pdf"
+  #   code: "https://github.com/zoom-wang112358/MOLLEO"
+  #   selected: n
+
+  # - title: "Syntax-Guided Procedural Synthesis of Molecules"
+  #   authors: "Michael Sun, Alston Lo, <b>Wenhao Gao</b>, Minghao Guo, Veronika Thost, Jie Chen, Connor W. Coley and Wojciech Matusik"
+  #   venue: "ArXiv"
+  #   paper_pdf: "assets/publications/2024_Syn_grammar/paper.pdf"
+  #   selected: n
+
+  # - title: "TDC-2: Multimodal Foundation for Therapeutic Science"
+  #   authors: "Alejandro Velez-Arce, Kexin Huang, Michelle Li, Xiang Lin, Wenhao Gao, Tianfan Fu, Manolis Kellis, Bradley L Pentelute and Marinka Zitnik"
+  #   venue: "ArXiv"
+  #   paper_pdf: "assets/publications/2024_TDC2/paper.pdf"
+  #   selected: n
+
+  # - title: "Substrate Scope Contrastive Learning: Repurposing Human Bias to Learn Atomic Representations"
+  #   authors: "<b>Wenhao Gao</b>, Priyanka Raghavan, Ron Shprints and Connor W. Coley"
+  #   venue: "JACS"
+  #   paper_pdf: "assets/publications/2024_contrascope/paper.pdf"
+  #   code: "https://github.com/wenhao-gao/substrate_scope_contrastive_learning/tree/main"
+  #   selected: y
+
+  # - title: "AUTODIFF: Autoregressive Diffusion Modeling for Structure-based Drug Design"
+  #   authors: "Xinze Li, Penglei Wang, Tianfan Fu, <b>Wenhao Gao</b>, Chengtao Li, Leilei Shi and Junhong Liu"
+  #   venue: "ArXiv"
+  #   paper_pdf: "assets/publications/2024_autodiff/paper.pdf"
+  #   selected: n
+
+  # - title: "Closing the Execution Gap in Generative AI for Chemicals and Materials: Freeways or Safeguards"
+  #   authors: "Akshay Subramanian, <b>Wenhao Gao</b>, ... Rafael Gomez-Bombarelli"
+  #   venue: "An MIT Exploration of Generative AI"
+  #   paper_pdf: "assets/publications/2024_genai_whitepaper/paper.pdf"
+  #   selected: y
+    
+  # - title: "Scientific Discovery in the Age of Artificial Intelligence"
+  #   authors: "Hanchen Wang<sup>‡</sup>, Tianfan Fu<sup>‡</sup>, Yuanqi Du<sup>‡</sup>, <b>Wenhao Gao</b>, ... Marinka Zitnik"
+  #   venue: "Nature"
+  #   paper_pdf: "assets/publications/2023_ai4sci/paper.pdf"
+  #   selected: y
+
+  # - title: "Artificial Intelligence Foundation for Therapeutic Science"
+  #   authors: "Kexin Huang<sup>‡</sup>, Tianfan Fu<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Yue Zhao, Yusuf Roohani, Jure Leskovec, Connor W. Coley, Cao Xiao, Jimeng Sun and Marinka Zitnik"
+  #   venue: "Nature Chemical Biology"
+  #   paper_pdf: "assets/publications/2022_tdc_ncb/paper.pdf"
+  #   slides: "assets/publications/2022_tdc_ncb/slides.pdf"
+  #   code: "https://github.com/mims-harvard/TDC"
+  #   selected: y
+
+  # - title: "Sample Efficiency Matters: A Benchmark for Practical Molecular Optimization"
+  #   authors: "<b>Wenhao Gao<sup>‡</sup></b>, Tianfan Fu<sup>‡</sup>, Jimeng Sun and Connor W. Coley"
+  #   venue: "NeurIPS 2022"
+  #   paper_pdf: "assets/publications/2022_PMO_Neurips_datasets/paper.pdf"
+  #   code: "https://github.com/wenhao-gao/mol_opt"
+  #   selected: y
+
+  # - title: "Reinforced Genetic Algorithm for Structure-based Drug Design"
+  #   authors: "Tianfan Fu<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Connor W. Coley and Jimeng Sun"
+  #   venue: "NeurIPS 2022"
+  #   paper_pdf: "assets/publications/2022_RGA_NeurIPS/paper.pdf"
+  #   code: "https://github.com/futianfan/reinforced-genetic-algorithm"
+  #   selected: y
+
+  # - title: "Autonomous Platforms for Data-driven Organic Synthesis"
+  #   authors: "<b>Wenhao Gao</b>, Priyanka Raghavan, and Connor W. Coley"
+  #   venue: "Nature Communications"
+  #   paper_pdf: "assets/publications/2022_Auto_Synthesis_NC/paper.pdf"
+  #   selected: y
+
+  # - title: "Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design"
+  #   authors: "<b>Wenhao Gao</b>, Rocio Mercado, and Connor W. Coley"
+  #   venue: "ICLR 2022 (Spotlight)"
+  #   paper_pdf: "assets/publications/2021_SynNet_ICLR/paper.pdf"
+  #   slides: "assets/publications/2021_SynNet_ICLR/slides.pdf"
+  #   code: "https://github.com/wenhao-gao/SynNet"
+  #   selected: y
+
+  # - title: "Differentiable Scaffolding Tree for Molecular Optimization"
+  #   authors: "Tianfan Fu<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Cao Xiao, Jacob Yasonik, Connor W. Coley and Jimeng Sun"
+  #   venue: "ICLR 2022"
+  #   paper_pdf: "assets/publications/2021_DST_ICLR/paper.pdf"
+  #   code: "https://github.com/futianfan/DST"
+  #   selected: y
+
+  # - title: "Pairwise Difference Regression: A Machine Learning Meta-algorithm for Improved Prediction and Uncertainty Quantification in Chemical Search"
+  #   authors: "Michael Tynes, <b>Wenhao Gao</b>, Daniel J. Burrill, Enrique R. Batista, Danny Perez, Ping Yang and Nicholas Lubbers"
+  #   venue: "Journal of Chemical Informatics and Modeling"
+  #   paper_pdf: "assets/publications/2021_PADRE_JCIM/paper.pdf"
+  #   selected: y
+
+  # - title: "Therapeutics Data Commons: Machine Learning Datasets and Tasks for Therapeutics"
+  #   authors: "Kexin Huang<sup>‡</sup>, Tianfan Fu<sup>‡</sup>, <b>Wenhao Gao<sup>‡</sup></b>, Yue Zhao, Yusuf Roohani, Jure Leskovec, Connor W. Coley, Cao Xiao, Jimeng Sun and Marinka Zitnik"
+  #   venue: "NeurIPS 2021"
+  #   paper_pdf: "assets/publications/2021_tdc_neurips/paper.pdf"
+  #   code: "https://github.com/mims-harvard/TDC"
+  #   selected: y
+
+  # - title: "Deep Learning in Protein Structural Modeling and Design"
+  #   authors: "<b>Wenhao Gao</b>, Sai P. Mahajan, Jeremias Sulam and Jeffrey J.Gray"
+  #   venue: "Patterns"
+  #   paper_pdf: "assets/publications/2020_protein_review_patterns/paper.pdf"
+  #   selected: y
+
+  # - title: "Synthesizability of Molecules Proposed by Generative Models"
+  #   authors: "<b>Wenhao Gao</b> and Connor W. Coley"
+  #   venue: "Journal of Chemical Informatics and Modeling"
+  #   paper_pdf: "assets/publications/2020_synthesizability_JCIM/paper.pdf"
+  #   code: "https://github.com/wenhao-gao/askcos_synthesizability"
+  #   selected: y

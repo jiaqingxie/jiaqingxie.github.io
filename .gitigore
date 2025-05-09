@@ -1,0 +1,5 @@
+*/.SA_Store
+.vscode/*
+.*
+assets/.DS_Store
+.DS_Store
