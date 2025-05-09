@@ -9,7 +9,7 @@ papers:
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
     authors: "<b>Jiaqing Xie<sup>‡</sup></b> and Tianfan Fu"
-    venue: "Bioinformatics, Oxford Press"
+    venue: "Bioinformatics, Oxford University Press"
     paper_pdf: "https://arxiv.org/pdf/2410.02023"
     code: "https://github.com/jiaqingxie/DeepProtein"
     selected: y
