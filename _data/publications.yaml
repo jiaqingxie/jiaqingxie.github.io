@@ -1,14 +1,29 @@
 papers:
 
+  - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
+    authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
+    venue: "Arxiv"
+    paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
+    code: "https://github.com/little1d/SpectrumLab"
+    selected: y
+
+  - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
+    authors: "<b>Jiaqing Xie</b>, Weida Wang, Ben Gao, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
+    venue: "Arxiv"
+    paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
+    code: "https://huggingface.co/datasets/jiaxie/QCBench"
+    selected: y
+
+
   - title: "Re-Evaluating Positional Encodings for GNNs"
-    authors: "Florian Grotschla, <b>Jiaqing Xie</b> and Roger Wattenhofer"
+    authors: "Florian Grotschla<sup>‡</sup>,, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
     venue: "Arxiv"
     paper_pdf: 
     code: 
     selected: y
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
-    authors: "<b>Jiaqing Xie<sup>‡</sup></b> and Tianfan Fu"
+    authors: "<b>Jiaqing Xie</b> and Tianfan Fu"
     venue: "Bioinformatics, Oxford University Press"
     paper_pdf: "https://arxiv.org/pdf/2410.02023"
     code: "https://github.com/jiaqingxie/DeepProtein"
