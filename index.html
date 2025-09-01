@@ -7,11 +7,10 @@ title: Home
   <h4>Bio</h4>
   <p>
   Hello! I am Jiaqing Xie(謝嘉慶). I was graduated in May 2025 at ETH Zurich (CS Rank@4). I am now a AI4Science Research Assistant at Shanghai AI Lab.
-  My research interests are  AI for Chemistry, Protein Design and Quantum Physics.
+  My research interests are  AI for Chemistry, Protein Design and Quantum Physics.<br/>
   
-  AI4Chem: <b>SpectrumWorld</b>, <b>TriMolLLM</b>, <b>SpectrumFlow (In Progress)</b>, <b>InverseDiff (In Progress)</b>
-  
-  AI4Protein: <b>DeepProtein</b>, <b>RAGProt</b>, <b>CoVDET</b>
+  <strong>AI4Chem:</strong> <b>SpectrumWorld</b>, <b>TriMolLLM</b>, <b>SpectrumFlow (In Progress)</b>, <b>InverseDiff (In Progress)</b><br/>
+  <strong>AI4Protein:</strong> <b>DeepProtein</b>, <b>RAGProt</b>, <b>CoVDET</b>
   
   
 
@@ -113,12 +112,12 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
   </p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+    <!-- <li><div class="button" data-ref="#papers-selected">Selected</div></li> -->
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
   </ul>
 
   <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
+    <div class="tab-pane" id="papers-selected">
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
         <div class="paper">
@@ -155,7 +154,7 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
       {% endfor %}
     </div>
 
-    <div class="tab-pane" id="papers-all">
+    <div class="tab-pane active" id="papers-all">
       {% for paper in site.data.publications.papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
