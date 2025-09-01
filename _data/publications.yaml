@@ -1,5 +1,13 @@
 papers:
 
+  - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
+    authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
+    venue: "Arxiv"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
+
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
     venue: "Arxiv"
@@ -8,7 +16,7 @@ papers:
     selected: y
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
-    authors: "<b>Jiaqing Xie</b>, Weida Wang, Ben Gao, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
+    authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
     venue: "Arxiv"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
