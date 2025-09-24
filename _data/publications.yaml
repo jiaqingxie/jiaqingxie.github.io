@@ -1,12 +1,26 @@
 papers:
 
+  - title: "MolSpectLLM: A Molecular Foundation Model Bridging Spectroscopy, Molecule Elucidation, and 3D Structure Generation"
+    authors: "Shuaike Shen, <b>Jiaqing Xie</b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
+    venue: "Arxiv"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
+
+  - title: "A Comparative Analysis of Sparse Autoencoder and Activation Difference in Language Model Steering"
+    authors: "<b>Jiaqing Xie</b>"
+    venue: "Arxiv"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
   - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
     venue: "Arxiv"
     paper_pdf: ""
     code: ""
     selected: y
-
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
