@@ -31,7 +31,7 @@ papers:
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
     authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
-    venue: "Arxiv"
+    venue: "Revision @ Journal of Chemical Information and Modeling"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
