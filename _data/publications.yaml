@@ -11,7 +11,7 @@ papers:
   - title: "A Comparative Analysis of Sparse Autoencoder and Activation Difference in Language Model Steering"
     authors: "<b>Jiaqing Xie</b>"
     venue: "Under Review, Arxiv"
-    paper_pdf: ""
+    paper_pdf: "https://arxiv.org/pdf/2510.01246"
     code: ""
     selected: y
 
