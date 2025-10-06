@@ -2,29 +2,29 @@ papers:
 
   - title: "MolSpectLLM: A Molecular Foundation Model Bridging Spectroscopy, Molecule Elucidation, and 3D Structure Generation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
-    venue: "Arxiv"
-    paper_pdf: ""
-    code: ""
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2509.21861"
+    code: "https://github.com/Eurekashen/MolSpectLLM"
     selected: y
 
 
   - title: "A Comparative Analysis of Sparse Autoencoder and Activation Difference in Language Model Steering"
     authors: "<b>Jiaqing Xie</b>"
-    venue: "Arxiv"
-    paper_pdf: ""
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2510.01246"
     code: ""
     selected: y
 
   - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
-    venue: "Arxiv"
-    paper_pdf: ""
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2509.01396"
     code: ""
     selected: y
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
-    venue: "Arxiv"
+    venue: "Under Review, Arxiv"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
     code: "https://github.com/little1d/SpectrumLab"
     selected: y
@@ -39,15 +39,15 @@ papers:
 
   - title: "Re-Evaluating Positional Encodings for GNNs"
     authors: "Florian Grotschla<sup>‡</sup>,, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
-    venue: "Arxiv"
-    paper_pdf: 
-    code: 
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2411.12732"
+    code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
     selected: y
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
     authors: "<b>Jiaqing Xie</b> and Tianfan Fu"
-    venue: "Bioinformatics, Oxford University Press"
-    paper_pdf: "https://arxiv.org/pdf/2410.02023"
+    venue: "Bioinformatics btaf165, Oxford University Press, 2025"
+    paper_pdf: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaf165/8137840"
     code: "https://github.com/jiaqingxie/DeepProtein"
     selected: y
 
