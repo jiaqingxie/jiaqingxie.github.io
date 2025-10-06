@@ -45,7 +45,7 @@ papers:
     selected: y
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
-    authors: "<b>Jiaqing Xie</b> and Tianfan Fu"
+    authors: "<b>Jiaqing Xie</b>, Yuqiang Li and Tianfan Fu"
     venue: "Bioinformatics btaf165, Oxford University Press, 2025"
     paper_pdf: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaf165/8137840"
     code: "https://github.com/jiaqingxie/DeepProtein"
