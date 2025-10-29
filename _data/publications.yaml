@@ -31,14 +31,14 @@ papers:
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
     authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
-    venue: "Journal of Chemical Information and Modeling"
+    venue: "Journal of Chemical Information and Modeling, 2025"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
 
 
   - title: "Re-Evaluating Positional Encodings for GNNs"
-    authors: "Florian Grotschla<sup>‡</sup>,, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
+    authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/pdf/2411.12732"
     code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
