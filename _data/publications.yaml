@@ -1,12 +1,24 @@
 papers:
-  - title: "SpectroGen v2"
-    venue: "Under Review, Arxiv"
+  - title: "plmAlign"
+    venue: "In preparation"
+
+  - title: "SpectrumFlow"
+    venue: "In preparation"
+
+  - title: "SpectrumVL"
+    venue: "In preparation"    
+
+  - title: "MatHCO"
+    venue: "In preparation"    
   
-  - title: "PolyReal"
+  - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
+    authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
     venue: "Under Review, Arxiv"
 
-  - title: "RxTTA"
+  - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
+    authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
     venue: "Under Review, Arxiv"
+
 
   - title: "MolSpectLLM: A Molecular Foundation Model Bridging Spectroscopy, Molecule Elucidation, and 3D Structure Generation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
