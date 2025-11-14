@@ -1,16 +1,4 @@
 papers:
-  - title: "plmAlign"
-    venue: "In preparation"
-
-  - title: "SpectrumFlow"
-    venue: "In preparation"
-
-  - title: "SpectrumVL"
-    venue: "In preparation"    
-
-  - title: "MatHCO"
-    venue: "In preparation"    
-  
   - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
     authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
     venue: "Under Review, Arxiv"
