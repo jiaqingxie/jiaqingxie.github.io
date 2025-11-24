@@ -31,7 +31,7 @@ papers:
 
   - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
     authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
-    venue: "Under Review, Arxiv"
+    venue: "KDD 2025"
     paper_pdf: "https://arxiv.org/pdf/2411.12732"
     code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
     selected: y
@@ -39,14 +39,14 @@ papers:
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
     authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
-    venue: "Journal of Chemical Information and Modeling, 2025"
+    venue: "JCIM 2025"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
 
   - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
-    venue: "AAAI Conference on Artificial Intelligence, 2026"
+    venue: "AAAI 2026"
     paper_pdf: "https://arxiv.org/pdf/2509.01396"
     code: ""
     selected: y
@@ -54,7 +54,7 @@ papers:
 
   - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
     authors: "<b>Jiaqing Xie</b>, Yuqiang Li and Tianfan Fu"
-    venue: "Bioinformatics btaf165, Oxford University Press, 2025"
+    venue: "Bioinformatics 2025"
     paper_pdf: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaf165/8137840"
     code: "https://github.com/jiaqingxie/DeepProtein"
     selected: y
