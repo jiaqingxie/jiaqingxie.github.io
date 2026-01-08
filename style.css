@@ -1,6 +1,12 @@
 body {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   }
+
+  .main {
+    position: relative;
+    z-index: 1;
+  }
+
   
   .main {
     display: flex;
