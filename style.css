@@ -786,7 +786,17 @@ body {
     margin-top: 0.5ex;
   }
   
-  .publications ~ tr.yr-2026 + tr.yr-2025 .year, .publications + tr.yr-2026 .year {
+  .publications ~ tr.yr-2026 ~ tr.yr-2025:first-of-type .year, .publications ~ tr.yr-2026 + tr.yr-2025 .year, .publications + tr.yr-2026 .year {
+    display: block;
+    font-size: 24pt;
+    color: #ddd;
+    font-weight: lighter;
+    padding-right: 1ex;
+    padding-left: 0.5ex;
+    margin-top: 0ex;
+  }
+  
+  tr.yr-2026 ~ tr.yr-2025:first-of-type .year {
     display: block;
     font-size: 24pt;
     color: #ddd;
