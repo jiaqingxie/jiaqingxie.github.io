@@ -1,4 +1,18 @@
 papers:
+  - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
+    authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, Jiaqing Xie, Zhuo Yang, Yuqiang Li, Jun Xia"
+    venue: "Under Review, Arxiv"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
+  - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
+    authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
+    venue: "Under Review, Arxiv"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
   - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
     authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
     venue: "Under Review, Arxiv"
@@ -14,9 +28,9 @@ papers:
     selected: y
 
 
-  - title: "MolSpectLLM: A Molecular Foundation Model Bridging Spectroscopy, Molecule Elucidation, and 3D Structure Generation"
+  - title: "SpecMol: A Spectroscopy-Grounded Foundation Model for Multi-Task Molecular Learning"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
-    venue: "Under Review, Arxiv"
+    venue: "In submission to Nature Communications"
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y
@@ -25,6 +39,13 @@ papers:
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
+    code: ""
+    selected: y
+
+  - title: "On Fair Comparisons in LLM Steering: Sparse Autoencoders vs. Activation Differences "
+    authors: "Jiaqing Xie"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2510.01246v1"
     code: ""
     selected: y
 
