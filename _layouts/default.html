@@ -75,30 +75,31 @@
           <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
         </div>
         <div class="nine columns main-description">
-            <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span>
+            <div style="position: relative;">
+              <div style="float: right; margin-top: 0;">
+                <img src="{{ site.baseurl }}/assets/imgs/Fudan_University_Logo.png" alt="Fudan University" style="height: 60px; vertical-align: middle;">
+              </div>
+              <h1>{{ site.data.main_info.name }}</h1>
+              <p>{{ site.data.main_info.title }}</p>
+              <p>{{ site.data.main_info.email }}</p>
+              <p>
+                <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </span>
 
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
+                <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </span>
 
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
+                <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </span>
 
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
-
-              <span style="margin-left: 15px; vertical-align: middle;">
-                <img src="{{ site.baseurl }}/assets/imgs/Fudan_University_Logo.png" alt="Fudan University" style="height: 24px; vertical-align: middle;">
-              </span>
-            </p>
+                <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+                  <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+                </span>
+              </p>
+            </div>
         </div>
       </div>
     </section>
