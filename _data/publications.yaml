@@ -20,15 +20,7 @@ papers:
     code: ""
     selected: y
 
-  - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
-    authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
-    venue: "Under Review, Arxiv"
-    paper_pdf: "https://arxiv.org/pdf/2511.12691"
-    code: ""
-    selected: y
-
-
-  - title: "SpecMol: A Spectroscopy-Grounded Foundation Model for Multi-Task Molecular Learning"
+  - title: "SpecMol: A Unified Framework for Spectroscopy-Grounded Molecular Modeling and Evaluation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
     venue: "In submission to Nature Communications"
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
@@ -46,6 +38,13 @@ papers:
     authors: "Jiaqing Xie"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/pdf/2510.01246v1"
+    code: ""
+    selected: y
+
+  - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
+    authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
+    venue: "CVPR 2026"
+    paper_pdf: "https://arxiv.org/pdf/2511.12691"
     code: ""
     selected: y
 
