@@ -1,22 +1,22 @@
 papers:
+  - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
+    authors: "Zhuo Yang<sup>‡</sup>, Yeyun Chen<sup>‡</sup>, Jiaqing Xie, Ben Gao, Shuaike Shen, Wanhao Liu, Liujia Yang, Beilun Wang, Tianfan Fu, Yuqiang Li"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/abs/2512.20135"
+    code: "https://github.com/little1d/MolAct"
+    selected: y
+
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
     authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, Jiaqing Xie, Zhuo Yang, Yuqiang Li, Jun Xia"
     venue: "Under Review, Arxiv"
-    paper_pdf: ""
+    paper_pdf: "https://arxiv.org/pdf/2601.15763"
     code: ""
     selected: y
 
   - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
     authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
     venue: "Under Review, Arxiv"
-    paper_pdf: ""
-    code: ""
-    selected: y
-
-  - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
-    authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
-    venue: "Under Review, Arxiv"
-    paper_pdf: ""
+    paper_pdf: "https://arxiv.org/pdf/2602.10158"
     code: ""
     selected: y
 
@@ -41,16 +41,23 @@ papers:
     code: ""
     selected: y
 
+  - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
+    authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
+    venue: "Conference on Computer Vision and Pattern Recognition (CVPR 2026)"
+    paper_pdf: ""
+    code: ""
+    selected: y
+
   - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
     authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
-    venue: "CVPR 2026"
+    venue: "Conference on Computer Vision and Pattern Recognition (CVPR 2026)"
     paper_pdf: "https://arxiv.org/pdf/2511.12691"
     code: ""
     selected: y
 
   - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
     authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
-    venue: "KDD 2026"
+    venue: "32nd SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2026)"
     paper_pdf: "https://arxiv.org/pdf/2411.12732"
     code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
     selected: y
@@ -58,14 +65,14 @@ papers:
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
     authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
-    venue: "JCIM 2025"
+    venue: "Journal of Chemical Information and Modeling 2025"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
 
   - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
-    venue: "AAAI 2026"
+    venue: "The Fortieth AAAI Conference on Artificial Intelligence (AAAI 2026)"
     paper_pdf: "https://arxiv.org/pdf/2509.01396"
     code: ""
     selected: y
