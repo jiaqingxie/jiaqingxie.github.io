@@ -43,21 +43,21 @@ papers:
 
   - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
     authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
-    venue: "Conference on Computer Vision and Pattern Recognition (CVPR 2026)"
+    venue: "CVPR 2026 Findings"
     paper_pdf: ""
     code: ""
     selected: y
 
   - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
     authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
-    venue: "Conference on Computer Vision and Pattern Recognition (CVPR 2026)"
+    venue: "CVPR 2026"
     paper_pdf: "https://arxiv.org/pdf/2511.12691"
     code: ""
     selected: y
 
   - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
     authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
-    venue: "32nd SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2026)"
+    venue: "KDD 2026"
     paper_pdf: "https://arxiv.org/pdf/2411.12732"
     code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
     selected: y
@@ -65,14 +65,14 @@ papers:
 
   - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
     authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
-    venue: "Journal of Chemical Information and Modeling 2025"
+    venue: "JCIM 2025"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
 
   - title: "Deep Research Arena: The First Exam of LLMs’ Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
-    venue: "The Fortieth AAAI Conference on Artificial Intelligence (AAAI 2026)"
+    venue: "AAAI 2026"
     paper_pdf: "https://arxiv.org/pdf/2509.01396"
     code: ""
     selected: y
