@@ -5,6 +5,95 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2512.20135"
     code: "https://github.com/little1d/MolAct"
     selected: y
+    tags: ["AI for Science", "Generative"]
+
+  - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
+    authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, Jiaqing Xie, Zhuo Yang, Yuqiang Li, Jun Xia"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2601.15763"
+    code: ""
+    selected: y
+    tags: ["AI for Science", "Spectroscopy"]
+
+  - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
+    authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2602.10158"
+    code: ""
+    selected: y
+    tags: ["AI for Science", "Spectroscopy"]
+
+  - title: "SpecMol: A Unified Framework for Spectroscopy-Grounded Molecular Modeling and Evaluation"
+    authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
+    venue: "In submission to Nature Communications"
+    paper_pdf: "https://arxiv.org/pdf/2509.21861"
+    code: ""
+    selected: y
+    tags: ["AI for Science", "Spectroscopy"]
+
+  - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
+    authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
+    code: ""
+    selected: y
+    tags: ["AI for Science", "Spectroscopy"]
+
+  - title: "On Fair Comparisons in LLM Steering: Sparse Autoencoders vs. Activation Differences "
+    authors: "Jiaqing Xie"
+    venue: "Under Review, Arxiv"
+    paper_pdf: "https://arxiv.org/pdf/2510.01246v1"
+    code: ""
+    selected: y
+    tags: ["LLM"]
+
+  - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
+    authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
+    venue: "CVPR 2026 Findings"
+    paper_pdf: ""
+    code: ""
+    selected: y
+    tags: ["AI for Science"]
+
+  - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
+    authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
+    venue: "CVPR 2026"
+    paper_pdf: "https://arxiv.org/pdf/2511.12691"
+    code: ""
+    selected: y
+    tags: ["AI for Science"]
+
+  - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
+    authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
+    venue: "KDD 2026"
+    paper_pdf: "https://arxiv.org/pdf/2411.12732"
+    code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
+    selected: y
+    tags: ["Graph Neural Network"]
+
+  - title: "QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry"
+    authors: "<b>Jiaqing Xie‡</b>, Weida Wang‡, Ben Gao‡, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, and Yuqiang Li"
+    venue: "JCIM 2025"
+    paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
+    code: "https://huggingface.co/datasets/jiaxie/QCBench"
+    selected: y
+    tags: ["LLM", "AI for Science"]
+
+  - title: "Deep Research Arena: The First Exam of LLMs' Research Abilities via Seminar-Grounded Tasks"
+    authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
+    venue: "AAAI 2026"
+    paper_pdf: "https://arxiv.org/pdf/2509.01396"
+    code: ""
+    selected: y
+    tags: ["LLM"]
+
+  - title: "DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning"
+    authors: "<b>Jiaqing Xie</b>, Yuqiang Li and Tianfan Fu"
+    venue: "Bioinformatics 2025"
+    paper_pdf: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaf165/8137840"
+    code: "https://github.com/jiaqingxie/DeepProtein"
+    selected: y
+    tags: ["AI for Science", "Protein"]
 
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
     authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, Jiaqing Xie, Zhuo Yang, Yuqiang Li, Jun Xia"
