@@ -14,7 +14,7 @@ papers:
     selected: n
 
   - title: Revisiting Multi-layer Perceptrons with Positional Encoding on Graphs
-    selected: y
+    selected: n
 
 
   - title: VibraFlow: Vibrational Spectra Interconversion via Flow Matching
