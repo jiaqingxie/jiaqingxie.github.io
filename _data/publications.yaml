@@ -1,21 +1,26 @@
 papers:
   - title: M3Bench
-    selected: y
+    selected: n
 
   - title: VibraFlow
-    selected: y
+    selected: n
 
   - title: UPOT
-    selected: y
+    selected: n
   
-  - title: GeoAtt-LM
-    selected: y
+
   
   - title: HGT-PE
-    selected: y
+    selected: n
 
   - title: Revisiting Multi-layer Perceptrons with Positional Encoding on Graphs
     selected: y
+
+  - title: GeBA: Geometry Biased Attention for Molecular Language Learning
+    authors: Jiaqing Xie, Ziheng Chi
+    venue: "Under Review, Arxiv, Previous Works @ ACL24 L+M Workshop"
+    tags: ["AI for Science", "LLM"]
+  
 
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
     authors: "Zhuo Yang<sup>‡</sup>, Yeyun Chen<sup>‡</sup>, Jiaqing Xie, Ben Gao, Shuaike Shen, Wanhao Liu, Liujia Yang, Beilun Wang, Tianfan Fu, Yuqiang Li"
