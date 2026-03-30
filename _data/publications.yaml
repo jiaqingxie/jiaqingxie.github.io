@@ -1,28 +1,12 @@
 papers:
-  - title: M3Bench
-    selected: n
-
-  - title: VibraFlow
-    selected: n
-
-  - title: UPOT
-    selected: n
-  
-  - title: HGT-PE
-    selected: n
-
-  - title: Revisiting Multi-layer Perceptrons with Positional Encoding on Graphs
-    selected: n
-
-
-  - title: VibraFlow: Vibrational Spectra Interconversion via Flow Matching
-    authors: Jiaqing Xie, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li
+  - title: "VibraFlow: Vibrational Spectra Interconversion via Flow Matching"
+    authors: "<b>Jiaqing Xie</b>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li"
     selected: y
     tags: ["AI for Science", "Spectroscopy"]
 
 
-  - title: GeBA: Geometry Biased Attention for Molecular Language Learning
-    authors: Jiaqing Xie, Ziheng Chi
+  - title: "GeBA: Geometry Biased Attention for Molecular Language Learning"
+    authors: "<b>Jiaqing Xie</b>, Ziheng Chi"
     selected: y
     tags: ["AI for Science", "LLM"]
   
