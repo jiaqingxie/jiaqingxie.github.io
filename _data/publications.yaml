@@ -1,4 +1,6 @@
 papers:
+
+
   - title: "VibraFlow: Vibrational Spectra Interconversion via Flow Matching"
     authors: "<b>Jiaqing Xie</b>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li"
     selected: y
@@ -9,6 +11,14 @@ papers:
     authors: "<b>Jiaqing Xie</b>, Ziheng Chi"
     selected: y
     tags: ["AI for Science", "LLM"]
+
+  - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
+    authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Penghui Li, Tianfan Fu, Yuqiang Li"
+    venue: "Under Review at Science Bulletin"
+    selected: y
+    tags: ["AI for Science"]
+
+   
   
 
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
