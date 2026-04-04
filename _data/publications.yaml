@@ -7,8 +7,8 @@ papers:
     tags: ["AI for Science", "Spectroscopy"]
 
 
-  - title: "GeBA: Geometry Biased Attention for Molecular Language Learning"
-    authors: "<b>Jiaqing Xie</b>, Ziheng Chi"
+  - title: "SA-Attn: Structure-Aware Attention for Molecular Language Learning"
+    authors: "<b>Jiaqing Xie</b>, Ziheng Chi, Zhuo Yang"
     selected: y
     tags: ["AI for Science", "LLM"]
 
