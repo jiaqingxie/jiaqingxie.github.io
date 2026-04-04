@@ -13,7 +13,7 @@ papers:
     tags: ["AI for Science", "LLM"]
 
   - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
-    authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Penghui Li, Tianfan Fu, Yuqiang Li"
+    authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
     venue: "Under Review at Science Bulletin"
     selected: y
     tags: ["AI for Science"]
@@ -22,7 +22,7 @@ papers:
   
 
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
-    authors: "Zhuo Yang<sup>‡</sup>, Yeyun Chen<sup>‡</sup>, Jiaqing Xie, Ben Gao, Shuaike Shen, Wanhao Liu, Liujia Yang, Beilun Wang, Tianfan Fu, Yuqiang Li"
+    authors: "Zhuo Yang<sup>‡</sup>, Yeyun Chen<sup>‡</sup>, <b>Jiaqing Xie</b>, Ben Gao, Shuaike Shen, Wanhao Liu, Liujia Yang, Beilun Wang, Tianfan Fu, Yuqiang Li"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/abs/2512.20135"
     code: "https://github.com/little1d/MolAct"
@@ -30,7 +30,7 @@ papers:
     tags: ["AI for Science", "Reinforcement Learning"]
 
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
-    authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, Jiaqing Xie, Zhuo Yang, Yuqiang Li, Jun Xia"
+    authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <b>Jiaqing Xie</b>, Zhuo Yang, Yuqiang Li, Jun Xia"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/pdf/2601.15763"
     code: ""
@@ -38,7 +38,7 @@ papers:
     tags: ["AI for Science", "Spectroscopy"]
 
   - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
-    authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie</b><sup>‡</sup>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
+    authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
     venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/pdf/2602.10158"
     code: ""
