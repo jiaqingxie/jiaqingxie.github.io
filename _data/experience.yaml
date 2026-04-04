@@ -2,17 +2,12 @@ experiences:
 
 
 
-- place: "Shanghai AI Lab"
-  time: "June 2025 - Current"
-  title: "AI for Science Research Assistant"
-  subtitle: "Foundation Models"
-  category: "work"
-
-- place: "Texas A&M University"
-  time: "April 2025 - July 2025 (Spring)"
-  title: "Research Intern"
-  subtitle: "Protein Design"
+- place: "Fudan University"
+  time: "Sept 2026 - Current"
+  title: "Ph.D."
+  subtitle: "Computer Science"
   category: "school"
+
 
 - place: "ETH Zurich"
   time: "2022 - 2025"

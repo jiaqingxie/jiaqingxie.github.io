@@ -19,8 +19,6 @@ papers:
     tags: ["AI for Science"]
 
    
-  
-
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
     authors: "Zhuo Yang<sup>‡</sup>, Yeyun Chen<sup>‡</sup>, <b>Jiaqing Xie</b>, Ben Gao, Shuaike Shen, Wanhao Liu, Liujia Yang, Beilun Wang, Tianfan Fu, Yuqiang Li"
     venue: "Under Review, Arxiv"
