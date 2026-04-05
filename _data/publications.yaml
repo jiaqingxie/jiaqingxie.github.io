@@ -45,7 +45,7 @@ papers:
 
   - title: "SpecMol: A Unified Framework for Spectroscopy-Grounded Molecular Modeling and Evaluation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
-    venue: "In submission to Nature Communications"
+    venue: "Under Review @ Nature Communications"
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y
