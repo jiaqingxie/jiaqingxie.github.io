@@ -14,7 +14,7 @@ papers:
 
   - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
     authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
-    venue: "Under Review at Science Bulletin"
+    venue: "Under Review @ Science Bulletin (IF = 21.1)"
     selected: y
     tags: ["AI for Science"]
 
@@ -45,7 +45,7 @@ papers:
 
   - title: "SpecMol: A Unified Framework for Spectroscopy-Grounded Molecular Modeling and Evaluation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
-    venue: "Under Review @ Nature Communications"
+    venue: "Under Review @ Nature Communications (IF = 15.7)"
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y
