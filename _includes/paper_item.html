@@ -6,13 +6,6 @@
   {% if include.paper.venue %}
   <p class="paper-card-venue"><i>{{ include.paper.venue }}</i></p>
   {% endif %}
-  {% if include.paper.tags %}
-  <div class="paper-tags">
-    {% for tag in include.paper.tags %}
-      <span class="paper-tag {{ tag | downcase | replace: ' ', '-' }}">{{ tag }}</span>
-    {% endfor %}
-  </div>
-  {% endif %}
   <div class="paper-buttons">
     {% if include.paper.paper_pdf %}
       <a class="button" href="{{ include.paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>

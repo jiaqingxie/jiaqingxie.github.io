@@ -12,13 +12,13 @@ papers:
     authors: "<b>Jiaqing Xie</b>, Ziheng Chi, Zhuo Yang"
     venue: "Under Review, Arxiv"
     selected: y
-    tags: ["AI for Science", "LLM"]
+    tags: ["Graph Neural Network"]
 
   - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
     authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
     venue: "Under Review @ Science Bulletin (IF = 21.1)"
     selected: y
-    tags: ["AI for Science"]
+    tags: ["LLM"]
 
    
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
@@ -27,7 +27,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2512.20135"
     code: "https://github.com/little1d/MolAct"
     selected: y
-    tags: ["AI for Science", "Reinforcement Learning"]
+    tags: ["LLM"]
 
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
     authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <b>Jiaqing Xie</b>, Zhuo Yang, Yuqiang Li, Jun Xia"
@@ -51,7 +51,7 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y
-    tags: ["AI for Science", "Spectroscopy"]
+    tags: ["LLM"]
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
@@ -83,7 +83,7 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2511.12691"
     code: ""
     selected: y
-    tags: ["AI for Science"]
+    tags: ["LLM"]
 
   - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
     authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
@@ -99,7 +99,7 @@ papers:
     paper_pdf: "https://www.arxiv.org/pdf/2508.01670"
     code: "https://huggingface.co/datasets/jiaxie/QCBench"
     selected: y
-    tags: ["LLM", "AI for Science"]
+    tags: ["LLM"]
 
   - title: "Deep Research Arena: The First Exam of LLMs' Research Abilities via Seminar-Grounded Tasks"
     authors: "Haiyuan Wan, Chen Yang, Junchi Yu, Meiqi Tu, Jiaxuan Lu, Di Yu, Jianbao Cao, Ben Gao,  <b>Jiaqing Xie</b>, Aoran Wang, Wenlong Zhang, Philip Torr, Dongzhan Zhou"
@@ -115,6 +115,6 @@ papers:
     paper_pdf: "https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaf165/8137840"
     code: "https://github.com/jiaqingxie/DeepProtein"
     selected: y
-    tags: ["AI for Science", "Protein"]
+    tags: ["AI for Science"]
 
   
