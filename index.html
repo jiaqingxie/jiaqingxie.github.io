@@ -115,13 +115,13 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
   <sup>‡</sup> indicates equal contribution.
   </p>
 
-  <div class="publication-category-block">
+  <div class="publication-category-block category-gnn">
     <h5>Graph Neural Networks</h5>
     <div class="publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "Graph Neural Network" %}
-          <div class="publication-grid-item">
+          <div class="publication-grid-item publication-paper-card">
             {% include paper_item.html paper=paper %}
           </div>
           {% endif %}
@@ -130,13 +130,13 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
     </div>
   </div>
 
-  <div class="publication-category-block">
+  <div class="publication-category-block category-ai4science">
     <h5>AI for Physical Science</h5>
     <div class="publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "AI for Science" %}
-          <div class="publication-grid-item">
+          <div class="publication-grid-item publication-paper-card">
             {% include paper_item.html paper=paper %}
           </div>
           {% endif %}
@@ -145,13 +145,13 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
     </div>
   </div>
 
-  <div class="publication-category-block">
+  <div class="publication-category-block category-llm">
     <h5>Large Language Models</h5>
     <div class="publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "LLM" %}
-          <div class="publication-grid-item">
+          <div class="publication-grid-item publication-paper-card">
             {% include paper_item.html paper=paper %}
           </div>
           {% endif %}
