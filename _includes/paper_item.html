@@ -1,7 +1,7 @@
-<div class="paper">
-  <p class="title"><b>{{ include.paper.title }}</b></p>
+<div class="paper paper-card">
+  <p class="title paper-card-title"><b>{{ include.paper.title }}</b></p>
   {% if include.paper.authors %}
-  <p>{{ include.paper.authors }}</p>
+  <p class="paper-card-authors">{{ include.paper.authors }}</p>
   {% endif %}
   {% if include.paper.venue %}
   <p><i>{{ include.paper.venue }}</i></p>
