@@ -33,16 +33,43 @@ h4 {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #ddd; }
 .publication-paper-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
   margin-top: 0.25rem; }
-.publication-grid-item {
-  margin-bottom: 2rem; }
-.publication-grid-item .paper {
+.publication-paper-grid .publication-grid-item {
+  width: calc(33.3333% - 20px);
+  margin: 0 10px 20px 10px;
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box; }
+.publication-paper-grid .publication-grid-item .paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 0;
   padding: 1rem;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   background: #fafafa;
   box-sizing: border-box; }
+.publication-paper-grid .publication-grid-item .paper .paper-buttons {
+  margin-top: auto;
+  padding-top: 8px; }
+@media (max-width: 749px) {
+  .publication-paper-grid .publication-grid-item {
+    width: calc(100% - 20px); } }
 .paper-tags {
   margin-top: 5px;
   margin-bottom: 5px; }
