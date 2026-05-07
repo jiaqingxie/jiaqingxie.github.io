@@ -115,33 +115,45 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
   <sup>‡</sup> indicates equal contribution.
   </p>
 
-  <div class="row publications-columns">
-    <div class="four columns publication-column">
-      <h5>Graph Neural Networks</h5>
+  <div class="publication-category-block">
+    <h5>Graph Neural Networks</h5>
+    <div class="row publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "Graph Neural Network" %}
+          <div class="four columns publication-grid-item">
             {% include paper_item.html paper=paper %}
+          </div>
           {% endif %}
         {% endif %}
       {% endfor %}
     </div>
-    <div class="four columns publication-column">
-      <h5>AI for Physical Science</h5>
+  </div>
+
+  <div class="publication-category-block">
+    <h5>AI for Physical Science</h5>
+    <div class="row publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "AI for Science" %}
+          <div class="four columns publication-grid-item">
             {% include paper_item.html paper=paper %}
+          </div>
           {% endif %}
         {% endif %}
       {% endfor %}
     </div>
-    <div class="four columns publication-column">
-      <h5>Large Language Models</h5>
+  </div>
+
+  <div class="publication-category-block">
+    <h5>Large Language Models</h5>
+    <div class="row publication-paper-grid">
       {% for paper in site.data.publications.papers %}
         {% if paper.tags %}
           {% if paper.tags contains "LLM" %}
+          <div class="four columns publication-grid-item">
             {% include paper_item.html paper=paper %}
+          </div>
           {% endif %}
         {% endif %}
       {% endfor %}
