@@ -31,18 +31,15 @@ h4 {
 .category-llm {
   --category-color: #777; }
 .publication-category-block h5 {
-  display: inline-block;
-  font-size: 1.45rem;
+  font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.04rem;
   text-transform: none;
   margin-top: 0;
   margin-bottom: 1.2rem;
-  padding: 0.15rem 0.8rem 0.2rem 0.8rem;
-  border-left: 4px solid var(--category-color);
-  border-bottom: 0;
-  background: #f7f8fa;
-  border-radius: 999px; }
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #eee;
+  color: #333; }
 .publication-paper-grid {
   display: grid;
   grid-template-columns: 1fr;
