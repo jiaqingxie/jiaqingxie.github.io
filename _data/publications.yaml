@@ -3,12 +3,14 @@ papers:
 
   - title: "VibraFlow: Vibrational Spectra Interconversion via Flow Matching"
     authors: "<b>Jiaqing Xie</b>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li"
+    venue: "To be released"
     selected: y
     tags: ["AI for Science", "Spectroscopy"]
 
 
-  - title: "SA-Attn: Structure-Aware Attention for Molecular Language Learning"
+  - title: "GeoBA: Geometry-Biased Attention for Molecular Property Prediction"
     authors: "<b>Jiaqing Xie</b>, Ziheng Chi, Zhuo Yang"
+    venue: "Under Review, Arxiv"
     selected: y
     tags: ["AI for Science", "LLM"]
 
@@ -45,7 +47,7 @@ papers:
 
   - title: "SpecMol: A Unified Framework for Spectroscopy-Grounded Molecular Modeling and Evaluation"
     authors: "Shuaike Shen<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li"
-    venue: "Under Review @ Nature Communications (IF = 15.7)"
+    venue: "Under Review, Arxiv"
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y

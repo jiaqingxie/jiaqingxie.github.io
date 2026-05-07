@@ -1,0 +1,39 @@
+<div class="paper">
+  <p class="title"><b>{{ include.paper.title }}</b></p>
+  {% if include.paper.authors %}
+  <p>{{ include.paper.authors }}</p>
+  {% endif %}
+  {% if include.paper.venue %}
+  <p><i>{{ include.paper.venue }}</i></p>
+  {% endif %}
+  {% if include.paper.tags %}
+  <div class="paper-tags">
+    {% for tag in include.paper.tags %}
+      <span class="paper-tag {{ tag | downcase | replace: ' ', '-' }}">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div class="paper-buttons">
+    {% if include.paper.paper_pdf %}
+      <a class="button" href="{{ include.paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+    {% endif %}
+    {% if include.paper.slides %}
+      <a class="button" href="{{ include.paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+    {% endif %}
+    {% if include.paper.poster %}
+      <a class="button" href="{{ include.paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+    {% endif %}
+    {% if include.paper.video %}
+      <a class="button" href="{{ include.paper.video }}" target="_blank">Video</a>
+    {% endif %}
+    {% if include.paper.code %}
+      <a class="button" href="{{ include.paper.code }}" target="_blank">Code</a>
+    {% endif %}
+    {% if include.paper.data %}
+      <a class="button" href="{{ include.paper.data }}" target="_blank">Data</a>
+    {% endif %}
+    {% if include.paper.website %}
+      <a class="button" href="{{ include.paper.website }}" target="_blank">Website</a>
+    {% endif %}
+  </div>
+</div>
