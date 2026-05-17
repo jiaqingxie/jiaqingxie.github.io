@@ -31,7 +31,7 @@ papers:
 
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
     authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <b>Jiaqing Xie</b>, Zhuo Yang, Yuqiang Li, Jun Xia"
-    venue: "Under Review, Arxiv"
+    venue: "SIGKDD 2026"
     paper_pdf: "https://arxiv.org/pdf/2601.15763"
     code: ""
     selected: y
@@ -39,7 +39,7 @@ papers:
 
   - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
     authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
-    venue: "KDD 2026"
+    venue: "SIGKDD 2026"
     paper_pdf: "https://arxiv.org/pdf/2602.10158"
     code: ""
     selected: y
@@ -55,7 +55,7 @@ papers:
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
-    venue: "KDD 2026"
+    venue: "SIGKDD 2026"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
     code: ""
     selected: y
@@ -87,7 +87,7 @@ papers:
 
   - title: "Benchmarking Positional Encodings for GNNs and Graph Transformers"
     authors: "Florian Grotschla<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b> and Roger Wattenhofer"
-    venue: "KDD 2026"
+    venue: "SIGKDD 2026"
     paper_pdf: "https://arxiv.org/pdf/2411.12732"
     code: "https://github.com/ETH-DISCO/Benchmarking-PEs"
     selected: y
