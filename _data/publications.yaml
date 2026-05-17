@@ -14,11 +14,11 @@ papers:
     selected: y
     tags: ["Graph Neural Network"]
 
-  - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
-    authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
-    venue: "Under Review @ Science Bulletin (IF = 21.1)"
-    selected: y
-    tags: ["LLM"]
+  # - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
+  #   authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
+  #   venue: "Under Review @ Science Bulletin (IF = 21.1)"
+  #   selected: y
+  #   tags: ["LLM"]
 
    
   - title: "MolAct: An Agentic RL Framework for Molecular Editing and Property Optimization"
@@ -39,7 +39,7 @@ papers:
 
   - title: "NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers"
     authors: "Liujia Yang<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Yubin Wang<sup>‡</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu"
-    venue: "Under Review, Arxiv"
+    venue: "KDD 2026"
     paper_pdf: "https://arxiv.org/pdf/2602.10158"
     code: ""
     selected: y
@@ -55,7 +55,7 @@ papers:
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
-    venue: "Under Review, Arxiv"
+    venue: "KDD 2026"
     paper_pdf: "https://www.arxiv.org/pdf/2508.01188"
     code: ""
     selected: y
