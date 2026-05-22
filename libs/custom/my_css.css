@@ -30,6 +30,10 @@ h4 {
   --category-color: #4f8fcf; }
 .category-llm {
   --category-color: #777; }
+.category-technical-report {
+  --category-color: #5f8b66; }
+.category-under-review {
+  --category-color: #a0675b; }
 .publication-category-block h5 {
   font-size: 1.8rem;
   font-weight: 600;

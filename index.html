@@ -159,6 +159,36 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
       {% endfor %}
     </div>
   </div>
+
+  <div class="publication-category-block category-technical-report">
+    <h5>Technical Report</h5>
+    <div class="publication-paper-grid">
+      {% for paper in site.data.publications.papers %}
+        {% if paper.tags %}
+          {% if paper.tags contains "Technical Report" %}
+          <div class="publication-grid-item publication-paper-card">
+            {% include paper_item.html paper=paper %}
+          </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="publication-category-block category-under-review">
+    <h5>Under Review</h5>
+    <div class="publication-paper-grid">
+      {% for paper in site.data.publications.papers %}
+        {% if paper.tags %}
+          {% if paper.tags contains "Under Review" %}
+          <div class="publication-grid-item publication-paper-card">
+            {% include paper_item.html paper=paper %}
+          </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 <!-- ========== Talks ==========

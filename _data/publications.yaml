@@ -12,7 +12,7 @@ papers:
     authors: "<b>Jiaqing Xie</b>, Ziheng Chi, Zhuo Yang"
     venue: "Under Review, Arxiv"
     selected: y
-    tags: ["Graph Neural Network"]
+    tags: ["Under Review"]
 
   # - title: "ChemClaw: An Agentic Framework for Chemistry with Modular Skills"
   #   authors: "Ben Gao<sup>‡</sup>, Yi Ban<sup>‡</sup>, Laiao Lu<sup>‡</sup>, Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Penghui Li, Tianfan Fu, Yuqiang Li"
@@ -27,7 +27,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2512.20135"
     code: "https://github.com/little1d/MolAct"
     selected: y
-    tags: ["LLM"]
+    tags: ["Technical Report"]
 
   - title: "NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation"
     authors: "Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <b>Jiaqing Xie</b>, Zhuo Yang, Yuqiang Li, Jun Xia"
@@ -51,7 +51,7 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2509.21861"
     code: ""
     selected: y
-    tags: ["LLM"]
+    tags: ["Under Review"]
 
   - title: "SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy"
     authors: "Zhuo Yang<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Jun Jiang, Tianfan Fu, and Yuqiang Li"
@@ -67,7 +67,7 @@ papers:
     paper_pdf: "https://arxiv.org/pdf/2510.01246v1"
     code: ""
     selected: y
-    tags: ["LLM"]
+    tags: ["Technical Report"]
 
   - title: "PolyReal: A Benchmark for Real-World Polymer Science Workflows"
     authors: Wanhao Liu<sup>‡</sup>, Weida Wang<sup>‡</sup>, <b>Jiaqing Xie</b>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
@@ -79,7 +79,7 @@ papers:
 
   - title: "R2-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection"
     authors: Shuaike Shen<sup>‡</sup>, Ke Liu<sup>‡</sup>, <b>Jiaqing Xie</b>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao 
-    venue: "CVPR 2026"
+    venue: "CVPR 2026 (Best Paper Candidate)"
     paper_pdf: "https://arxiv.org/pdf/2511.12691"
     code: ""
     selected: y
