@@ -15,14 +15,14 @@ papers:
     tags: ["Under Review"]
 
   - title: "SkillsInjector: Dynamic Skill Context Construction for LLM Agents"
-    authors: "Yanchao Li, Wanhao Liu, Ben Gao, Jiaqing Xie, Zhehong AI, Na Zou, Yuqiang Li, Tianfan Fu"
+    authors: "Yanchao Li, Wanhao Liu, Ben Gao, <b>Jiaqing Xie</b>, Zhehong Ai, Na Zou, Yuqiang Li, Tianfan Fu"
     venue: "Under Review, Arxiv"
     paper_pdf: ""
     selected: y
     tags: ["Under Review"]
 
   - title: "OmniMatBench: A Human-Calibrated Multimodal Reasoning Benchmark Across 19 Materials Science Subfields"
-    authors: "Wanhao Liu<sup>*</sup>, Jiaqing Xie<sup>*</sup>, QianTan, Weida Wang, Jue Wang, Ran Sun, ZhuoYang, Lei Bai, TianFan Fu, Lu Chen, Xin Chen, Yuqiang Li"
+    authors: "Wanhao Liu<sup>‡</sup>, <b>Jiaqing Xie<sup>‡</sup></b>, Qian Tan, Weida Wang, Jue Wang, Ran Sun, Zhuo Yang, Lei Bai, TianFan Fu, Lu Chen, Xin Chen, Yuqiang Li"
     venue: "Under Review, Arxiv"
     paper_pdf: ""
     selected: y
