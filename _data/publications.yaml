@@ -1,7 +1,20 @@
 papers:
 
 
-  - title: "VibraFlow: Vibrational Spectra Interconversion via Flow Matching"
+  - title: "Antibody Design via On-Policy Self-Distillation"
+    authors: "Zhuo Yang, Jiaying He, <b>Jiaqing Xie</b> et al."
+    venue: "To be released"
+    selected: y
+    tags: ["AI for Science"]
+
+  - title: "Scaling Learnable Laplacian Positional Encodings with Random-Probe Krylov Methods"
+    authors: "<b>Jiaqing Xie</b>"
+    venue: "To be released"
+    selected: y
+    tags: ["Graph Neural Network"]
+
+
+  - title: "SpectraFlow: Physics-guided Flow Matching for IR-Raman Spectral Interconversion"
     authors: "<b>Jiaqing Xie</b>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li"
     venue: "To be released"
     selected: y
