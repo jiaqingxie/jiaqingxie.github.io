@@ -1,19 +1,30 @@
 h4 {
   letter-spacing: .1rem; }
 
-/* ========== Neel-style layout ========== */
+/* ========== Neel Nanda-style layout ========== */
+:root {
+  --nn-accent: #1473ae;            /* hsl(204.4, 79.5%, 38.2%) */
+  --nn-accent-dark: #105e8e;
+  --nn-text: #111;
+  --nn-serif: "Playfair Display", "Granville", Georgia, "Times New Roman", serif;
+  --nn-sans: "Jost", "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nn-max: 760px;
+}
+
 html {
   font-size: 100%;
 }
 
 body {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif !important;
-  font-size: 1.125rem;
-  color: #222;
+  font-family: var(--nn-sans) !important;
+  font-size: 1.2rem;
+  color: var(--nn-text);
   background: #fff;
-  line-height: 1.7;
+  line-height: 1.6;
   font-weight: 400;
+  letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .page-content h1,
@@ -22,73 +33,77 @@ body {
 .page-content h4,
 .page-content h5,
 .page-content h6 {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-family: var(--nn-serif);
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.25;
+  line-height: 1.3;
+  color: var(--nn-text);
   margin-top: 0;
 }
 
 .page-content {
-  max-width: 720px;
+  max-width: var(--nn-max);
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
+/* ---- Header ---- */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ececec;
   backdrop-filter: blur(6px);
 }
 
 .site-header-inner {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1.4rem 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 2.2rem;
 }
 
 .site-title {
-  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #111;
+  font-family: var(--nn-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--nn-text);
   text-decoration: none;
-  letter-spacing: 0.01rem;
+  line-height: 1.3;
+  white-space: nowrap;
 }
 
 .site-title:hover {
-  color: #111;
+  color: var(--nn-text);
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.1rem;
+  align-items: baseline;
+  gap: 0.4rem 1.8rem;
 }
 
 .site-nav a {
-  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #444;
+  font-family: var(--nn-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--nn-text);
   text-decoration: none;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0;
 }
 
 .site-nav a:hover {
-  color: #111;
-  text-decoration: underline;
+  color: var(--nn-accent);
 }
 
+/* ---- Hero ---- */
 .hero-photo {
-  margin: 0.5rem 0 2rem;
+  margin: 0.5rem 0 2.5rem;
 }
 
 .hero-photo img {
@@ -98,57 +113,62 @@ body {
   border-radius: 2px;
 }
 
+/* ---- Sections ---- */
 .content-section {
-  margin-bottom: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 .content-section h2 {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.75rem;
+  font-family: var(--nn-serif);
+  font-size: 2.8rem;
   font-weight: 700;
-  margin: 0 0 1rem;
+  line-height: 1.3;
+  margin: 0 0 1.2rem;
   letter-spacing: 0;
 }
 
 .content-section h3 {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.28rem;
-  font-weight: 600;
-  margin: 1.8rem 0 0.8rem;
-  color: #333;
+  font-family: var(--nn-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 2rem 0 0.9rem;
+  color: var(--nn-text);
 }
 
 .content-section p,
 .content-section li,
 .pub-list-item {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
-  font-size: 1.125rem;
-  margin-bottom: 0.9rem;
+  font-family: var(--nn-sans);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .content-section ul {
-  margin-left: 1.2rem;
+  margin-left: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 .content-section a {
-  color: #222;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  color: var(--nn-accent);
+  text-decoration: none;
 }
 
 .content-section a:hover {
-  color: #000;
+  color: var(--nn-accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .vita-list,
 .pub-list {
   list-style: disc;
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
 }
 
 .pub-list-item {
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
   line-height: 1.55;
 }
 
@@ -158,50 +178,62 @@ body {
 
 .pub-list-item em {
   font-style: italic;
-  font-weight: 600;
-  color: #333;
+  font-weight: 500;
+  color: var(--nn-text);
 }
 
+/* ---- Footer ---- */
 .site-footer {
-  max-width: 720px;
+  max-width: var(--nn-max);
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
-  border-top: 1px solid #eee;
+  padding: 2.5rem 1.5rem 3rem;
+  border-top: 1px solid #ececec;
   text-align: center;
-  color: #666;
-  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.92rem;
+  color: #555;
+  font-family: var(--nn-sans);
+  font-size: 1rem;
 }
 
 .site-footer-name {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
+  font-family: var(--nn-serif);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--nn-text);
+  margin-bottom: 0.6rem;
 }
 
 .site-footer-links {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
 .site-footer-links a {
-  color: #555;
+  color: var(--nn-accent);
   text-decoration: none;
 }
 
 .site-footer-links a:hover {
   text-decoration: underline;
-  color: #111;
+  color: var(--nn-accent-dark);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .site-header-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.6rem;
   }
 
   .site-nav {
-    gap: 0.5rem 0.9rem;
+    gap: 0.4rem 1.2rem;
+  }
+
+  .content-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .content-section h3 {
+    font-size: 1.8rem;
   }
 }
 
