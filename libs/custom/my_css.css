@@ -8,8 +8,8 @@ h4 {
   --nn-header-bg: #8eb7dc;         /* darkAccent periwinkle band */
   --nn-page-bg: #eaeaee;           /* lightAccent lavender-grey */
   --nn-text: #1a1a1a;
-  --nn-serif: "Marcellus", "Granville", Georgia, "Times New Roman", serif;
-  --nn-sans: "Jost", "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --nn-serif: "Marcellus", Georgia, "Times New Roman", serif;
+  --nn-sans: "Marcellus", Georgia, "Times New Roman", serif;
   --nn-max: 1080px;
 }
 
@@ -433,7 +433,7 @@ body {
 
 .post-content pre,
 .post-content code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: var(--nn-serif);
   font-size: 0.92em;
 }
 
