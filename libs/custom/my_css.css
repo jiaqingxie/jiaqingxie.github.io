@@ -8,7 +8,7 @@ h4 {
   --nn-header-bg: #8eb7dc;         /* darkAccent periwinkle band */
   --nn-page-bg: #eaeaee;           /* lightAccent lavender-grey */
   --nn-text: #1a1a1a;
-  --nn-serif: "Playfair Display", "Granville", Georgia, "Times New Roman", serif;
+  --nn-serif: "Marcellus", "Granville", Georgia, "Times New Roman", serif;
   --nn-sans: "Jost", "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --nn-max: 1080px;
 }
@@ -280,6 +280,23 @@ body {
   .site-social {
     margin-left: 0;
   }
+}
+
+/* Marcellus ships a single (regular) weight; avoid faux-bold */
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6,
+.content-section h2,
+.content-section h3,
+.blog-page > h1,
+.post-card .post-title,
+.post-article .post-header h1,
+.post-content h2,
+.post-content h3 {
+  font-weight: 400;
 }
 
 /* ========== Blog (Neel-style) ========== */
