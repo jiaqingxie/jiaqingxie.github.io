@@ -2,283 +2,110 @@
 layout: default
 title: Home
 ---
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <h4>Bio</h4>
-  <p>
-  Hello! I am Jiaqing. I was graduated in May 2025 at ETH Zurich (CS Rank@4). I am an incoming CS PhD Student at Fudan University since Sept 2026. My research interests are (1) Flow Matching, and Diffusion Models; (2) Graph Neural Networks and Graph Transformers; (3) Their Applications in Physical Science. 
-  </p>
 
-  <p>
-    News: 
-    <li> [2026/04] We released GeoBA in May.</li>
-    <li> [2026/04] We released ChemClaw, an agentic framework for chemistry with modular skills.</li>
-    <li> [2026/03] Two second-authored papers are accepted by CVPR 2026 (One Main, One Findings).</li>
-    <li> [2026/02] We launched NMRGym and NMRTrans for better NMR structure elucidation</li>
-    <li> [2025/11] First Co-authored Paper GraphPEBench is accepted by KDD 2026</li>
-    <li> [2025/11] One Paper DeepResearchArena is accepted by AAAI 2026</li>
-    <li> [2025/10] First Authored Paper QCBench is published in JCIM 2025</li>
-    <li> [2025/05] First Authored Paper DeepProtein is published in Bioinformatics 2025</li>
-  </p>
-
-  <!-- <p>
-
-    Hello! I am Wenhao Gao (高文昊), a researcher in chemistry and AI, currently completing my Ph.D. at MIT with Professor Connor W. Coley. My research focuses on advancing molecular design by developing AI-driven models that integrate generative AI with chemical synthesis, aimed at enabling scalable, synthesizable, and efficient exploration of chemical space. My long-term goal is to accelerate and transform molecular discovery processes through foundation models tailored specifically for the unique challenges of chemical science.
-
-I am grateful to have my research supported by the Google PhD Fellowship and the Takeda Fellowship, and I am honored to be a recipient of the D.E. Shaw Research Fellowship and recognized among CAS Future Leaders Top 100.
-
-This fall, I am actively seeking postdoctoral and faculty positions! You can find more information about my research, publications, and projects, as well as my professional and academic background, below. Thank you for visiting, and please feel free to reach out with questions, opportunities, or collaboration ideas.
-
-    My research goal is to bring autonomous molecular discovery to the real world, which means a systematical methodology that can be applied to a wide 
-    range of molecular discovery problems, with little human intervention. This not only speeds up the discovery process but also allows us to scale it up. 
-    In my past endeavors, I have focused on developing AI algorithms with broader practical applicability for designing small organic molecules, 
-    expanding upon the synthetic accessibility and sample efficiency. Lately, I have been working on bridging the gap between AI planning and autonomous experiments, 
-    and exploring pre-training strategies for molecules.
-  </p> -->
-
-  <!-- <p>
-  My work in designing drug candidates for advancing human health is generously supported by 
-  <a href="https://research.google/outreach/phd-fellowship/recipients/" target="_blank">Google PhD Fellowship</a> and 
-  <a href="https://news.mit.edu/2023/takeda-fellows-leveraging-ai-positively-impact-human-health-0112" target="_blank">MIT-Takeda Fellowship</a>.
-  I also work with <a href="https://impactclimate.mit.edu" target="_blank">the MIT Climate and Sustainability Consortium</a> 
-  where I apply my methods to design next-generation carbon-capture materials aimed at mitigating climate change and fostering sustainability.
-  </p> -->
-
-
-
-  <!-- <p>
-  This fall, I will be on job market looking for postdoc and faculty positions! 
-  My research interests span in acelerating chemical discovery with AI. 
-  If there are opportunities to present in your school, institute, group, seminar, workshop etc., I really appreciate it! 
-  </p> -->
-  
+<div class="hero-photo">
+  <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic }}" alt="{{ site.data.main_info.name }}">
 </div>
 
+<section class="content-section" id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I'm Jiaqing! I am a research assistant at the Shanghai AI Lab AI for Science Center.
+    I received my M.Sc. in Computer Science from ETH Zurich in 2025, and my B.Eng. in Electronics and Computer Science from the University of Edinburgh in 2022.
+    I will start my Ph.D. in Computer Science at Fudan University in September 2026.
+  </p>
+  <p>
+    My research focuses on AI for physical sciences, generative models (flow matching and diffusion models),
+    graph neural networks and graph transformers, and their applications to chemistry, spectroscopy, and molecular modeling.
+    You can see my papers on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+    or download my <a href="{{ site.baseurl }}{{ site.data.main_info.cv }}" target="_blank" rel="noopener">CV</a>.
+  </p>
+  <p>
+    If you want to reach me, email me at
+    <a href="mailto:godxie.steven@gmail.com">godxie.steven@gmail.com</a>.
+  </p>
+</section>
 
-<!-- ========== News ========== -->
-<!-- <div class="docs-section" id="news">
-  <h4>News</h4>
-  <li> [2024/01] I am teaching an IAP course about Machine Learning for Molecular Design at MIT
-    <a href="https://ai4sciencecommunity.github.io/neurips23.html">[Link]</a> 
-  </li>
-  <li> [2023/12] We will organize the AI for Science Workshop at NeurIPS 2023
-    <a href="https://ai4sciencecommunity.github.io/neurips23.html">[Link]</a> 
-  </li>
-  <li> [2023/09] Excited to annouce that I have been seelcted as one of the Google PhD Fellows
-    <a href="https://research.google/outreach/phd-fellowship/recipients/">[Link]</a> 
-  </li>
-  <li> [2023/08] We organized the Machine Learning for Organic Chemistry Simposium at ACS Fall 2023
-  </li>
-    <li> [2022/09] Our paper on molecular optimization benchmark is accepted by NeurIPS 2022, Datasets and Benchmarks track 
-      <a href="https://github.com/wenhao-gao/mol_opt">[Code]</a> 
+<section class="content-section" id="news">
+  <h2>News</h2>
+  <ul>
+    <li>[2026/04] We released GeoBA in May.</li>
+    <li>[2026/04] We released ChemClaw, an agentic framework for chemistry with modular skills.</li>
+    <li>[2026/03] Two second-authored papers are accepted by CVPR 2026 (One Main, One Findings).</li>
+    <li>[2026/02] We launched NMRGym and NMRTrans for better NMR structure elucidation.</li>
+    <li>[2025/11] First co-authored paper GraphPEBench is accepted by KDD 2026.</li>
+    <li>[2025/11] One paper DeepResearchArena is accepted by AAAI 2026.</li>
+    <li>[2025/10] First authored paper QCBench is published in JCIM 2025.</li>
+    <li>[2025/05] First authored paper DeepProtein is published in Bioinformatics 2025.</li>
+  </ul>
+</section>
+
+<section class="content-section" id="vita">
+  <h2>Education &amp; Experience</h2>
+  <ul class="vita-list">
+    <li>
+      <strong>Shanghai AI Lab</strong> — Assistant Researcher, AI for Science Center (2025 — Present)
     </li>
-    <li> [2022/09] Our paper on machine learning assisted structure-based drug design is accepted by NeurIPS 2022
-      <a href="https://github.com/futianfan/reinforced-genetic-algorithm">[Code]</a> 
-    </li>
-    <li> [2022/08] I am houred to be selected as one of the MIT-Takeda fellows
-      <a href="https://mittakedaprogram.mit.edu">[Link]</a> 
-    </li>
-</div> -->
-
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
-
-  <!--<p>Full Resume in <a href={{ "/assets/cv/WenhaoGao_CV.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>-->
-
-  <!-- The Timeline -->
-  <ul class="timeline">
     {% for exp in site.data.experience.experiences %}
     <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
+      <strong>{{ exp.place }}</strong> — {{ exp.title }}, {{ exp.subtitle }} ({{ exp.time }})
     </li>
     {% endfor %}
   </ul>
-</div>
+</section>
 
+<section class="content-section" id="publications">
+  <h2>Publications</h2>
+  <p><sup>‡</sup> indicates equal contribution.</p>
 
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
-  </p>
-
-  <div class="publication-category-block category-gnn">
-    <h5>Graph Neural Networks</h5>
-    <div class="publication-paper-grid">
-      {% for paper in site.data.publications.papers %}
-        {% if paper.tags %}
-          {% if paper.tags contains "Graph Neural Network" %}
-          <div class="publication-grid-item publication-paper-card">
-            {% include paper_item.html paper=paper %}
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="publication-category-block category-ai4science">
-    <h5>AI for Physical Science</h5>
-    <div class="publication-paper-grid">
-      {% for paper in site.data.publications.papers %}
-        {% if paper.tags %}
-          {% if paper.tags contains "AI for Science" %}
-          <div class="publication-grid-item publication-paper-card">
-            {% include paper_item.html paper=paper %}
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="publication-category-block category-llm">
-    <h5>Large Language Models</h5>
-    <div class="publication-paper-grid">
-      {% for paper in site.data.publications.papers %}
-        {% if paper.tags %}
-          {% if paper.tags contains "LLM" %}
-          <div class="publication-grid-item publication-paper-card">
-            {% include paper_item.html paper=paper %}
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="publication-category-block category-technical-report">
-    <h5>Technical Report</h5>
-    <div class="publication-paper-grid">
-      {% for paper in site.data.publications.papers %}
-        {% if paper.tags %}
-          {% if paper.tags contains "Technical Report" %}
-          <div class="publication-grid-item publication-paper-card">
-            {% include paper_item.html paper=paper %}
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="publication-category-block category-under-review">
-    <h5>Under Review</h5>
-    <div class="publication-paper-grid">
-      {% for paper in site.data.publications.papers %}
-        {% if paper.tags %}
-          {% if paper.tags contains "Under Review" %}
-          <div class="publication-grid-item publication-paper-card">
-            {% include paper_item.html paper=paper %}
-          </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-<!-- ========== Talks ==========
-<div class="docs-section" id="talks">
-  <h4>Talks</h4>
-    <li> 
-      [2022/07] Our  
-      <a href="https://github.com/wengong-jin/abdockgen">[Link]</a> 
-    </li>
-</div> -->
-
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
+  <h3>Graph Neural Networks</h3>
+  <ul class="pub-list">
+    {% for paper in site.data.publications.papers %}
+      {% if paper.tags and paper.tags contains "Graph Neural Network" %}
+        {% include paper_list_item.html paper=paper %}
+      {% endif %}
+    {% endfor %}
   </ul>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
+  <h3>AI for Physical Science</h3>
+  <ul class="pub-list">
+    {% for paper in site.data.publications.papers %}
+      {% if paper.tags and paper.tags contains "AI for Science" %}
+        {% include paper_list_item.html paper=paper %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-          <div class="four columns">
-            <div class="project-container">
+  <h3>Large Language Models</h3>
+  <ul class="pub-list">
+    {% for paper in site.data.publications.papers %}
+      {% if paper.tags and paper.tags contains "LLM" %}
+        {% include paper_list_item.html paper=paper %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
+  <h3>Technical Report</h3>
+  <ul class="pub-list">
+    {% for paper in site.data.publications.papers %}
+      {% if paper.tags and paper.tags contains "Technical Report" %}
+        {% include paper_list_item.html paper=paper %}
+      {% endif %}
+    {% endfor %}
+  </ul>
 
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
+  <h3>Under Review</h3>
+  <ul class="pub-list">
+    {% for paper in site.data.publications.papers %}
+      {% if paper.tags and paper.tags contains "Under Review" %}
+        {% include paper_list_item.html paper=paper %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
 
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
-
-
-<div class="docs-section" id="personal-info">
-  <h4>Personal Info</h4>
-
+<section class="content-section" id="personal-info">
+  <h2>Personal Info</h2>
   <ul>
     <li><strong>Physical</strong>: height 183 cm, weight 80 kg.</li>
     <li><strong>Running (PB)</strong>: 50 m 6.5 s; 1000 m 3&#8242;22&#8243;; 5000 m 27&#8242;30&#8243;; 10000 m 55&#8242;30&#8243;.</li>
@@ -287,20 +114,12 @@ This fall, I am actively seeking postdoctoral and faculty positions! You can fin
     <li><strong>Zhihu</strong>: 2800 followers — <a href="https://www.zhihu.com/people/37-77-11-3-2" target="_blank" rel="noopener">P等于NP</a>.</li>
     <li><strong>Codeforces</strong>: 1200.</li>
   </ul>
-</div>
+</section>
 
-<div class="docs-section" id="academic-services">
-  <h4>Academic Services (Reviewer)</h4>
-
+<section class="content-section" id="academic-services">
+  <h2>Academic Services (Reviewer)</h2>
   <ul>
-    <li><strong>2025</strong>: ACL, CVPR, EMNLP,  ICONIP, NeurIPS</li>
+    <li><strong>2025</strong>: ACL, CVPR, EMNLP, ICONIP, NeurIPS</li>
     <li><strong>2024</strong>: ACML, NeurIPS</li>
   </ul>
-</div>
-
-
-
-<div class="docs-section" id="template">
-  <h5>Acknowledgement</h5>
-  This website was built with jekyll based on a template by <a href="http://web.media.mit.edu/~msaveski/"> Martin Saveski </a>
-</div>
+</section>

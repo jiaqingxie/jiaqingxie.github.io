@@ -1,0 +1,21 @@
+<li class="pub-list-item">
+  <strong>{{ include.paper.title }}</strong>
+  {% if include.paper.authors %}
+  <br>{{ include.paper.authors }}
+  {% endif %}
+  {% if include.paper.venue %}
+  <br><em>{{ include.paper.venue }}</em>
+  {% endif %}
+  {% if include.paper.paper_pdf or include.paper.code or include.paper.website %}
+  <br>
+  {% if include.paper.paper_pdf %}
+    <a href="{% if include.paper.paper_pdf contains 'http' %}{{ include.paper.paper_pdf }}{% else %}{{ include.paper.paper_pdf | prepend: site.baseurl }}{% endif %}" target="_blank">Paper</a>
+  {% endif %}
+  {% if include.paper.code %}
+    {% if include.paper.paper_pdf %} · {% endif %}<a href="{{ include.paper.code }}" target="_blank">Code</a>
+  {% endif %}
+  {% if include.paper.website %}
+    {% if include.paper.paper_pdf or include.paper.code %} · {% endif %}<a href="{{ include.paper.website }}" target="_blank">Website</a>
+  {% endif %}
+  {% endif %}
+</li>
