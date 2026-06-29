@@ -117,6 +117,18 @@ home: true
   </ul>
 </section>
 
+<section class="content-section" id="resources">
+  <h2>Resources</h2>
+  <ul>
+    {% for book in site.data.resources.books %}
+    <li>
+      <strong>{{ book.title }}</strong> —
+      <a href="{{ site.baseurl }}{{ book.file }}" target="_blank" rel="noopener">PDF</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section class="content-section" id="academic-services">
   <h2>Academic Services (Reviewer)</h2>
   <ul>
