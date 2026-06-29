@@ -1,8 +1,7 @@
-# source:      .
-# destination: ./_site
-# includes:    ./_includes
-# baseurl: /~msaveski
-
-# collections:
-#   projects:
-#     output: true
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
+    previewAsCode: false

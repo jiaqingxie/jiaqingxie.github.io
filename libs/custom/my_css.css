@@ -424,6 +424,13 @@ body {
   margin: 1.5rem auto;
 }
 
+.post-content .MathJax_Display,
+.post-content mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
 .post-content blockquote {
   border-left: 3px solid var(--nn-header-bg);
   margin: 1.5rem 0;
