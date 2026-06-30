@@ -56,7 +56,29 @@ home: true
 </section>
 
 <section class="content-section" id="publications">
-  <h2>Publications</h2>
+  {% assign first_author_count = 0 %}
+  {% assign second_author_count = 0 %}
+  {% assign third_author_count = 0 %}
+  {% for paper in site.data.publications.papers %}
+    {% assign author_list = paper.authors | split: "," %}
+    {% for author in author_list limit:3 %}
+      {% if author contains "Jiaqing Xie" %}
+        {% if forloop.index == 1 %}
+          {% assign first_author_count = first_author_count | plus: 1 %}
+        {% elsif forloop.index == 2 %}
+          {% assign second_author_count = second_author_count | plus: 1 %}
+        {% elsif forloop.index == 3 %}
+          {% assign third_author_count = third_author_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  <h2 class="publications-title">
+    Publications
+    <span class="publication-medals" aria-label="{{ first_author_count }} first-author, {{ second_author_count }} second-author, {{ third_author_count }} third-author papers">
+      {{ first_author_count }}🥇 {{ second_author_count }}🥈 {{ third_author_count }}🥉
+    </span>
+  </h2>
   <p><sup>‡</sup> indicates equal contribution.</p>
 
   <h3>Graph Neural Networks</h3>

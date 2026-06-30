@@ -222,6 +222,19 @@ body {
   color: var(--nn-text);
 }
 
+.publications-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.publication-medals {
+  font-size: 0.72em;
+  color: #333;
+  white-space: nowrap;
+}
+
 /* ---- Footer ---- */
 .site-footer {
   margin: 2rem 0 0;
