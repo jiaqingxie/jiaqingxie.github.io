@@ -16,8 +16,8 @@ home: true
     I will start my Ph.D. in Computer Science at Fudan University in September 2026.
   </p>
   <p>
-    My research focuses on AI for physical sciences, generative models (flow matching and diffusion models),
-    graph neural networks and graph transformers, and their applications to chemistry, spectroscopy, and molecular modeling.
+    My research focuses on graph neural networks, flow matching, and molecular dynamics,
+    especially where structure-aware learning meets chemistry and molecular modeling.
     You can see my papers on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
     or download my <a href="{{ site.baseurl }}{{ site.data.main_info.cv }}" target="_blank" rel="noopener">CV</a>.
   </p>
@@ -90,40 +90,27 @@ home: true
     {% endfor %}
   </ul>
 
-  <h3>AI for Physical Science</h3>
+  <h3>Flow Matching</h3>
   <ul class="pub-list">
     {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "AI for Science" %}
+      {% if paper.tags and paper.tags contains "Flow Matching" %}
         {% include paper_list_item.html paper=paper %}
       {% endif %}
     {% endfor %}
   </ul>
 
-  <h3>Large Language Models</h3>
+  <h3>Molecular Dynamics</h3>
   <ul class="pub-list">
+    {% assign molecular_dynamics_count = 0 %}
     {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "LLM" %}
+      {% if paper.tags and paper.tags contains "Molecular Dynamics" %}
+        {% assign molecular_dynamics_count = molecular_dynamics_count | plus: 1 %}
         {% include paper_list_item.html paper=paper %}
       {% endif %}
     {% endfor %}
-  </ul>
-
-  <h3>Technical Report</h3>
-  <ul class="pub-list">
-    {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "Technical Report" %}
-        {% include paper_list_item.html paper=paper %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h3>Under Review</h3>
-  <ul class="pub-list">
-    {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "Under Review" %}
-        {% include paper_list_item.html paper=paper %}
-      {% endif %}
-    {% endfor %}
+    {% if molecular_dynamics_count == 0 %}
+      <li class="pub-list-item">More coming soon.</li>
+    {% endif %}
   </ul>
 </section>
 
