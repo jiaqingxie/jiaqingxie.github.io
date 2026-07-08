@@ -2,13 +2,9 @@ papers:
 
   - title: "Gauge-Invariant Learnable Spectral Positional Encodings for Directed Graphs via Hermitian Block Krylov Subspaces"
     authors: "<b>Jiaqing Xie</b>, Yuxin Wang"
-    venue: "To be released"
-    selected: y
-    tags: ["Graph Neural Network"]
-
-  - title: "Scaling Learnable Laplacian Positional Encodings with Random-Probe Krylov Methods"
-    authors: "<b>Jiaqing Xie</b>"
-    venue: "To be released"
+    venue: "Arxiv"
+    paper_pdf: ""
+    code: ""
     selected: y
     tags: ["Graph Neural Network"]
 
@@ -16,13 +12,17 @@ papers:
   - title: "SpectraFlow: Physics-guided Flow Matching for IR-Raman Spectral Interconversion"
     authors: "<b>Jiaqing Xie</b>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li"
     venue: "To be released"
+    paper_pdf: "Arxiv"
+    code: ""
     selected: y
     tags: ["Flow Matching"]
 
 
   - title: "GeoBA: Geometry-Biased Attention for Molecular Property Prediction"
     authors: "<b>Jiaqing Xie</b>, Ziheng Chi, Zhuo Yang"
-    venue: "Under Review, Arxiv"
+    venue: "Under Review"
+    paper_pdf: ""
+    code: ""
     selected: y
     tags: ["Graph Neural Network"]
 
