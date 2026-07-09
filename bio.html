@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Brief bio — Tommaso D'Orsi</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=1200, initial-scale=1">
+  <meta name="description" content="Brief biography of Tommaso D'Orsi."/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    :root{ --accent:#4d8093; --emph:#0b3f5c; --link:#0E547F; --ink:#222; --border:#e5e7eb; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; color:var(--ink); line-height:1.5; font-size:0.92em; font-family:"Helvetica","Arial",sans-serif; }
+    h1{ color:var(--emph); margin:0 0 .5rem 0; font-size:1.17em; }
+    a{ text-decoration:none; } a:link{ color:var(--link); text-decoration:underline; } a:hover{ text-decoration:underline; }
+    author{ color:#38761d; } conference{ font-weight:bold; } ptitle{ color:var(--accent); font-weight:bolder; }
+
+    .layout{ display:grid; grid-template-columns: 200px minmax(0,1fr); gap:24px; max-width:1200px; min-width: 900px; margin:0 auto; padding:2.5rem 1rem; }
+    .sidebar{ margin-top:72px; }
+    .sidebar nav ul{ list-style:none; margin:0; padding:0; }
+    .sidebar nav li{ margin:6px 0; }
+    .sidebar nav a{ text-decoration:none; color:var(--link); padding:2px 0; display:inline-block; }
+    .sidebar .current{ font-weight:700; color:var(--emph); }
+    .content{ max-width:800px; }
+    hr{ border:0; border-top:1px solid var(--border); margin:1.25rem 0; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="./index.html">home</a></li>
+          <li><span class="current">brief bio</span></li>
+          <li><a href="./papers.html">papers</a></li>
+          <li><a href="./teaching.html">teaching</a></li>
+          <li><a href="./advising.html">advising</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <h1>Brief Bio</h1>
+      <hr>
+      <p>
+        Tommaso D’Orsi is an Assistant Professor in the department of
+        <a href="https://cs.unibocconi.eu">Computing Sciences</a> at
+        <a href="https://cs.unibocconi.eu">Bocconi</a>. He is part of the
+        <a href="https://cs.unibocconi.eu/research/theory">Theory group</a>.
+      </p>
+      <p>
+        He is broadly interested in computer science, from both a theoretical and applied perspective.
+        His research focuses on algorithm design, computational complexity, learning theory, and privacy.
+      </p>
+      <p>
+        He received his PhD from <a href="https://ethz.ch/en.html">ETH Zurich</a>, where
+        <author><a href="https://www.dsteurer.org" style="color:#38761d;">David Steurer</a></author> was his advisor.
+        He then spent a year as a Research Fellow at Bocconi, hosted by
+        <author><a href="https://lucatrevisan.github.io" style="color:#38761d;">Luca Trevisan</a></author>.
+        He is a frequent visitor of
+        <a href="https://ai.google/research/teams/algorithms-optimization/">Google Research</a>,
+        where he spent part of his PhD and postdoc.
+      </p>
+    </main>
+  </div>
+</body>
+</html>
+

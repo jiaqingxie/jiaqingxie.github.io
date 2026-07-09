@@ -1,139 +1,297 @@
----
-layout: default
-title: Home
-home: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tommaso D'Orsi</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=1200, initial-scale=1">
+  <meta name="description" content="Tommaso D'Orsi is an Assistant Professor in the department of Computing Sciences at Bocconi. He is part of the Theory group. The bulk of his research lies somewhere in the intersection of algorithm design, learning theory, privacy and computational complexity."/>
+  <meta name="google-site-verification" content="xTMoxPTmN_69F2CX32tUoXYpwacrNhe5C3fEC5Can_4" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-<div class="hero-photo">
-  <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic }}" alt="{{ site.data.main_info.name }}">
-</div>
+  <!-- Optional: address bar color on Android/Windows -->
+  <meta name="theme-color" content="#0b3f5c">
+  <style>
+    :root{
+      --accent:#4d8093;   /* publication titles */
+      --emph:#0b3f5c;     /* name, section titles, labels, active menu */
+      --link:#0E547F;     /* hyperlinks */
+      --ink:#222222;
+      --border:#e5e7eb;
+      --hover:#f5f7fa;
+      --gutter:24px;      /* sidebar <-> content spacing */
+      --photo-gap:80px;   /* NEW: text <-> image spacing (increase to push image "further right" from text) */
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; color:var(--ink); line-height:1.5; font-size:0.92em; font-family:"Helvetica","Arial",sans-serif; background:#fff; }
 
-<section class="content-section" id="about">
-  <h2>About Me</h2>
-  <p>
-    Hi, I'm Jiaqing! I am a first-year Computer Science Ph.D. student at Fudan University.
-    I received my M.Sc. in Computer Science from ETH Zurich in 2025, and my B.Eng. in Electronics and Computer Science from the University of Edinburgh in 2022.
-  <p>
-    My research focuses on theoretical analysis and applications of graph neural networks and flow matching,
-    especially for fine-grained molecular modeling.
-    You can see my papers on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
-    or download my <a href="{{ site.baseurl }}{{ site.data.main_info.cv }}" target="_blank" rel="noopener">CV</a>.
-  </p>
-  <p>
-    If you want to reach me, email me at
-    <a href="mailto:godxie.steven@gmail.com">godxie.steven@gmail.com</a>.
-  </p>
-</section>
+    /* Headings and inline tags */
+    h1{ color:var(--emph); margin:0 0 1.5rem 0; }
+    a{ text-decoration:none; }
+    a:link{ color:var(--link); text-decoration:underline; }
+    a:hover{ text-decoration:underline; }
+    author{ color:#38761d; }
+    conference{ font-weight:bold; }
+    ptitle{ color:var(--accent); font-weight:bolder; }
 
-<section class="content-section" id="news">
-  <h2>News</h2>
-  <ul>
-    <li>[2026/07] We released an efficient Positional Encoding calculation method for directed graphs.</li>
-    <li>[2026/01] We released a theoretic and experimental review of PE on graphs with GNN [KDD'2026] </li>
-  </ul>
-</section>
+    /* Layout */
+    .layout{
+      display:grid;
+      grid-template-columns: 200px minmax(0,1fr);
+      gap:var(--gutter);
+      max-width:1200px;
+      min-width: 900px;
+      margin:0 auto;
+      padding:2.5rem 1rem;
+    }
 
-<section class="content-section" id="vita">
-  <h2>Education &amp; Experience</h2>
-  <ul class="vita-list">
-    <li>
-      <strong>Shanghai AI Lab</strong> — Assistant Researcher, AI for Science Center (2025 — Present)
-    </li>
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      <strong>{{ exp.place }}</strong> — {{ exp.title }}, {{ exp.subtitle }} ({{ exp.time }})
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+    /* Sidebar (aligned site-wide with content/photo) */
+    .sidebar{ margin-top:72px; }
+    .sidebar nav ul{ list-style:none; margin:0; padding:0; }
+    .sidebar nav li{ margin:6px 0; }
+    .sidebar nav a{ text-decoration:none; color:var(--link); padding:2px 0; display:inline-block; }
+    .sidebar .current{ font-weight:700; color:var(--emph); }
 
-<section class="content-section" id="publications">
-  {% assign first_author_count = 0 %}
-  {% assign second_author_count = 0 %}
-  {% assign third_author_count = 0 %}
-  {% for paper in site.data.publications.papers %}
-    {% assign author_list = paper.authors | split: "," %}
-    {% for author in author_list limit:3 %}
-      {% if author contains "Jiaqing Xie" %}
-        {% if forloop.index == 1 %}
-          {% assign first_author_count = first_author_count | plus: 1 %}
-        {% elsif forloop.index == 2 %}
-          {% assign second_author_count = second_author_count | plus: 1 %}
-        {% elsif forloop.index == 3 %}
-          {% assign third_author_count = third_author_count | plus: 1 %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-  <h2 class="publications-title">
-    Publications
-    <span class="publication-medals" aria-label="{{ first_author_count }} first-author, {{ second_author_count }} second-author, {{ third_author_count }} third-author papers">
-      {{ first_author_count }}🥇 {{ second_author_count }}🥈 {{ third_author_count }}🥉
-    </span>
-  </h2>
-  <p><sup>‡</sup> indicates equal contribution.</p>
+    /* Content */
+    .content{ max-width:800px; }
+    hr{ border:0; border-top:1px solid var(--border); margin:1.25rem 0; }
 
-  <h3>Graph Neural Networks</h3>
-  <ul class="pub-list">
-    {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "Graph Neural Network" %}
-        {% include paper_list_item.html paper=paper %}
-      {% endif %}
-    {% endfor %}
-  </ul>
+    /* Profile image:
+       - Slightly larger (288px)
+       - Left margin = --photo-gap (controls distance from text)
+       - Right margin = 0 so it hugs the right edge
+    */
+    img.profile{
+      float:right; vertical-align:middle;
+      margin:72px 0;
+      margin-right:0;
+      margin-left:var(--photo-gap);
+      width:200px; height:auto;
+    }
 
-  <h3>Flow Matching</h3>
-  <ul class="pub-list">
-    {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "Flow Matching" %}
-        {% include paper_list_item.html paper=paper %}
-      {% endif %}
-    {% endfor %}
-  </ul>
+    /* Position uses same font treatment as Email/Office (normal body font & size) */
+    .position{ font-size:1em; font-weight:400; color:var(--ink); }
+    .affiliation{ margin:.25rem 0 .35rem 0; }
 
-  <h3>Molecular Dynamics</h3>
-  <ul class="pub-list">
-    {% assign molecular_dynamics_count = 0 %}
-    {% for paper in site.data.publications.papers %}
-      {% if paper.tags and paper.tags contains "Molecular Dynamics" %}
-        {% assign molecular_dynamics_count = molecular_dynamics_count | plus: 1 %}
-        {% include paper_list_item.html paper=paper %}
-      {% endif %}
-    {% endfor %}
-    {% if molecular_dynamics_count == 0 %}
-      <li class="pub-list-item">More coming soon.</li>
-    {% endif %}
-  </ul>
-</section>
+    /* Contact labels share --emph */
+    .contact{ margin-bottom:.5rem; }
+    .label{ font-weight:600; color:var(--emph); text-decoration:none; margin-right:.25rem; }
 
-<section class="content-section" id="personal-info">
-  <h2>Personal Info</h2>
-  <ul>
-    <li><strong>Physical</strong>: height 183 cm, weight 80 kg.</li>
-    <li><strong>Running (PB)</strong>: 50 m 6.5 s; 1000 m 3&#8242;22&#8243;; 5000 m 27&#8242;30&#8243;; 10000 m 55&#8242;30&#8243;.</li>
-    <li><strong>Weiqi (Go)</strong>: Chinese Weiqi Association amateur 1 dan (2008).</li>
-    <li><strong>Singing</strong>: 300+ fans.</li>
-    <li><strong>Zhihu</strong>: 2800 followers — <a href="https://www.zhihu.com/people/37-77-11-3-2" target="_blank" rel="noopener">P等于NP</a>.</li>
-    <li><strong>Codeforces</strong>: 1200.</li>
-  </ul>
-</section>
+    /* Sections share --emph */
+    .section-title{ color:var(--emph); margin:1.25rem 0 .5rem 0; }
 
-<section class="content-section" id="resources">
-  <h2>Resources</h2>
-  <ul>
-    {% for book in site.data.resources.books %}
-    <li>
-      <strong>{{ book.title }}</strong> —
-      <a href="{{ site.baseurl }}{{ book.file }}" target="_blank" rel="noopener">PDF</a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+    /* Events & papers formatting */
+    .events{ list-style:none; padding:0; margin:.5rem 0 0 0; }
+    .events li{ margin:.25rem 0; }
 
-<section class="content-section" id="academic-services">
-  <h2>Academic Services (Reviewer)</h2>
-  <ul>
-    <li><strong>2025</strong>: ACL, CVPR, EMNLP, ICONIP, NeurIPS</li>
-    <li><strong>2024</strong>: ACML, NeurIPS</li>
-  </ul>
-</section>
+    .papers{ list-style:none; margin:.5rem 0 0 0; padding:0; }
+    .pub{ margin:0 0 .9rem 0; }
+    .pub-title{ }
+    .pub-authors{ margin-left:1rem; }
+    .pub-venue{ margin-left:1rem; }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <!-- LEFT MENU -->
+    <aside class="sidebar">
+      <nav aria-label="Primary">
+        <ul>
+          <li><span class="current">home</span></li>
+          <li><a href="./bio.html">brief bio</a></li>
+          <li><a href="./papers.html">papers</a></li>
+          <li><a href="./teaching.html">teaching</a></li>
+          <li><a href="./advising.html">advising</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="content">
+      <img class="profile" src="pictures/hockney-2.jpeg" alt="Portrait of Tommaso D'Orsi" width="10">
+
+      <h1>Tommaso D'Orsi</h1>
+      <div class="position"><span class="label">Assistant Professor</span></div>
+
+      <div class="affiliation">
+        <a href="https://cs.unibocconi.eu">Computing Sciences</a>, <a href="https://cs.unibocconi.eu">Bocconi</a>
+      </div>
+
+      <div class="contact">
+        <div><span class="label">Email:</span> tommaso (dot) dorsi (at) unibocconi (dot) it</div>
+        <div><span class="label">Office:</span> <span style="font-family:courier,Arial;">2-C1-17</span>, Via Roentgen 1, 20136 Milan, Italy</div>
+      </div>
+
+      <hr>
+
+      <!-- Research Interests
+      <h3 class="section-title">Research Interests</h3>
+      <p>Semidefinite Programming, Spectral Methods, Random Matrices, Robust Statistics, High Dimensional Statistics, Differential Privacy, Augmented-Learning.</p>
+
+      <hr>
+      -->
+      <!--
+      <h3 class="section-title">Recruiting</h3>
+      <p class="PhD recruiting"><span class="label">PhD:</span> I am actively looking for students with a strong background in mathematics, computer science, machine learning or statistics.
+        If you are interested in working with me, apply to the <a href="https://www.unibocconi.it/en/programs/phd/phd-statistics-and-computer-science">Bocconi CS PhD Program</a> and mention my name.
+      </p>
+      
+      
+      <p class="Postdoc recruiting"><span class="label">Postdoc:</span> If you are interested in a postdoc position, reach out to me directly.
+      </p>
+      
+      <hr>
+      Recruiting  -->
+
+      <!-- Events: link on the year -->
+      <h3 class="section-title">Recent &amp; Upcoming Events</h3>
+      <ul class="events">
+        <li>[<a href="./index.html">Jan. 2026</a>] ITCS General Chair</li>
+        <li>[<a href="./index.html">Sep. 2025</a>] Theory Seminar, Rutgers</li>
+        <li>[<a href="./index.html">Sep. 2025</a>] Workshop on Combinatorial Optimization, Cargese</li>
+        <li>[<a href="./index.html">Apr. 2025</a>] Charles River Symposium on Privacy, Harvard</li>
+        <li>[<a href="./index.html">Mar. 2025</a>] Theory Seminar, University of Milan</li>
+        <li>[<a href="./index.html">Oct. 2024</a>] LucaFest, Simons Institute, Berkeley</li>
+        <li>[<a href="./index.html">Sep. 2024</a>] Google Research</li>
+      </ul>
+
+      <hr>
+
+      <!-- Selected & Recent Papers -->
+      <h3 class="section-title">Recent &amp; Representative Papers
+        [<a href="./papers.html">All Papers</a>]
+      </h3>
+      
+      <ul class="papers">
+        <li class="pub">
+              <div class="pub-title">
+                  <ptitle>Strongly Refuting Random CSP without Literals</ptitle> [<a href="https://arxiv.org/abs/2604.27336">arXiv</a>]
+              </div>
+              <div class="pub-authors">
+                  with
+                  <author>Siu On Chan</a></author>,
+                  <author><a href="https://jeffxsc.github.io" style="color:#38761d;">Jeff Xu</a></author>,
+              </div>
+            <div class="pub-venue"><conference>FOCS 2026</conference>.</div>
+        </li>
+        <li class="pub">
+            <div class="pub-title">
+                <ptitle>Tight Differentially Private PCA via Matrix Coherence</ptitle> [<a href="https://arxiv.org/abs/2510.26679">arXiv</a>]
+            </div>
+          <div class="pub-authors">with <author><a href="https://www.glebnovikov.org" style="color:#38761d;">Gleb Novikov</a></author>,</div>
+          <div class="pub-venue"><conference>SODA 2026</conference>.</div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Sparsest cut and eigenvalue multiplicities on low degree Abelian Cayley graphs</ptitle>
+            [<a href="https://arxiv.org/abs/2412.17115v2">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author><a href="https://chrisjones.space" style="color:#38761d;">Chris Jones</a></author>,
+            <author><a href="https://www.jakeruotolo.com" style="color:#38761d;">Jake Ruotolo</a></author>,
+            <author><a href="https://salil.seas.harvard.edu" style="color:#38761d;">Salil Vadhan</a></author> and
+            <author><a href="https://jiyuzhang1994.github.io" style="color:#38761d;">Jiyu Zhang</a></author>,
+          </div>
+          <div class="pub-venue">
+            <conference>APPROX 2025</conference>, invited to the special issue of <conference>Theory of Computing</conference>.
+          </div>
+        </li>
+        
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Private graphon estimation via sum-of-squares</ptitle>
+            [<a href="https://arxiv.org/abs/2403.12213">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author><a href="https://chen-hj.github.io" style="color:#38761d">Hongjie Chen</a></author>,
+            <author>Jingqiu Ding</author>, <author>Yiding Hua</author>, <author>Chih-Hung Liu</author> and
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author>,
+          </div>
+          <div class="pub-venue"><conference>STOC 2024</conference>.</div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Private estimation algorithms for stochastic block models and mixture models</ptitle>
+            [<a href="https://arxiv.org/abs/2301.04822">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author><a href="https://chen-hj.github.io" style="color:#38761d">Hongjie Chen</a></author>,
+            <author><a href="https://www.di.ens.fr/~vcohen/" style="color:#38761d">Vincent Cohen-Addad</a></author>,
+            <author><a href="https://www.epasto.org" style="color:#38761d">Alessandro Epasto</a></author>,
+            <author><a href="https://jimola.github.io" style="color:#38761d">Jacob Imola</a></author>,
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author>, and
+            <author><a href="https://stefantiegel.com" style="color:#38761d">Stefan Tiegel</a></author>,
+          </div>
+          <div class="pub-venue"><conference>NeurIPS 2023 (spotlight)</conference>.</div>
+        </li>
+        
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Higher degree sum-of-squares relaxations robust against oblivious outliers</ptitle>
+            [<a href="https://arxiv.org/abs/2211.07327">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author><a href="https://scholar.google.ch/citations?user=uzoQLkwAAAAJ&hl=en" style="color:#38761d">Rajai Nasser</a></author>,
+            <author><a href="https://www.glebnovikov.org" style="color:#38761d">Gleb Novikov</a></author> and
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author>,
+          </div>
+          <div class="pub-venue"><conference>SODA 2023</conference>.</div>
+        </li>
+        
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Fast algorithm for overcomplete order-3 tensor decomposition</ptitle>
+            [<a href="https://arxiv.org/abs/2202.06442">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with <author>Jingqiu Ding</author>, <author>Chih-Hung Liu</author>,
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author> and
+            <author><a href="https://stefantiegel.com" style="color:#38761d">Stefan Tiegel</a></author>,
+          </div>
+          <div class="pub-venue"><conference>COLT 2022</conference>.</div>
+        </li>
+        
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Robust Recovery for Stochastic Block Models</ptitle>
+            [<a href="https://arxiv.org/abs/2111.08568">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author>Jingqiu Ding</author>,
+            <author><a href="https://scholar.google.ch/citations?user=uzoQLkwAAAAJ&hl=en" style="color:#38761d">Rajai Nasser</a></author> and
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author>,
+          </div>
+          <div class="pub-venue"><conference>FOCS 2021</conference>.</div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-title">
+            <ptitle>Sparse PCA: Algorithms, Adversarial Perturbations and Certificates</ptitle>
+            [<a href="https://arxiv.org/abs/2011.06585">arXiv</a>]
+          </div>
+          <div class="pub-authors">
+            with
+            <author><a href="https://www.cs.cmu.edu/~praveshk/" style="color:#38761d">Pravesh Kothari</a></author>,
+            <author><a href="https://www.glebnovikov.org" style="color:#38761d">Gleb Novikov</a></author> and
+            <author><a href="https://www.dsteurer.org" style="color:#38761d">David Steurer</a></author>,
+          </div>
+          <div class="pub-venue"><conference>FOCS 2020</conference>.</div>
+        </li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
+
