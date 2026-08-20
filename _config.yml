@@ -1,0 +1,19 @@
+title: Jiaqing Xie
+email: 26113050148@m.fudan.edu.cn
+description: >-
+  Jiaqing Xie works on graph and flow models in theory and in practice.
+baseurl: ""
+url: "https://jiaqingxie.github.io"
+twitter_username: jiaqing_xie
+github_username: jiaqingxie
+
+theme: minima
+
+header_pages:
+  - bio.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
