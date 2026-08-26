@@ -14,6 +14,9 @@ I work on graph and flow models, in theory and in practice.
 
 <ol>
   <li>
+    <p>Neural Equivariant Mirror Assignment for Maximum Common Edge Subgraphs. <strong>Jiaqing Xie</strong>, Yanchao Li, Tianfan Fu, Yuxin Wang, and Yuqiang Li.</p>
+  </li>
+  <li>
     <p>Eigenbasis-Independent Learnable Spectral Positional Encodings for Directed Graphs via Hermitian Block Krylov Subspaces. <strong>Jiaqing Xie</strong> and Yuxin Wang. 2026. <a href="https://arxiv.org/abs/2607.07032">[arXiv]</a></p>
   </li>
   <li>
