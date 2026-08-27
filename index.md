@@ -14,7 +14,7 @@ I work on graph and flow models, in theory and in practice.
 
 <ol>
   <li>
-    <p>GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers. <strong>Jiaqing Xie</strong> and Yuxin Wang. To be released soon.</p>
+    <p>GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers. <strong>Jiaqing Xie</strong>, Yuxin Wang, and Xipeng Qiu. To be released soon.</p>
   </li>
   <li>
     <p>Neural Equivariant Mirror Assignment for Maximum Common Edge Subgraphs. <strong>Jiaqing Xie</strong>, Yanchao Li, Zhuo Yang, Tianfan Fu, Yuxin Wang, and Yuqiang Li. To be released soon.</p>
