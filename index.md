@@ -14,6 +14,12 @@ I work on graph and flow models, in theory and in practice.
 
 <ol>
   <li>
+    <p>Fixed-Density Transport Lifting: Riemannian Energy Matching for Generative Sampling. <strong>Jiaqing Xie</strong>, Yanchao Li, Ben Gao, Wanhao Liu, Tianfan Fu, and Yuqiang Li.</p>
+  </li>
+  <li>
+    <p>SpectraFlow: Peak-Aware Flow Matching for Bidirectional Infrared–Raman Spectral Translation and Molecular Property Prediction. <strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, and Yuqiang Li.</p>
+  </li>
+  <li>
     <p>GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers. <strong>Jiaqing Xie</strong>, Yuxin Wang, and Xipeng Qiu. To be released soon.</p>
   </li>
   <li>
