@@ -14,12 +14,6 @@ I work on graph and flow models, in theory and in practice.
 
 <ol>
   <li>
-    <p>Fixed-Density Transport Lifting: Riemannian Energy Matching for Generative Sampling. <strong>Jiaqing Xie</strong>, Yanchao Li, Ben Gao, Wanhao Liu, Tianfan Fu, and Yuqiang Li.</p>
-  </li>
-  <li>
-    <p>SpectraFlow: Peak-Aware Flow Matching for Bidirectional Infrared–Raman Spectral Translation and Molecular Property Prediction. <strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, and Yuqiang Li.</p>
-  </li>
-  <li>
     <p>GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers. <strong>Jiaqing Xie</strong>, Yuxin Wang, and Xipeng Qiu. To be released soon.</p>
   </li>
   <li>
@@ -27,6 +21,12 @@ I work on graph and flow models, in theory and in practice.
   </li>
   <li>
     <p>Eigenbasis-Independent Learnable Spectral Positional Encodings for Directed Graphs via Hermitian Block Krylov Subspaces. <strong>Jiaqing Xie</strong> and Yuxin Wang. 2026. <a href="https://arxiv.org/abs/2607.07032">[arXiv]</a></p>
+  </li>
+  <li>
+    <p>Fixed-Density Transport Lifting: Riemannian Energy Matching for Generative Sampling. <strong>Jiaqing Xie</strong>, Yanchao Li, Ben Gao, Wanhao Liu, Tianfan Fu, and Yuqiang Li.</p>
+  </li>
+  <li>
+    <p>SpectraFlow: Peak-Aware Flow Matching for Bidirectional Infrared–Raman Spectral Translation and Molecular Property Prediction. <strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, and Yuqiang Li.</p>
   </li>
   <li>
     <p>Benchmarking Positional Encodings for GNNs and Graph Transformers. Florian Grotschla<sup>*</sup>, <strong>Jiaqing Xie<sup>*</sup></strong>, and Roger Wattenhofer. <a href="https://dl.acm.org/doi/10.1145/3770854.3785701">KDD 2026</a>. <a href="https://arxiv.org/abs/2411.12732">[arXiv]</a> <a href="https://github.com/ETH-DISCO/Benchmarking-PEs">[code]</a></p>
