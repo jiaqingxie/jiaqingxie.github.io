@@ -57,6 +57,20 @@ p, li {
     color: #333;
 }
 
+.project-item {
+    margin-bottom: 14px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project-affiliation {
+    color: #666;
+    margin-bottom: 8px;
+}
+
 .pub-year {
     margin-top: 28px;
     margin-bottom: 12px;
