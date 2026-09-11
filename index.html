@@ -17,8 +17,8 @@
 
         #conteneur {
             background-color: #fafafa;
-            margin: 1em auto;
-            max-width: 60em;
+            margin: 1em 5%;
+            width: 90%;
             position: relative;
         }
 
@@ -111,6 +111,26 @@
 
         .shrtconf { color: #00008B; }
 
+        .pubrow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            align-items: flex-start;
+        }
+        .pubrow figure {
+            margin: 0 0 0.8em 0;
+            flex: 0 0 430px;
+            max-width: 100%;
+        }
+        .pubrow img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #ccc;
+        }
+        .pubrow .pubbody { flex: 1 1 320px; min-width: 260px; }
+        .pubrow .pubtitle { font-size: 1.1em; font-weight: bold; }
+
         #pied {
             background-color: #fafafa;
             border: 1px solid #202020;
@@ -125,6 +145,7 @@
             #header { padding-left: 1em; }
             #centre { padding: 1em; }
             h2 { margin-left: 0.4em; }
+            .pubrow figure { flex-basis: 100%; }
         }
     </style>
 </head>
@@ -188,9 +209,16 @@
         <h2>2026</h2>
         <ul>
             <li>
-                <b>Jiaqing Xie</b>, Yuxin Wang, Xipeng Qiu<br>
-                GSF-&chi;: Global Stereochemical Fields for Chiral Graph Transformers<br>
-                <span class="shrtconf">arXiv preprint</span>. Submitted, September 2026.
+                <div class="pubrow">
+                    <figure>
+                        <img src="img/gsfchi.png" alt="GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers">
+                    </figure>
+                    <div class="pubbody">
+                        <b>Jiaqing Xie</b>, Yuxin Wang, Xipeng Qiu<br>
+                        <span class="pubtitle">GSF-&chi;: Global Stereochemical Fields for Chiral Graph Transformers</span><br>
+                        <span class="shrtconf">arXiv preprint</span>. Submitted, September 2026.
+                    </div>
+                </div>
             </li>
         </ul>
         <p class="return"><a href="#home">[return]</a></p>
