@@ -1,233 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jiaqing Xie — PhD student in Computer Science at Fudan University. AI-accelerated graph optimization, spectral graph theory, and graph algorithms for science.">
-    <meta name="google-site-verification" content="xTMoxPTmN_69F2CX32tUoXYpwacrNhe5C3fEC5Can_4">
-    <title>Jiaqing Xie</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <style>
-        body {
-            background-color: #CDCDCD;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            margin: 0;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jiaqing Xie — PhD student in Computer Science at Fudan University. AI-accelerated graph optimization, spectral graph theory, and graph algorithms for science.">
+<meta name="google-site-verification" content="xTMoxPTmN_69F2CX32tUoXYpwacrNhe5C3fEC5Can_4">
+<title>Jiaqing Xie</title>
+<link rel="shortcut icon" href="favicon.ico">
+<style>
+body {
+    background-color: #d9d9f3;
+    color: #000;
+    margin: 8px;
+}
+a:link { color: #4444CC; }
+a:visited { color: #444444; }
+a:active { color: #880000; }
+a:hover { background-color: #ffffff; }
+a { text-decoration: none; }
 
-        #conteneur {
-            background-color: #fafafa;
-            margin: 1em 5%;
-            width: 90%;
-            position: relative;
-        }
+table { border-collapse: separate; border-spacing: 2px; }
+td { vertical-align: top; padding: 1px; }
 
-        #header {
-            background-color: #2B547E;
-            color: #fafafa;
-            font-size: 2em;
-            padding: 0.7em 0 0.7em 2em;
-        }
+/* ---- Column 1: picture + spotlight ---- */
+.col1 { width: 250px; text-align: center; }
+.portrait { width: 189px; height: 250px; object-fit: cover; object-position: center 18%; display: block; margin: 2px auto 0; }
+.myname { font-size: 18px; color: #555555; font-style: italic; }
+.spotlight-title { font-size: 24px; color: #FF0000; margin: 22px 0 18px; }
+.spotlight a { display: inline-block; margin-bottom: 22px; }
+.preview-small { width: 240px; height: 160px; object-fit: contain; visibility: hidden; }
 
-        #haut {
-            background-color: #463E41;
-            min-height: 2.4em;
-        }
+/* ---- Column 2: synopsis + professional ---- */
+.col2 { width: 460px; }
+.cloud {
+    width: 400px; height: 200px; margin: 0 0 12px auto;
+    position: relative; overflow: hidden;
+}
+.cloud img { width: 400px; height: 200px; object-fit: contain; display: none; background: #fff; }
+.cloud.previewing img { display: block; }
+.cloud.previewing .words { display: none; }
+.words { position: absolute; inset: 0; font-family: Georgia, "Times New Roman", serif; line-height: 1; white-space: nowrap; }
+.words span { position: absolute; }
+.w1 { color: #7a1f1f; } .w2 { color: #a0522d; } .w3 { color: #2f2f6f; } .w4 { color: #8b4513; } .w5 { color: #555; }
+.vert { writing-mode: vertical-rl; }
+.legend { font-size: 13px; color: #555; text-align: right; min-height: 1.2em; margin-top: -8px; margin-bottom: 6px; }
 
-        .menuhaut {
-            font-size: 1em;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+.bar td { background: #000; color: #d9d9f3; font-size: 24px; font-weight: bold; padding: 0 6px; }
+.row .label { text-align: right; font-weight: bold; white-space: nowrap; }
+.row .dash { text-align: center; }
 
-        .menuhaut li {
-            display: inline-block;
-            float: left;
-            border-right: 2px solid #fff;
-            padding: 0.55em 14px;
-            margin: 0;
-        }
+/* ---- Columns 3 & 4: selected publications ---- */
+.col3, .col4 { width: 330px; }
+.pubhead { background: #000; color: #fff; font-size: 24px; font-weight: bold; line-height: 1.35; padding: 4px 6px; }
+.sub td.subtitle { background: #555555; color: #fff; font-size: 16px; font-weight: bold; padding: 2px 6px; }
+.pub .short { text-align: right; white-space: nowrap; }
+.pub .dash { width: 14px; text-align: center; }
+.pub td { padding-bottom: 6px; }
+.note { color: #880000; }
 
-        .menuhaut a {
-            color: #fafafa;
-            margin: 0 0.4em;
-            text-decoration: none;
-        }
+.footer { color: #555; font-size: 13px; text-align: center; margin: 24px 0 8px; }
 
-        .menuhaut a:hover {
-            color: #FF0;
-            text-decoration: none;
-        }
-
-        #centre {
-            border-top: 1px solid #202020;
-            border-bottom: 1px solid #202020;
-            color: #000;
-            padding: 1.5em 2em;
-        }
-
-        a { color: #00688B; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        h1 {
-            border-bottom: 1.2px solid gray;
-            clear: both;
-            padding: 0.7em 0 0 0;
-            margin: 0.6em 0 0.6em 0.5em;
-            color: #00688B;
-            font-size: 1.7em;
-        }
-
-        h2 {
-            color: #00688B;
-            font-size: 1.7em;
-            margin: 1em 0.5em 0.5em 1.6em;
-        }
-
-        h3 { font-size: 1.25em; margin: 0.8em 0.5em 0.3em 0.8em; }
-        h4 { font-size: 1.8em; margin: 0.8em 0.5em 0.3em 0.5em; }
-
-        p { font-size: 1.1em; margin: 1px 0.5em 0.6em 1.2em; }
-        ul { font-size: 0.9em; }
-        li { font-size: 1.2em; padding-bottom: 0.6em; }
-
-        .return { text-align: right; margin: 0.4em 0.8em 0.4em 0; }
-
-        .intro {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.6em;
-            align-items: flex-start;
-            margin: 1em 0.5em 0.5em 0.8em;
-        }
-        .intro .photo { flex: 0 0 210px; max-width: 100%; }
-        .intro .photo img { width: 100%; height: auto; display: block; border: 1px solid #ccc; }
-        .intro .info { flex: 1 1 300px; min-width: 250px; }
-        .intro .info h4 { margin-top: 0; font-size: 1.7em; }
-        .intro .info h3 { margin-left: 0; }
-        .intro .info .seelinks { font-size: 1.15em; margin: 1em 0 0.3em 0; }
-
-        .shrtconf { color: #00008B; }
-        .award { color: red; font-weight: bold; }
-        .pubtitle { font-size: 1.1em; font-weight: bold; }
-        .pubnote {
-            display: inline-block;
-            margin-top: 0.5em;
-            font-size: 0.85em;
-            font-style: italic;
-            color: #555;
-        }
-
-        #pied {
-            background-color: #fafafa;
-            border: 1px solid #202020;
-            border-top: 0;
-            padding: 0.5em 1em;
-            text-align: right;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        @media (max-width: 640px) {
-            #header { padding-left: 1em; }
-            #centre { padding: 1em; }
-            h2 { margin-left: 0.4em; }
-        }
-    </style>
+/* ---- Small screens: stack the columns ---- */
+@media (max-width: 1100px) {
+    .main, .main > tbody, .main > tbody > tr, .main > tbody > tr > td { display: block; width: auto; }
+    .preview-small { display: none; }
+    .col2, .col3, .col4 { max-width: 640px; margin: 0 auto; }
+    .cloud { margin: 0 auto 12px; }
+}
+@media (max-width: 480px) {
+    .cloud { transform: scale(0.8); transform-origin: left top; height: 160px; margin: 0 0 12px; }
+    .row .label, .pub .short { white-space: normal; }
+}
+</style>
 </head>
 <body>
-<a name="home"></a>
-<div id="conteneur">
 
-    <div id="header">Jiaqing Xie</div>
+<!------ Start of Quadruple Top Table ------>
+<table class="main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr>
 
-    <div id="haut">
-        <ul class="menuhaut">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#pub">Publications</a></li>
-            <li><a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&amp;hl=en" target="_blank">Google Scholar</a></li>
-            <li><a href="https://github.com/jiaqingxie" target="_blank">GitHub</a></li>
-        </ul>
+<!------ Column 1: picture and spotlights ------>
+<td class="col1">
+    <img class="portrait" src="img/selfie/jiaqing.jpg" alt="Jiaqing Xie">
+    <div class="myname">Jiaqing Xie</div>
+    <div id="email"></div>
+
+    <div class="spotlight-title">Spotlight:</div>
+    <div class="spotlight">
+        <a href="#nmrtrans">NMRTrans: Structure Elucidation from Experimental NMR Spectra (KDD-26)</a><br>
+        <a href="https://arxiv.org/abs/2609.12532" data-preview="img/gsfchi.png" data-legend="GSF-&chi;: chiral graph transformers">GSF-&chi;: Chiral Graph Transformers</a><br>
+        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_R2-Seg_Training-Free_OOD_Medical_Tumor_Segmentation_via_Anatomical_Reasoning_and_CVPR_2026_paper.pdf" data-preview="img/r2seg.png" data-legend="R&sup2;-Seg (CVPR-26 Oral)">R&sup2;-Seg: Training-Free OOD Tumor Segmentation (CVPR-26 Oral)</a><br>
     </div>
+    <img class="preview-small" id="previewSmall" src="img/gsfchi.png" alt="">
+</td>
 
-    <div id="centre">
-
-        <div class="intro">
-            <div class="photo">
-                <img src="img/selfie/jiaqing.jpg" alt="Jiaqing Xie">
-            </div>
-            <div class="info">
-                <h4>Jiaqing Xie</h4>
-                <h3>
-                    PhD Student<br>
-                    School of Computer Science<br>
-                    Fudan University
-                </h3>
-                <h3>
-                    Email: <a href="mailto:26113050148@m.fudan.edu.cn">26113050148@m.fudan.edu.cn</a>
-                </h3>
-                <p class="seelinks">
-                    <a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&amp;hl=en" target="_blank">[Google Scholar]</a>
-                    &nbsp; <a href="https://github.com/jiaqingxie" target="_blank">[GitHub]</a>
-                </p>
-            </div>
+<!------ Column 2: synopsis and professional ------>
+<td class="col2">
+    <div class="cloud" id="cloud">
+        <img id="previewImg" src="img/gsfchi.png" alt="">
+        <div class="words" aria-hidden="true">
+            <span class="w1" style="left:78px;top:62px;font-size:44px">graph</span>
+            <span class="w3" style="left:198px;top:40px;font-size:38px">spectral</span>
+            <span class="w2" style="left:60px;top:108px;font-size:34px">positional</span>
+            <span class="w4" style="left:222px;top:86px;font-size:30px">encodings</span>
+            <span class="w1" style="left:212px;top:122px;font-size:30px">transformers</span>
+            <span class="w3" style="left:40px;top:146px;font-size:28px">optimization</span>
+            <span class="w2" style="left:72px;top:24px;font-size:24px">Laplacian</span>
+            <span class="w5" style="left:192px;top:14px;font-size:18px">eigenvectors</span>
+            <span class="w4" style="left:300px;top:14px;font-size:20px">chirality</span>
+            <span class="w3" style="left:22px;top:182px;font-size:13px">directed</span>
+            <span class="w5" style="left:84px;top:180px;font-size:15px">Hermitian</span>
+            <span class="w1" style="left:160px;top:180px;font-size:16px">Krylov</span>
+            <span class="w2" style="left:216px;top:180px;font-size:14px">subspaces</span>
+            <span class="w4" style="left:284px;top:176px;font-size:17px">molecules</span>
+            <span class="w5" style="left:236px;top:156px;font-size:15px">rotary</span>
+            <span class="w3" style="left:290px;top:154px;font-size:16px">walks</span>
+            <span class="w2" style="left:4px;top:70px;font-size:18px">GNNs</span>
+            <span class="w5" style="left:4px;top:94px;font-size:13px">benchmark</span>
+            <span class="w4" style="left:344px;top:156px;font-size:14px">gauge</span>
+            <span class="w3" style="left:4px;top:128px;font-size:13px">invariant</span>
+            <span class="w2" style="left:4px;top:44px;font-size:14px">learning</span>
+            <span class="w1 vert" style="left:376px;top:30px;font-size:22px">algorithms</span>
+            <span class="w5" style="left:4px;top:8px;font-size:12px">AI for science</span>
+            <span class="w4" style="left:110px;top:4px;font-size:13px">combinatorial</span>
         </div>
-
-        <h1>About Me</h1>
-        <p>
-            I am a first-year PhD student in the School of Computer Science at
-            <a href="https://www.fudan.edu.cn/" target="_blank">Fudan University</a>.
-            My research develops learning methods grounded in graph structure and spectral theory,
-            with the goal of accelerating graph optimization and scientific discovery.
-        </p>
-
-        <h1><a name="research"></a>Research Interests</h1>
-        <ul>
-            <li>AI-Accelerated Advanced Graph Optimization</li>
-            <li>Spectral Graph Theory</li>
-            <li>Graph Algorithms for Science with AI</li>
-        </ul>
-        <p class="return"><a href="#home">[return]</a></p>
-
-        <h1><a name="pub"></a>Publications</h1>
-
-        <h2>2026</h2>
-        <ul>
-            <li>
-                <b>Jiaqing Xie</b>, Yanchao Li, Zhuo Yang, Ben Gao, Yuxin Wang, Tianfan Fu, Yuqiang Li<br>
-                <span class="pubtitle">Equivariant Neural Primal–Dual Assignment for Maximum Common Edge Subgraphs</span><br>
-                <span class="shrtconf">arXiv-26</span> <span class="pubnote">Submitted, September 2026.</span>
-            </li>
-            <li>
-                <b>Jiaqing Xie</b>, Yuxin Wang, Xipeng Qiu<br>
-                <span class="pubtitle">Analytic-Walk Rotary Positional Encodings for Graphs</span><br>
-                <span class="shrtconf">arXiv-26</span> <span class="pubnote">Submitted, September 2026.</span>
-            </li>
-            <li>
-                <b>Jiaqing Xie</b>, Yuxin Wang, Xipeng Qiu<br>
-                <span class="pubtitle">GSF-&chi;: Global Stereochemical Fields for Chiral Graph Transformers</span> [<a href="https://arxiv.org/abs/2609.12532" target="_blank">arXiv</a>] [<a href="https://github.com/OpenMOSS/GSF-chi" target="_blank">Code</a>]<br>
-                <span class="shrtconf">arXiv-26</span> <span class="pubnote">September 2026.</span>
-            </li>
-            <li>
-                <b>Jiaqing Xie</b>, Yuxin Wang<br>
-                <span class="pubtitle">Gauge-Invariant Learnable Spectral Positional Encodings for Directed Graphs via Hermitian Block Krylov Subspaces</span> [<a href="https://arxiv.org/abs/2607.07032" target="_blank">arXiv</a>]<br>
-                <span class="shrtconf">arXiv-26</span>
-            </li>
-            <li>
-                Florian Grötschla, <b>Jiaqing Xie<sup>*</sup></b>, Roger Wattenhofer<br>
-                <span class="pubtitle">Benchmarking Positional Encodings for GNNs and Graph Transformers</span> [<b><a href="https://arxiv.org/abs/2411.12732" target="_blank">PDF</a></b>] [<a href="https://github.com/ETH-DISCO/Benchmarking-PEs" target="_blank">Code</a>]<br>
-                <span class="shrtconf">KDD-26</span> <span class="pubnote">*Equal contribution</span>
-            </li>
-        </ul>
-        <p class="return"><a href="#home">[return]</a></p>
-
     </div>
+    <div class="legend" id="legend"></div>
 
-    <div id="pied">&copy; 2026 Jiaqing Xie</div>
+    <b><a href="https://jiaqingxie.github.io/">Jiaqing Xie</a></b><br>
+    PhD Student, School of Computer Science, <a href="https://www.fudan.edu.cn/">Fudan University</a><br>
+    <br>
+    Master's, <a href="https://ethz.ch/">ETH Zurich</a><br>
+    Undergraduate, <a href="https://www.ed.ac.uk/">University of Edinburgh</a><br>
+    <br>
+    Email: <span id="email2"></span><br>
+    <br>
+    Research interests:<br>
+    &ndash; AI-Accelerated Advanced Graph Optimization<br>
+    &ndash; Spectral Graph Theory<br>
+    &ndash; Graph Algorithms for Science with AI<br>
 
-</div>
+    <p id="about">I am a first-year PhD student in the School of Computer Science at
+    <a href="https://www.fudan.edu.cn/">Fudan University</a>.
+    My research develops learning methods grounded in graph structure and
+    spectral theory, with the goal of accelerating graph optimization and
+    scientific discovery.</p>
+
+    <!------ Start of Professional Section ------>
+    <table border="0" width="100%">
+        <tr class="bar"><td colspan="3">&nbsp;Professional</td></tr>
+        <tr class="row"><td class="label">About me</td><td class="dash">&ndash;</td><td>
+            <a href="#about">Research</a> &ndash;
+            <a href="#pubs">Publications</a> &ndash;
+            <a href="mailto:26113050148@m.fudan.edu.cn">Contact</a>
+        </td></tr>
+        <tr class="row"><td class="label">Publications</td><td class="dash">&ndash;</td><td>
+            <a href="#pubs">Selected</a> &ndash;
+            <a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&amp;hl=en">Google Scholar</a>
+        </td></tr>
+        <tr class="row"><td class="label">Code</td><td class="dash">&ndash;</td><td>
+            <a href="https://github.com/jiaqingxie">GitHub</a> &ndash;
+            <a href="https://github.com/OpenMOSS/GSF-chi" data-preview="img/gsfchi.png" data-legend="GSF-&chi;">GSF-&chi;</a> &ndash;
+            <a href="https://github.com/ETH-DISCO/Benchmarking-PEs" data-preview="img/benchmarkpe.png" data-legend="Benchmarking-PEs">Benchmarking-PEs</a>
+        </td></tr>
+        <tr class="row"><td class="label">Education</td><td class="dash">&ndash;</td><td>
+            <a href="https://www.fudan.edu.cn/">Fudan</a> (PhD) &ndash;
+            <a href="https://ethz.ch/">ETH Zurich</a> (Master's) &ndash;
+            <a href="https://www.ed.ac.uk/">Edinburgh</a> (Undergraduate)
+        </td></tr>
+    </table>
+</td>
+
+<!------ Column 3: selected publications by area ------>
+<td class="col3" id="pubs">
+    <div class="pubhead">Graph Learning &ndash; Selected Publications</div>
+    <table border="0" width="100%">
+        <tr class="sub"><td></td><td></td><td class="subtitle">Graph Optimization</td></tr>
+        <tr class="pub">
+            <td class="short"><b>MCES</b></td><td class="dash">&ndash;</td>
+            <td>Equivariant neural primal&ndash;dual assignment for maximum common edge subgraphs <span class="note">(submitted, 2026)</span></td>
+        </tr>
+        <tr class="sub"><td></td><td></td><td class="subtitle">Positional Encodings</td></tr>
+        <tr class="pub">
+            <td class="short"><b>Graph RoPE</b></td><td class="dash">&ndash;</td>
+            <td>Analytic-walk rotary positional encodings for graphs <span class="note">(submitted, 2026)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://arxiv.org/abs/2607.07032">Directed PEs</a></td><td class="dash">&ndash;</td>
+            <td>Gauge-invariant learnable spectral PEs for directed graphs via Hermitian block Krylov subspaces</td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://arxiv.org/abs/2411.12732" data-preview="img/benchmarkpe.png" data-legend="Benchmarking PEs for GNNs and Graph Transformers (KDD-26)">Benchmark</a></td><td class="dash">&ndash;</td>
+            <td>Benchmarking positional encodings for GNNs and graph transformers <span class="note">(KDD-26)</span></td>
+        </tr>
+        <tr class="sub"><td></td><td></td><td class="subtitle">AI for Science</td></tr>
+        <tr class="pub" id="nmrtrans">
+            <td class="short"><b>NMRTrans</b></td><td class="dash">&ndash;</td>
+            <td>Structure elucidation from experimental NMR spectra via set transformers <span class="note">(KDD-26)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://arxiv.org/abs/2609.12532" data-preview="img/gsfchi.png" data-legend="GSF-&chi;: Global Stereochemical Fields">GSF-&chi;</a></td><td class="dash">&ndash;</td>
+            <td>Global stereochemical fields for chiral graph transformers</td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_R2-Seg_Training-Free_OOD_Medical_Tumor_Segmentation_via_Anatomical_Reasoning_and_CVPR_2026_paper.pdf" data-preview="img/r2seg.png" data-legend="R&sup2;-Seg (CVPR-26 Oral, Best Paper Candidate)">R&sup2;-Seg</a></td><td class="dash">&ndash;</td>
+            <td>Training-free OOD medical tumor segmentation via anatomical reasoning and statistical rejection <span class="note">(CVPR-26 Oral)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short">Other</td><td class="dash">&ndash;</td>
+            <td><a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&amp;hl=en">Google Scholar</a> &ndash;
+                <a href="https://github.com/jiaqingxie">GitHub</a></td>
+        </tr>
+    </table>
+</td>
+
+<!------ Column 4: datasets + research directions ------>
+<td class="col4">
+    <table border="0" width="100%">
+        <tr class="sub"><td></td><td></td><td class="subtitle">Datasets</td></tr>
+        <tr class="pub">
+            <td class="short"><a href="https://arxiv.org/abs/2411.12732" data-preview="img/benchmarkpe.png" data-legend="Benchmarking PEs for GNNs and Graph Transformers (KDD-26)">PE Benchmark</a></td><td class="dash">&ndash;</td>
+            <td>Positional encodings for GNNs and graph transformers <span class="note">(KDD-26)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><b>NMRGym</b></td><td class="dash">&ndash;</td>
+            <td>NMR-based molecular structure elucidation <span class="note">(KDD-26)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><b>PolyReal</b></td><td class="dash">&ndash;</td>
+            <td>Real-world polymer science workflows <span class="note">(CVPR-26)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://arxiv.org/abs/2605.29833">OmniMatBench</a></td><td class="dash">&ndash;</td>
+            <td>Human-calibrated multimodal reasoning across 19 materials science subfields <span class="note">(arXiv-26)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://github.com/jiaqingxie/QCBench">QCBench</a></td><td class="dash">&ndash;</td>
+            <td>LLMs on domain-specific quantitative chemistry <span class="note">(JCIM-25)</span></td>
+        </tr>
+        <tr class="pub">
+            <td class="short"><a href="https://github.com/jiaqingxie/DeepProtein">DeepProtein</a></td><td class="dash">&ndash;</td>
+            <td>Deep learning library and benchmark for protein sequence learning <span class="note">(Bioinformatics-25)</span></td>
+        </tr>
+        <tr class="sub"><td></td><td></td><td class="subtitle">Research Directions</td></tr>
+        <tr class="pub"><td class="short">Optimization</td><td class="dash">&ndash;</td><td>AI-accelerated advanced graph optimization</td></tr>
+        <tr class="pub"><td class="short">Spectral</td><td class="dash">&ndash;</td><td>Spectral graph theory</td></tr>
+        <tr class="pub"><td class="short">Science</td><td class="dash">&ndash;</td><td>Graph algorithms for science with AI</td></tr>
+    </table>
+</td>
+
+</tr>
+</table>
+
+<div class="footer">&copy; 2026 Jiaqing Xie</div>
+
+<script>
+// Email assembled in script, like the entity-encoded address on the original page.
+(function () {
+    var e = '26113050148' + '@' + 'm.fudan.edu.cn';
+    var a = '<a href="mailto:' + e + '">' + e + '</a>';
+    document.getElementById('email').innerHTML = a;
+    document.getElementById('email2').innerHTML = a;
+})();
+
+// Hover previews: links with data-preview swap the word cloud (and the small
+// left-column preview) for that paper's figure, then restore after a delay.
+(function () {
+    var cloud = document.getElementById('cloud');
+    var big = document.getElementById('previewImg');
+    var small = document.getElementById('previewSmall');
+    var legend = document.getElementById('legend');
+    var timer;
+
+    document.querySelectorAll('[data-preview]').forEach(function (el) {
+        el.addEventListener('mouseover', function () {
+            clearTimeout(timer);
+            big.src = el.getAttribute('data-preview');
+            small.src = big.src;
+            cloud.classList.add('previewing');
+            small.style.visibility = 'visible';
+            legend.innerHTML = el.getAttribute('data-legend') || '';
+        });
+        el.addEventListener('mouseout', function () {
+            timer = setTimeout(function () {
+                cloud.classList.remove('previewing');
+                small.style.visibility = 'hidden';
+                legend.innerHTML = '';
+            }, 2000);
+        });
+    });
+})();
+</script>
 </body>
 </html>
