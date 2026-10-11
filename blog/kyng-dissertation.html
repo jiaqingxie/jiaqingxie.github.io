@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reading notes on Rasmus Kyng's PhD dissertation 'Approximate Gaussian Elimination' (Yale, 2017): sampled Cholesky factorizations, the first nearly-linear solver for directed Laplacians, fast random spanning trees, and what this line of work means for graph learning and algorithm theory.">
+<title>Reading Notes: Approximate Gaussian Elimination — Jiaqing Xie</title>
+<link rel="shortcut icon" href="../favicon.ico">
+<style>
+body {
+    background-color: #d9d9f3;
+    color: #000;
+    margin: 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.55;
+}
+a:link { color: #4444CC; }
+a:visited { color: #444444; }
+a:active { color: #880000; }
+a:hover { background-color: #ffffff; }
+a { text-decoration: none; }
+
+.page { max-width: 780px; margin: 0 auto; }
+
+.back { font-size: 14px; margin: 6px 0 18px; }
+
+.bar td { background: #000; color: #d9d9f3; font-size: 24px; font-weight: bold; padding: 2px 8px; }
+.sub td { background: #555555; color: #fff; font-size: 17px; font-weight: bold; padding: 3px 8px; }
+
+h1.posttitle { font-size: 26px; margin: 20px 0 2px; line-height: 1.25; }
+.byline { color: #555; font-size: 14px; margin-bottom: 14px; }
+.tag { color: #880000; }
+
+.tldr {
+    background: #fff; border: 1px solid #555555;
+    padding: 10px 14px; margin: 14px 0 22px; font-size: 15.5px;
+}
+.tldr b:first-child { color: #880000; }
+
+p { margin: 10px 0 12px; }
+li { margin-bottom: 7px; }
+
+.theorem {
+    background: #fff; border-left: 5px solid #000;
+    padding: 8px 14px; margin: 14px 0; font-size: 15.5px;
+}
+.theorem .tname { font-weight: bold; font-style: italic; }
+
+.note { color: #555; font-size: 13.5px; }
+
+.footer { color: #555; font-size: 13px; text-align: center; margin: 30px 0 8px; }
+
+@media (max-width: 640px) {
+    h1.posttitle { font-size: 22px; }
+    .theorem, .tldr { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="back"><a href="../">&#8592; Back to homepage</a></div>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="bar"><td>&nbsp;Blog</td></tr>
+</table>
+
+<h1 class="posttitle">Reading Notes: <i>Approximate Gaussian Elimination</i> (Rasmus Kyng, Yale PhD 2017)</h1>
+<div class="byline">
+    October 11, 2026 &nbsp;&middot;&nbsp; ~10 min read &nbsp;&middot;&nbsp;
+    <span class="tag">#spectral-graph-theory</span>
+    <span class="tag">#laplacian-solvers</span>
+    <span class="tag">#reading-notes</span><br>
+    Dissertation: <a href="https://rasmuskyng.com/rjkyng-dissertation.pdf"><i>Approximate Gaussian Elimination</i> (PDF)</a>,
+    advised by Daniel A. Spielman.
+    Chapter 3 is joint work with Sushant Sachdeva (FOCS'16);
+    Chapters 3.4&ndash;4 with Durfee, Peebles, Rao, Sachdeva (STOC'17);
+    Chapter 5 with Cohen, Kelner, Peebles, Peng, Rao, Sidford (FOCS'17).
+</div>
+
+<div class="tldr">
+<b>TL;DR.</b>
+For Laplacian matrices &mdash; the algebraic avatar of a weighted graph &mdash; you can run Gaussian
+elimination while <i>randomly discarding almost all of the fill-in it creates</i>, and still get a
+high-quality approximate factorization. This one idea yields: (1) the first Laplacian solver built
+purely on random sampling, with no graph-theoretic constructions, whose core proof fits in ten
+pages; (2) the first nearly-linear-time solver for <i>directed</i> Laplacians, which makes a long
+list of random-walk quantities (stationary distributions, PageRank, hitting/commute times)
+computable in near-linear time on digraphs; and (3) the first algorithm for sampling random
+spanning trees in dense/weighted graphs faster than matrix multiplication, the first improvement
+there in over 20 years. Methodologically, the dissertation is a showcase of
+<i>matrix martingales</i>: the right probabilistic abstraction collapses a hundred-page theory
+into a short, clean argument.
+</div>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>1 &nbsp;Background: fill-in and the Laplacian paradigm</td></tr>
+</table>
+
+<p>A graph Laplacian <b>U</b> is how a weighted graph becomes a matrix, and solving <b>U</b>x = <b>b</b>
+is the computational core of electric flows, diffusion, semi-supervised learning, graph
+partitioning, and PDE solvers built on finite elements. In 2004, Spielman&ndash;Teng showed these
+systems can be solved in nearly-linear time, and their result spawned what Tenenholtz and others
+call the <i>Laplacian paradigm</i>: many graph optimization problems (max-flow, matchings,
+spanning tree sampling, min-cost flows) became fast because Laplacian systems became fast.</p>
+
+<p>But there were two uncomfortable facts. First, the classic direct method &mdash; Gaussian
+elimination &mdash; suffers <i>fill-in</i>: eliminating vertex <i>i</i> from the graph adds a
+<b>clique on all of its neighbors</b>, so a sparse matrix turns dense and the runtime degrades to
+O(n&sup3;). Second, all near-linear solvers in the ST line achieved sparsity through heavyweight
+graph constructions: low-stretch trees, sparsifiers, explicit expanders. Powerful, but a lot of
+machinery &mdash; the original proof spanned roughly a hundred pages across three papers. The
+popular engineering alternative, <i>incomplete Cholesky</i> (just throw the fill-in away), had no
+guarantees whatsoever for general Laplacians.</p>
+
+<p>The thesis asks the na&iuml;ve question directly: <b>what if the incomplete factorization you
+get by deleting fill-in at random is actually good?</b> The answer is essentially yes, and the
+proof is short.</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>2 &nbsp;Result 1: Cholesky by coin flips (Ch. 3)</td></tr>
+</table>
+
+<p>The algorithm is three lines long:</p>
+<ol>
+    <li>Randomly permute the vertices;</li>
+    <li>for <i>i</i> = 1 to <i>n</i>&minus;1: eliminate vertex <i>i</i>;</li>
+    <li>instead of adding the fill-in clique on its neighbors, add a <b>random sparse sample</b> of that clique.</li>
+</ol>
+
+<div class="theorem">
+<span class="tname">Theorem 1.2.1 (sketch).</span>
+Given a Laplacian <b>U</b> with <i>m</i> nonzeros, the sampled factorization satisfies
+<b>LL</b><sup>T</sup> &asymp;<sub>1/2</sub> <b>U</b> (i.e., both <i>e</i><sup>&plusmn;1/2</sup>
+sandwiches in the Loewner order) with high probability, and both the number of nonzeros and the
+runtime are O(<i>m</i> log&sup2;(1/&delta;) log <i>n</i>). Used as a preconditioner in iterative
+refinement, this gives a nearly-linear-time Laplacian solver.
+</div>
+
+<p>Why on earth does this work? The proof strategy is what makes the thesis worth reading:</p>
+<ul>
+    <li><b>Additive, unbiased view.</b> Instead of the classical multiplicative view of
+    elimination, view the process additively: the sampled factorization is an
+    <i>unbiased estimator</i> of the true LU-decomposition, with independent-ish increments
+    you can control.</li>
+    <li><b>Matrix martingales.</b> Eliminations and sampling steps interleave, creating
+    dependencies between the random matrices. The analysis handles this with Tropp's matrix
+    Freedman inequality &mdash; the technical engine of the whole thesis.</li>
+    <li><b>Crude leverage scores are enough.</b> Previous solvers needed involved machinery to
+    estimate leverage scores (low-stretch trees, ultrasparsifiers, subsampling). Here every edge
+    starts with the crudest possible estimate &ldquo;1&rdquo;, and the bootstrap for newly created
+    fill-in edges comes from a single extra fact: the <b>effective resistance triangle
+    inequality</b>.</li>
+</ul>
+
+<p>Strikingly, the entire algorithm rests on just two algebraic facts about Laplacians: they are
+closed under Schur complements, and effective resistances satisfy a triangle inequality. No
+trees, no expanders, no sparsifiers &mdash; the first solver based purely on random sampling.
+And the core proof fits in under ten pages, versus roughly a hundred for Spielman&ndash;Teng.
+Modern random matrix theory simply removed most of the machinery.</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>3 &nbsp;Result 2: the directed case (Ch. 5)</td></tr>
+</table>
+
+<p>Everything above is symmetric. Directed Laplacians (row sums zero, nonpositive off-diagonals,
+<b>L</b> &ne; <b>L</b><sup>T</sup>) had resisted the paradigm: their asymmetric nature broke
+essentially all known techniques. The thesis delivers the <b>first nearly-linear-time solver for
+directed Laplacians</b>, via a sparse approximate <b>LU</b>-factorization of
+<i>Eulerian</i> Laplacians (where in-degree = out-degree at every vertex), combined with the
+reductions of Cohen&ndash;Kelner&ndash;Peebles&ndash;Peng&ndash;Rao&ndash;Sidford from general
+directed systems to Eulerian ones.</p>
+
+<p>Two things I find genuinely surprising here. First, there exists an <b>unbiased, sparse
+elimination estimator that preserves the null space exactly</b> &mdash; you must maintain every
+vertex degree perfectly while sampling everything else, and a priori that seems impossible.
+Second, the analysis is done in a <i>norm that depends on the random choices made by the
+algorithm itself</i>: Schur complements of Eulerian Laplacians can blow up (the symmetric
+monotonicity fails), so the algorithm carefully chooses which vertices to eliminate
+(&alpha;-RCDD sets), periodically re-sparsifies, and measures its own error in an
+execution-dependent norm, proving convergence there and transferring to the usual norm at the
+end.</p>
+
+<p>The payoff list is long. Through the known reductions, one solver gives nearly-linear-time
+algorithms on <b>directed</b> graphs for: stationary distributions of Markov chains, personalized
+PageRank, mixing-time estimates, hitting times, escape probabilities, and all-pairs commute times.
+This effectively opened a <i>directed Laplacian paradigm</i>.</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>4 &nbsp;Result 3: Schur complements and random spanning trees (Ch. 3.4&ndash;4)</td></tr>
+</table>
+
+<p>A Schur complement is what remains of a matrix after you eliminate a block of variables &mdash;
+electrically, the effective network after shorting out part of the graph. The thesis gives an
+algorithm producing &epsilon;-approximate Laplacian Schur complements whose sparsity scales as
+&epsilon;<sup>&minus;2</sup> (vs. &epsilon;<sup>&minus;4</sup> in prior work), which is exactly the
+regime where applications become feasible.</p>
+
+<p>The headline application is <b>random spanning trees</b>. In a weighted graph, an edge's
+marginal probability under the <i>w</i>-uniform spanning tree distribution can be read off a tiny
+Schur complement, so approximate Schur complements give fast approximate edge probabilities.
+Starting from the O(<i>n</i><sup>&omega;</sup>) conditional-decimation scheme of Harvey&ndash;Xu
+and accelerating its bottleneck (Schur complement computation), the thesis samples a
+<i>w</i>-uniform random spanning tree in expected time
+&#213;(max{<i>n</i><sup>4/3</sup> <i>m</i><sup>1/2</sup>, <i>n</i>&sup2;}) &mdash;
+the first improvement for dense and/or weighted graphs in more than 20 years, and the reason this
+matters is that random spanning trees sat at the core of breakthroughs on symmetric and asymmetric
+TSP approximation, and even give cut sparsifiers. A cute trick worth stealing: the sampling is
+<i>exact</i>, not approximate &mdash; edge probabilities are recomputed adaptively to higher
+precision only where an error could actually flip the sampled edge.</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>5 &nbsp;Why this matters for graph learning</td></tr>
+</table>
+
+<p>The dissertation predates the current GNN era and makes no learning claims; everything in this
+section is my own reading of the transfer. But the transfer is real:</p>
+
+<ul>
+    <li><b>Random-walk features at scale.</b> Random-walk structural encodings (RWSE), hitting
+    times, commute times, stationary distributions and escape probabilities are the raw material
+    of many positional encodings and graph features. After this thesis, all of them are
+    computable in nearly-linear time &mdash; <b>including on directed graphs</b>, where GNNs are
+    weakest. For work like mine on positional encodings for digraphs (Hermitian/Krylov spectral
+    PEs, analytic-walk RoPEs), this is the algorithmic license: the walk quantities we encode are
+    not just computable, they are computable fast, with provable guarantees, at million-node
+    scale.</li>
+    <li><b>The sampling engine of spectral preprocessing.</b> Leverage scores and effective
+    resistances &mdash; the two protagonists of approximate Cholesky &mdash; are exactly the
+    quantities behind spectral sparsification. Graph-learning pipelines increasingly use
+    sparsification-style tools for rewiring (oversmoothing/oversquashing fixes), graph
+    condensation, and multilevel coarsening. Kron reduction, the workhorse of coarsening, <i>is</i>
+    a Schur complement; approximate Schur complements give coarsening with a provable spectral
+    fidelity guarantee rather than a heuristic.</li>
+    <li><b>A variance-control template for neighbor sampling.</b> Training GNNs on sampled
+    neighborhoods is, at its core, unbiased estimation plus variance control. The thesis's
+    recipe &mdash; unbiased sparse estimator, martingale concentration, ordering choices that
+    bound variance growth &mdash; is the same logical skeleton used in convergence analyses of
+    sampling-based graph learning. It is a good place to learn the technique properly.</li>
+    <li><b>Elimination as one-shot message passing.</b> Eliminating vertex <i>i</i> turns its
+    neighborhood into a clique: aggregate, then connect everyone. That is one round of global
+    message passing, and clique sampling is a principled, effective-resistance-weighted sparse
+    attention over exactly the edges that matter. I find this a useful mental model when thinking
+    about pooling/attention hybrids.</li>
+</ul>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>6 &nbsp;Why this matters for theory</td></tr>
+</table>
+
+<ul>
+    <li><b>Simplicity as an accelerator.</b> Ten pages vs. a hundred changed who can enter the
+    field. The sampled-Cholesky proof is now standard course material, and the algorithm is
+    simple enough to implement &mdash; see the <a href="https://github.com/danspielman/Laplacians.jl">Laplacians.jl</a>
+    effort, which the dissertation itself points to as a sign the Laplacian paradigm is ready
+    for practice.</li>
+    <li><b>New standard tools.</b> Matrix martingales (Freedman's inequality) applied to
+    interleaved elimination + sampling; the additive/unbiased view of Gaussian elimination; and
+    error measured in an execution-dependent norm. The last of these in particular reappears in
+    the subsequent wave of directed-graph algorithms (directed flows and negative-weight shortest
+    paths), where norms defined on the fly by the algorithm became part of the standard
+    toolkit.</li>
+    <li><b>The directed Laplacian paradigm.</b> For a decade, near-linear graph algorithmics was
+    an undirected privilege. This thesis closed the gap up to logarithmic factors and unlocked
+    Markov chain computations that previously needed super-quadratic time.</li>
+    <li><b>A model of how theory simplifies.</b> The historical arc &mdash; Spielman&ndash;Teng
+    (2004, ~100 pp.) &rarr; a decade of refinements &rarr; Kyng&ndash;Sachdeva (2016, ~10 pp.,
+    sampling only) &mdash; is the clearest recent example of a field digesting its own
+    breakthroughs into something a first-year student can fully understand. I wish every area
+    had its version of this dissertation.</li>
+</ul>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>7 &nbsp;How to read it</td></tr>
+</table>
+
+<ul>
+    <li><b>Everyone:</b> Chapter 1 &mdash; ten pages, the best summary of the Laplacian paradigm
+    I know.</li>
+    <li><b>Want the machinery:</b> Sections 3.1&ndash;3.2 (Master Cholesky + martingale
+    analysis). Chapter 2's preliminaries are self-contained.</li>
+    <li><b>Markov chains / digraphs:</b> Chapter 5, plus the CKP<sup>+</sup>16 reductions for
+    context.</li>
+    <li><b>Only here for spanning trees:</b> Chapter 4; the Schur complement&ndash;spanning tree
+    dictionary in Section 2.4 is the key.</li>
+</ul>
+
+<p>Gaussian elimination has been studied since antiquity (the <i>Nine Chapters on the
+Mathematical Art</i>, ~179 CE). That there were still results this clean and this general to be
+found &mdash; you just have to look at the algorithm additively, and be willing to throw almost
+everything away at random &mdash; is the real lesson of this dissertation.</p>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="2">
+<tr class="sub"><td>中文摘要</td></tr>
+</table>
+
+<p>这篇笔记总结 Rasmus Kyng 在 Yale 的博士论文《Approximate Gaussian Elimination》
+（导师 Daniel A. Spielman，2017）。核心思想一句话：<b>对图的拉普拉斯矩阵做高斯消元时，
+随机丢弃消元产生的大部分 fill-in（新出现的稠密元素），得到的稀疏近似分解依然是高质量的
+预处理子</b>。由此得到三大成果：</p>
+
+<ul>
+    <li><b>近似 Cholesky 分解（第 3 章，与 Sachdeva，FOCS'16）。</b>随机置换顶点、逐个消元、
+    对消元产生的 fill-in 团随机采样，得到 <b>LL</b><sup>T</sup> &asymp;<sub>1/2</sub> <b>U</b>，
+    非零元数与运行时间均为 O(<i>m</i> log&sup2;(1/&delta;) log <i>n</i>)；配合迭代精化即得
+    近线性时间 Laplacian 求解器。这是第一个<b>不依赖任何图构造</b>（低拉伸树、稀疏化、扩展图）
+    而纯粹基于随机采样的求解器：算法只用到两条代数事实（Laplacian 对 Schur 补封闭、有效电阻
+    满足三角不等式），证明核心是<b>矩阵鞅</b>（Tropp 的 Freedman 不等式）+ 无偏估计视角，
+    正文不到十页 &mdash; 对比 Spielman&ndash;Teng 的约一百页。</li>
+    <li><b>有向 Laplacian 的首个近线性求解器（第 5 章，FOCS'17）。</b>对 Eulerian Laplacian 做
+    <b>无偏、精确保持零空间</b>的稀疏近似 LU 分解，并在一个<b>随算法自身随机选择而定的范数</b>下
+    分析收敛（对称情形的 Schur 补单调性在有向情形失效）。结合已有归约，首次让<b>有向图</b>上的
+    平稳分布、个性化 PageRank、混合时间、hitting time、escape probability、commute time 等
+    随机游走量都能近线性计算，开启了"有向 Laplacian paradigm"。</li>
+    <li><b>Schur 补逼近与随机生成树（第 3.4&ndash;4 章，STOC'17）。</b>&epsilon;-近似 Laplacian
+    Schur 补的非零元数达 O(<i>k</i> &epsilon;<sup>&minus;2</sup>)（此前为 &epsilon;<sup>&minus;4</sup>）；
+    由此在 &#213;(max{<i>n</i><sup>4/3</sup><i>m</i><sup>1/2</sup>, <i>n</i>&sup2;}) 时间内按
+    权重均匀分布采样随机生成树，是<b>二十多年来</b>稠密/加权图上首次超越矩阵乘法时间
+    O(<i>n</i><sup>&omega;</sup>) 的改进。</li>
+</ul>
+
+<p><b>对 Graph Learning 的帮助（笔者的个人解读，非论文原意）：</b>
+(i) RWSE、commute time、平稳分布等随机游走类特征/位置编码，如今即使<b>有向图</b>也能近线性
+计算 &mdash; 这为有向图 PE（如我自己的 Hermitian/Krylov 谱 PE、analytic-walk RoPE 方向）提供了
+算法层面的可行性保障；(ii) leverage score 与有效电阻采样是谱稀疏化、graph rewiring、图粗化的
+共同引擎，而粗化常用的 kron reduction 本质上就是 Schur 补，近似 Schur 补给出了带谱逼近保证的
+粗化方式；(iii) "无偏估计 + 鞅集中不等式"的配方，与 GNN 邻域采样训练的收敛性分析是同一副
+骨架，是学习这套技术的最佳范本之一。</p>
+
+<p><b>对理论（theory）的帮助：</b>Laplacian paradigm 的证明从约百页压缩到十页，大幅降低了
+入行门槛；矩阵鞅、消元的无偏加法视角、算法执行依赖范数，已成为后续有向流、负权最短路等
+一系列工作的标准工具；加上 Laplacians.jl 等实现，"理论快 + 实现快"的 Laplacian 求解器正在
+真正走向实用。</p>
+
+<p class="note">Comments welcome &mdash; find me on <a href="https://github.com/jiaqingxie">GitHub</a>
+or by <a href="mailto:26113050148@m.fudan.edu.cn">email</a>. All errors in these notes are mine;
+the science is Kyng's (and his coauthors').</p>
+
+<div class="footer">&copy; 2026 <a href="../">Jiaqing Xie</a> &middot; <a href="https://jiaqingxie.github.io/">jiaqingxie.github.io</a></div>
+
+</div>
+</body>
+</html>

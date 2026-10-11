@@ -60,6 +60,10 @@ td { vertical-align: top; padding: 1px; }
 
 .footer { color: #555; font-size: 13px; text-align: center; margin: 24px 0 8px; }
 
+/* ---- Blog section (below the main table) ---- */
+.blogsec { margin-top: 26px; }
+.blogsec .row td { padding-top: 6px; }
+
 /* ---- Small screens: stack the columns ---- */
 @media (max-width: 1100px) {
     .main, .main > tbody, .main > tbody > tr, .main > tbody > tr > td { display: block; width: auto; }
@@ -153,6 +157,7 @@ td { vertical-align: top; padding: 1px; }
         <tr class="row"><td class="label">About me</td><td class="dash">&ndash;</td><td>
             <a href="#about">Research</a> &ndash;
             <a href="#pubs">Publications</a> &ndash;
+            <a href="#blog">Blog</a> &ndash;
             <a href="mailto:26113050148@m.fudan.edu.cn">Contact</a>
         </td></tr>
         <tr class="row"><td class="label">Publications</td><td class="dash">&ndash;</td><td>
@@ -251,6 +256,16 @@ td { vertical-align: top; padding: 1px; }
 </td>
 
 </tr>
+</table>
+
+<!------ Start of Blog Section ------>
+<table class="blogsec" id="blog" border="0" width="100%" cellpadding="0" cellspacing="2">
+    <tr class="bar"><td>&nbsp;Blog</td></tr>
+    <tr class="row"><td class="label">Oct 2026</td><td class="dash">&ndash;</td><td>
+        <a href="blog/kyng-dissertation.html">Reading Notes: <i>Approximate Gaussian Elimination</i> (Rasmus Kyng, Yale PhD 2017)</a>
+        &mdash; Cholesky by random sampling, the first nearly-linear solver for directed Laplacians,
+        faster random spanning trees, and what this line of work offers graph learning and theory.
+    </td></tr>
 </table>
 
 <div class="footer">&copy; 2026 Jiaqing Xie</div>
