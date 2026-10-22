@@ -1,0 +1,154 @@
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+body {
+  color: #111;
+}
+
+strong {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.papertitle {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+/* Paper meta that follows titles */
+span.papertitle ~ strong {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
+  color: inherit;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+span.papertitle ~ em {
+  font-size: 15px;
+  color: inherit;
+}
+
+span.papertitle ~ a {
+  font-size: 12px;
+}
+
+/* TL;DR blurb: smaller and tighter so entries stack in less vertical space */
+span.papertitle ~ p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 6px 0 0;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* Headings in Computer Modern (serif) */
+h1, h3 {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Larger intro paragraphs on home */
+.lead {
+  font-size: 15.3px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  table,
+  tbody,
+  tr,
+  td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  td {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+
+  .name {
+    font-size: 26px !important;
+  }
+
+  .papertitle {
+    font-size: 17px !important;
+  }
+
+  img[style*="border-radius"] {
+    width: 200px !important;
+    height: 200px !important;
+    display: block !important;
+    margin: 0 auto 14px !important;
+  }
+}
