@@ -44,11 +44,23 @@
                 <h2>Representative Papers</h2>
               </td>
             </tr>
+            <tr>
+              <td style="padding:0px 16px 8px;width:100%;vertical-align:middle">
+                <div class="pubtabs" id="pubtabs">
+                  <button class="on" data-cat="all">All</button>
+                  <button data-cat="spec">Spectroscopic Data Mining</button>
+                  <button data-cat="gt">Geometric Transformer</button>
+                  <button data-cat="vlm">Vision-Language Model</button>
+                  <button data-cat="df">Diffusion &amp; Flow Matching</button>
+                  <button data-cat="ds">Datasets &amp; Benchmarks</button>
+                </div>
+              </td>
+            </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <!-- GSF-chi -->
-            <tr>
+            <tr class="paper-row" data-cats="gt">
               <td style="padding:16px;width:30%;vertical-align:middle">
                 <img src="images/gsf_chi.png" width="220" height="188" alt="GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers" loading="lazy" decoding="async">
               </td>
@@ -57,11 +69,203 @@
                 <br>
                 <strong>Jiaqing Xie</strong>, Yuxin Wang<sup>&dagger;</sup>, Xipeng Qiu<sup>&dagger;</sup>
                 <br>
-                <em>arXiv preprint</em>, 2026
+                <em><strong>arXiv preprint</strong></em>, 2026
                 <br>
                 <a href="https://arxiv.org/abs/2609.12532">arXiv</a> /
                 <a href="https://github.com/OpenMOSS/GSF-chi">Code</a>
                 <p>TL;DR: Enantiomers share atoms, bonds, and pairwise distances yet behave differently in chiral environments, so molecular encoders must respect rotations without going blind to reflection. GSF-&chi; lets every stereogenic unit modulate all pairwise attention through a reflection-even phase field, while a handedness pseudoscalar &chi; reverses a Chiral-RoPE on latent query&ndash;key blocks; a C<sub>2</sub> projection keeps ECD peak counts and positions mirror-even and peak signs mirror-odd. GSF-&chi; leads every central-ECD output and improves axial Rotation and Symbol by 12.6% and 7.9% over the strongest baseline.</p>
+              </td>
+            </tr>
+
+            <!-- AW-RoPE -->
+            <tr class="paper-row" data-cats="gt">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/aw_rope.jpg" width="220" style="height:auto" alt="Analytic-Walk Rotary Positional Encodings for Graphs" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Analytic-Walk Rotary Positional Encodings for Graphs</span>
+                <br>
+                <strong>Jiaqing Xie</strong>, Yuxin Wang, Xipeng Qiu
+                <br>
+                <em><strong>arXiv preprint</strong></em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2609.32178">arXiv</a> /
+                <a href="https://github.com/jiaqingxie/AW-RoPE">Code</a>
+                <p>TL;DR: Rotary position encodings make attention sensitive to relative position, but prior graph versions assign each node a rotation from spectral coordinates, so the rotary factor between two nodes cannot distinguish the routes connecting them. AW-RoPE places the rotations on edges and sums the transported features over all walks, so contributions along different routes can reinforce or cancel: an exact variant evaluates the complete sum by a differentiable linear solve, and a sparse variant truncates it at finite depth. Across five synthetic tasks both variants reduce nRMSE by 15&ndash;58% relative to the strongest baseline, and on real superpixel, peptide and OGB benchmarks the sparse recurrence attains the best mean on every dataset with Performer kernels and on twelve of thirteen datasets with GIN.</p>
+              </td>
+            </tr>
+
+            <!-- NMRTrans -->
+            <tr class="paper-row" data-cats="spec">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/nmrtrans.jpg" width="220" style="height:auto" alt="NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers</span>
+                <br>
+                Liujia Yang, Zhuo Yang, <strong>Jiaqing Xie</strong>, Yubin Wang, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu
+                <br>
+                <em><strong>KDD</strong></em>, 2026
+                <br>
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3818935">KDD</a>
+                <p>TL;DR: Recent NMR structure-elucidation models rely heavily on large corpora of computed spectra and drop sharply on experimental measurements. We build NMRSpec, a large-scale corpus of experimental <sup>1</sup>H and <sup>13</sup>C spectra mined from chemical literature, and propose NMRTrans, which models spectra as unordered peak sets and aligns the model's inductive bias with the physical nature of NMR. To our knowledge NMRTrans is the first NMR Transformer trained solely on large-scale experimental spectra, improving Top-10 Accuracy over the strongest baseline by +17.82 points (61.15% vs. 43.33%).</p>
+              </td>
+            </tr>
+
+            <!-- R2-Seg -->
+            <tr class="paper-row" data-cats="vlm">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/r2seg.png" width="220" style="height:auto" alt="R2-Seg: Training-Free OOD Medical Tumor Segmentation" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">R&sup2;-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection</span>
+                <br>
+                Shuaike Shen, Ke Liu, <strong>Jiaqing Xie</strong>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao
+                <br>
+                <em><strong>CVPR</strong></em>, 2026 &nbsp;<strong>(Oral)</strong>
+                <br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_R2-Seg_Training-Free_OOD_Medical_Tumor_Segmentation_via_Anatomical_Reasoning_and_CVPR_2026_paper.pdf">PDF</a>
+                <p>TL;DR: Foundation models for medical image segmentation struggle under out-of-distribution shifts, often producing fragmented false positives on OOD tumors. R&sup2;-Seg is a training-free Reason-and-Reject framework: an LLM-guided anatomical reasoning planner localizes organ anchors and generates multi-scale ROIs, then two-sample statistical testing rejects candidates from a frozen foundation model (BiomedParse) that are not significantly different from normal tissue. On multi-center, multi-modal tumor segmentation benchmarks, R&sup2;-Seg substantially improves Dice, specificity, and sensitivity over strong baselines with no parameter updates.</p>
+              </td>
+            </tr>
+
+            <!-- OmniMatBench -->
+            <tr class="paper-row" data-cats="vlm ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/omnimatbench.jpg" width="220" style="height:auto" alt="OmniMatBench: A Human-Calibrated Multimodal Reasoning Benchmark" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">OmniMatBench: A Human-Calibrated Multimodal Reasoning Benchmark Across 19 Materials Science Subfields</span>
+                <br>
+                Wanhao Liu, <strong>Jiaqing Xie</strong>, Qian Tan, Weida Wang, Jue Wang, Ran Sun, Zhuo Yang, Wanli Ouyang, Lei Bai, Tianfan Fu, Lu Chen, Xin Chen, Yuqiang Li
+                <br>
+                <em><strong>arXiv preprint</strong></em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.29833">arXiv</a>
+                <p>TL;DR: Existing materials benchmarks mainly focus on property prediction, knowledge QA, or characterization understanding, leaving the broader reasoning process from materials knowledge to application underexplored. OmniMatBench is a human-calibrated multimodal reasoning benchmark with 3,171 expert-curated QA and calculation problems across 19 materials-science subfields. Evaluating 13 open-source and closed-source MLLMs, the best model achieves only a 0.372 overall score, revealing a substantial gap in current materials-science reasoning and a foundation for reliable AI assistants in materials research.</p>
+              </td>
+            </tr>
+
+            <!-- PolyReal -->
+            <tr class="paper-row" data-cats="vlm ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/polyreal.jpg" width="220" style="height:auto" alt="PolyReal: A Benchmark for Real-World Polymer Science Workflows" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">PolyReal: A Benchmark for Real-World Polymer Science Workflows</span>
+                <br>
+                Wanhao Liu, Weida Wang, <strong>Jiaqing Xie</strong>, Suorong Yang, Jue Wang, Benteng Chen, Guangtao Mei, Zonglin Yang, Shufei Zhang, Yuchun Mo, Lang Cheng, Jin Zeng, Houqiang Li, Wanli Ouyang, Yuqiang Li
+                <br>
+                <em><strong>arXiv preprint</strong></em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2604.02934">arXiv</a>
+                <p>TL;DR: Multimodal large language models excel in general domains but struggle with complex, real-world science. PolyReal is a multimodal benchmark grounded in real-world scientific practice that evaluates MLLMs across the full lifecycle of polymer experimentation, covering foundational knowledge application, lab safety analysis, experiment mechanism reasoning, raw data extraction, and performance &amp; application exploration. Evaluating leading MLLMs reveals a capability imbalance: models do well on knowledge-intensive reasoning but drop sharply on practice-based tasks such as lab safety analysis and raw data extraction, exposing a severe gap between abstract scientific knowledge and its practical, context-dependent application.</p>
+              </td>
+            </tr>
+
+            <!-- RACER -->
+            <tr class="paper-row" data-cats="df">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/racer.jpg" width="220" style="height:auto" alt="Disagree to Accelerate: Closing the Loop on Diffusion Feature Forecasts" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Disagree to Accelerate: Closing the Loop on Diffusion Feature Forecasts</span>
+                <br>
+                Yanchao Li, <strong>Jiaqing Xie</strong>, Ben Gao, Wanhao Liu, Yanbo Wang, T. Y. Tsui, Jinfei Liu, Yuqiang Li, Tianfan Fu
+                <br>
+                <em><strong>arXiv preprint</strong></em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2608.01740">arXiv</a> /
+                <a href="https://github.com/LiZaiyuan0619/RACER">Code</a>
+                <p>TL;DR: Training-free feature forecasting accelerates diffusion sampling by predicting features at skipped denoising steps, but open-loop caches trust the forecast in full at every skipped step. We show reliability can be observed from the cache itself: two forecasts agree where the feature trajectory is smooth and diverge where prediction turns hard, and their disagreement is a free runtime signal. RACER uses it as a training-free closed-loop controller that shrinks uncertain forecasts toward the last computed feature and, at the riskiest steps, refreshes the feature while repaying the cost by skipping a later one. At equal denoiser evaluations RACER improves the strongest open-loop baseline across SD3.5-Large, FLUX.1-dev, Wan2.1-14B, and HunyuanVideo on DrawBench, VBench, and COCO.</p>
+              </td>
+            </tr>
+
+            <!-- PE Benchmark -->
+            <tr class="paper-row" data-cats="ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/benchmark_pe.png" width="220" style="height:auto" alt="Benchmarking Positional Encodings for GNNs and Graph Transformers" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Benchmarking Positional Encodings for GNNs and Graph Transformers</span>
+                <br>
+                Florian Gr&ouml;tschla, <strong>Jiaqing Xie</strong>, Roger Wattenhofer
+                <br>
+                <em><strong>KDD</strong></em>, 2026 &nbsp;<strong>(Datasets &amp; Benchmarks)</strong>
+                <br>
+                <a href="https://arxiv.org/abs/2411.12732">arXiv</a> /
+                <a href="https://github.com/ETH-DISCO/Benchmarking-PEs">Code</a>
+                <p>TL;DR: Positional Encodings (PEs) are essential for injecting structural information into GNNs, particularly Graph Transformers, yet their empirical impact remains insufficiently understood. We introduce a unified benchmarking framework that decouples PEs from architectural choices, comparing 8 GNN and Transformer models, 9 PEs, and 10 synthetic and real-world datasets &mdash; over 500 model-PE-dataset configurations. Weisfeiler-Lehman distinguishability and other expressiveness proxies do not reliably predict downstream performance; highly expressive PEs can even degrade real-world tasks, while several simple, previously overlooked model-PE combinations match or outperform recent state-of-the-art methods.</p>
+              </td>
+            </tr>
+
+            <!-- NMRGym -->
+            <tr class="paper-row" data-cats="spec ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/nmrgym.jpg" width="220" style="height:auto" alt="NMRGym: A Comprehensive Benchmark for NMR Based Molecular Structure Elucidation" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation</span>
+                <br>
+                Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <strong>Jiaqing Xie</strong>, Zhuo Yang, Jun Xia
+                <br>
+                <em><strong>KDD</strong></em>, 2026
+                <br>
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3817452">KDD</a>
+                <p>TL;DR: Deep learning for NMR structure elucidation is impeded by reliance on synthetic datasets, which introduces domain shifts on real-world experimental spectra, and by the lack of standardized evaluation protocols. NMRGym is the largest and most comprehensive standardized benchmark from high-quality experimental NMR data to date: 269,999 unique molecules paired with high-fidelity <sup>1</sup>H and <sup>13</sup>C spectra, strict quality control, a scaffold-based split to prevent data leakage, and fine-grained peak-atom annotations, with an evaluation suite covering structure elucidation, functional group prediction, toxicity prediction, and spectral simulation.</p>
+              </td>
+            </tr>
+
+            <!-- SpectrumWorld -->
+            <tr class="paper-row" data-cats="spec ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/spectrumworld.jpg" width="220" style="height:auto" alt="SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy</span>
+                <br>
+                Zhuo Yang, <strong>Jiaqing Xie</strong>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Qinying Gu, Jun Jiang, Tianfan Fu, Yuqiang Li
+                <br>
+                <em><strong>KDD</strong></em>, 2026
+                <br>
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3818936">KDD</a>
+                <p>TL;DR: Deep learning holds immense promise for spectroscopy, yet research and evaluation in this emerging field often lack standardized formulations. SpectrumLab is a unified platform that systematizes the field: a comprehensive Python library with data processing and evaluation tools and leaderboards, a SpectrumAnnotator module that generates high-quality benchmarks from limited seed data, and SpectrumBench, a multi-layered benchmark suite covering 14 spectroscopic tasks and over 10 spectrum types with spectra from over 1.2 million substances. Empirical studies with 18 cutting-edge multimodal LLMs reveal critical limitations of current approaches.</p>
+              </td>
+            </tr>
+
+            <!-- QCBench -->
+            <tr class="paper-row" data-cats="ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/qcbench.jpg" width="220" style="height:auto" alt="QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry</span>
+                <br>
+                <strong>Jiaqing Xie</strong>, Weida Wang, Ben Gao, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, Yuqiang Li
+                <br>
+                <em><strong>JCIM</strong></em>, 2025
+                <br>
+                <a href="https://doi.org/10.1021/acs.jcim.5c02033">DOI</a> /
+                <a href="https://github.com/jiaqingxie/QCBench">Code</a>
+                <p>TL;DR: QCBench is a benchmark of 350 calculation-oriented chemistry questions spanning eight subfields &mdash; analytical, inorganic, organic, physical, polymer, and technical chemistry, biochemistry, and materials science &mdash; designed to test the domain-specific quantitative reasoning of large language models. Answers are scored with high-precision numerical tolerance and an answer-verification model, enabling systematic comparison across LLMs and chemistry categories.</p>
+              </td>
+            </tr>
+
+            <!-- DeepProtein -->
+            <tr class="paper-row" data-cats="ds">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/deep_protein.jpg" width="220" style="height:auto" alt="DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning</span>
+                <br>
+                <strong>Jiaqing Xie</strong>, Tianfan Fu
+                <br>
+                <em><strong>Bioinformatics</strong></em>, 2025
+                <br>
+                <a href="https://arxiv.org/abs/2410.02023">arXiv</a> /
+                <a href="https://github.com/jiaqingxie/DeepProtein">Code</a>
+                <p>TL;DR: A comprehensive and user-friendly deep learning library for protein-related tasks, with a benchmark evaluating CNNs, RNNs, transformers, and GNNs across protein function prediction, subcellular localization, protein-protein interaction, and structure prediction. We also introduce DeepProt-T5, a series of fine-tuned Prot-T5-based models that achieve state-of-the-art performance on four benchmark tasks while remaining competitive on six others.</p>
               </td>
             </tr>
 
@@ -84,4 +288,23 @@
       </tr>
     </tbody></table>
   </body>
+
+  <script>
+    // Selectable publication columns: tabs filter paper rows by data-cats.
+    (function () {
+      var tabs = document.querySelectorAll('#pubtabs button');
+      var rows = document.querySelectorAll('.paper-row');
+      tabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          tabs.forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          var cat = btn.getAttribute('data-cat');
+          rows.forEach(function (row) {
+            var cats = (row.getAttribute('data-cats') || '').split(/\s+/);
+            row.style.display = (cat === 'all' || cats.indexOf(cat) !== -1) ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 </html>

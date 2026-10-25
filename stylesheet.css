@@ -110,6 +110,29 @@ span.highlight {
     border-radius: 10px;
 }
 
+/* Selectable publication columns */
+.pubtabs button {
+  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+  font-size: 14.5px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 16px 0 0;
+  color: #1772d0;
+  cursor: pointer;
+}
+
+.pubtabs button:hover {
+  color: #f09228;
+}
+
+.pubtabs button.on {
+  color: #111;
+  font-weight: 600;
+  border-bottom: 2px solid #f09228;
+  padding-bottom: 1px;
+}
+
 /* Headings in Computer Modern (serif) */
 h1, h3 {
   font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
