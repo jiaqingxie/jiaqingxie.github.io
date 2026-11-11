@@ -66,6 +66,40 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <!-- VibraTrans -->
+            <tr class="paper-row" data-cats="spec df">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/vibratrans.png" width="220" style="height:auto" alt="VibraTrans: Cross-modal Translation between Infrared and Raman Spectra with Molecular Representation Learning" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">VibraTrans: Cross-modal Translation between Infrared and Raman Spectra with Molecular Representation Learning</span>
+                <br>
+                <strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li
+                <br>
+                <em><strong>Preprint</strong></em>, 2026
+                <br>
+                <a href="https://github.com/jiaqingxie/VibraTrans">Code</a>
+                <p>TL;DR: Infrared and Raman spectra probe the same molecular vibrations through complementary selection rules, so a single measurement can miss functional-group signatures. VibraTrans is a source-conditioned diffusion Transformer that predicts either vibrational spectrum from the other in a single network evaluation, using only the observed spectrum as input. Across QM9S, QMe14S and ViBench-Full it exceeds Transformer and convolutional baselines in all six dataset&ndash;direction comparisons (mean per-spectrum R&sup2; 0.714&ndash;0.949); predictions preserve modality-specific band strengths and reproduce the conjugation-induced carbonyl frequency shift in all 38 matched ketone pairs, verified by normal-mode assignments. Frozen encoder features raise QM9S IR-based logP and topological polar surface area prediction R&sup2; from 0.489 and 0.724 to 0.800 and 0.908, connecting cross-modal translation with structure-free molecular representation learning.</p>
+              </td>
+            </tr>
+
+            <!-- UltraMS -->
+            <tr class="paper-row" data-cats="spec">
+              <td style="padding:16px;width:30%;vertical-align:middle">
+                <img src="images/ultrams.jpg" width="220" style="height:auto" alt="UltraMS: Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data" loading="lazy" decoding="async">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data</span>
+                <br>
+                Yifan Li, Yunhua Zhong, Pan Liu, Zikun Wang, <strong>Jiaqing Xie</strong>, Hongxin Xiang, Zihan Chen, Yuqiang Li, Jun Xia
+                <br>
+                <em><strong>Preprint</strong></em>, 2026
+                <br>
+                <a href="https://github.com/Dsadd4/UltraMS">Code</a>
+                <p>TL;DR: Community repositories such as GNPS and MassIVE aggregate massive tandem-MS corpora whose chemical meaning remains largely untapped. UltraMS is the first dual-polarity foundation model, pretrained on more than 160 million positive- and negative-ion-mode spectra to decipher the molecular language latent in tandem mass spectra via self-supervised learning on unannotated data. It advances elemental detection, molecular identification with peak-by-peak substructural attributions via annotation transfer, molecular property profiling, and metabolic landscape characterization; on a clinical plaque cohort it discovers previously unrecognized phenotype-linked metabolites and corrects likely misannotated markers, while UltraAtlas organizes millions of experimental spectra into a unified coordinate system enabling millisecond-scale molecular profiling.</p>
+              </td>
+            </tr>
+
             <!-- GSF-chi -->
             <tr class="paper-row" data-cats="gt">
               <td style="padding:16px;width:30%;vertical-align:middle">
@@ -300,6 +334,15 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr>
+              <td style="padding:8px;width:15%;vertical-align:top">
+                <span style="font-weight:bold;">2026.11</span>
+              </td>
+              <td style="padding:8px;width:85%;vertical-align:top">
+                New preprints: <a href="https://github.com/jiaqingxie/VibraTrans">VibraTrans</a> (cross-modal translation between IR and Raman spectra) and <a href="https://github.com/Dsadd4/UltraMS">UltraMS</a> (dual-polarity tandem-MS foundation model).
+              </td>
+            </tr>
 
             <tr>
               <td style="padding:8px;width:15%;vertical-align:top">
