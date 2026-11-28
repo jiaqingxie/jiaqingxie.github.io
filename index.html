@@ -1,534 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta charset="utf-8">
     <title>Jiaqing Xie</title>
-
     <meta name="author" content="Jiaqing Xie">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jiaqing Xie works on geometric transformers and spectroscopic data mining.">
+    <meta name="description" content="Jiaqing Xie — Ph.D. student in Computer Science at Fudan University and Shanghai Artificial Intelligence Laboratory.">
     <meta name="google-site-verification" content="xTMoxPTmN_69F2CX32tUoXYpwacrNhe5C3fEC5Can_4">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="blog/fonts/Serif/cmun-serif.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Marcellus+SC&display=swap">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
 
   <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">Jiaqing Xie<br><br></p>
-                <p class="lead">I am a first-year PhD student in Computer Science at <a href="https://www.fudan.edu.cn/">Fudan University</a>. I received my M.Sc. in Computer Science from <a href="https://ethz.ch/en.html">ETH Zurich</a> and my B.Eng. in Electronics and Computer Science from the <a href="https://www.ed.ac.uk/">University of Edinburgh</a>, and in Summer 2020 I worked with <a href="https://www.csail.mit.edu/person/manolis-kellis">Manolis Kellis</a> at <a href="https://web.mit.edu/">MIT</a>. I am supervised by Yuqiang Li, <a href="https://futianfan.github.io/">Tianfan Fu</a>, Yuxin Wang, <a href="https://qiu.xipeng.org/">Xipeng Qiu</a>, and <a href="https://junxia97.github.io/">Jun Xia</a>.</p>
-                <p class="lead">My research focuses on geometric transformers (KDD &times; 1), spectroscopic data mining (KDD &times; 3), vision-language models for scientific reasoning, and diffusion &amp; flow matching.</p>
-                <p style="text-align:center;margin:18px 0 6px;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:16px 22px;">
-                  <a href="https://ethz.ch/en.html"><img src="images/logos/eth_zurich.png" alt="ETH Zurich" style="height:40px;vertical-align:middle;"></a>
-                  <a href="https://web.mit.edu/"><img src="images/logos/mit_wordmark.png" alt="MIT" height="50" loading="lazy" decoding="async"></a>
-                  <a href="https://www.ed.ac.uk/"><img src="images/logos/edinburgh.png" alt="University of Edinburgh" style="height:60px;vertical-align:middle;"></a>
-                  <a href="https://www.fudan.edu.cn/"><img src="images/logos/fudan.png" alt="Fudan University" style="height:60px;vertical-align:middle;"></a>
-                </p>
-                <p style="text-align:center">
-                  <a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jiaqingxie">GitHub</a> &nbsp;/&nbsp;
-                  <a href="mailto:26113050148@m.fudan.edu.cn">Email</a>
-                </p>
-                <p style="text-align:center">Email: 26113050148 [at] m.fudan [dot] edu [dot] cn</p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%; margin-top: 56px;" alt="Jiaqing Xie" src="images/profile_pic.jpg" width="320" height="320" class="hoverZoomLink">
-              </td>
-            </tr>
-          </tbody></table>
+    <div class="wrap" id="top">
+      <nav class="mini-nav" aria-label="Sections">
+        <a href="#papers">Publications</a>
+        <a href="#software">Software</a>
+        <a href="#news">News</a>
+        <a href="#service">Services</a>
+        <a href="#blog">Notes &amp; Blog</a>
+      </nav>
 
-          <!-- Representative Papers Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Representative Papers</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px 16px 8px;width:100%;vertical-align:middle">
-                <div class="pubtabs" id="pubtabs">
-                  <button class="on" data-cat="all">All</button>
-                  <button data-cat="spec">Spectroscopic Data Mining</button>
-                  <button data-cat="gt">Geometric Transformer</button>
-                  <button data-cat="vlm">Vision-Language Model</button>
-                  <button data-cat="df">Diffusion &amp; Flow Matching</button>
-                  <button data-cat="ds">Datasets &amp; Benchmarks</button>
-                </div>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <!-- Tufte Header: Main text + Right Margin Column -->
+      <header class="tufte-header">
+        <div>
+          <h1>Jiaqing Xie</h1>
+          <p class="subtitle">Ph.D. Student in Computer Science &middot; Fudan University &amp; Shanghai AI Lab</p>
+          <p>
+            I am a first-year Ph.D. student in Computer Science at <a href="https://www.fudan.edu.cn/">Fudan University</a> and <a href="https://www.shlab.org.cn/">Shanghai Artificial Intelligence Laboratory</a>. I received my M.Sc. in Computer Science from <a href="https://ethz.ch/en.html">ETH Zurich</a> and my B.Eng. in Electronics and Computer Science from the <a href="https://www.ed.ac.uk/">University of Edinburgh</a>. In Summer 2020, I worked with <a href="https://www.csail.mit.edu/person/manolis-kellis">Manolis Kellis</a> at <a href="https://web.mit.edu/">MIT</a>. I am supervised by Yuqiang Li, <a href="https://futianfan.github.io/">Tianfan Fu</a>, Yuxin Wang, <a href="https://qiu.xipeng.org/">Xipeng Qiu</a>, and <a href="https://junxia97.github.io/">Jun Xia</a>.
+          </p>
+          <p>
+            My research focuses on AI for chemistry and asymmetric catalysis, spectroscopic data mining (KDD &times; 3), geometric transformers (KDD &times; 1), vision-language models for scientific reasoning, and diffusion &amp; flow matching.
+          </p>
+        </div>
 
-            <!-- VibraTrans -->
-            <tr class="paper-row" data-cats="spec df">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/vibratrans.png" width="220" style="height:auto" alt="VibraTrans: Cross-modal Translation between Infrared and Raman Spectra with Molecular Representation Learning" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">VibraTrans: Cross-modal Translation between Infrared and Raman Spectra with Molecular Representation Learning</span>
-                <br>
-                <strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li
-                <br>
-                <em><strong>Preprint</strong></em>, 2026
-                <br>
-                <a href="https://github.com/jiaqingxie/VibraTrans">Code</a>
-                <p>TL;DR: Infrared and Raman spectra probe the same molecular vibrations through complementary selection rules, so a single measurement can miss functional-group signatures. VibraTrans is a source-conditioned diffusion Transformer that predicts either vibrational spectrum from the other in a single network evaluation, using only the observed spectrum as input. Across QM9S, QMe14S and ViBench-Full it exceeds Transformer and convolutional baselines in all six dataset&ndash;direction comparisons (mean per-spectrum R&sup2; 0.714&ndash;0.949); predictions preserve modality-specific band strengths and reproduce the conjugation-induced carbonyl frequency shift in all 38 matched ketone pairs, verified by normal-mode assignments. Frozen encoder features raise QM9S IR-based logP and topological polar surface area prediction R&sup2; from 0.489 and 0.724 to 0.800 and 0.908, connecting cross-modal translation with structure-free molecular representation learning.</p>
-              </td>
-            </tr>
+        <aside class="margin-col">
+          <img class="portrait" src="images/profile_pic.jpg" alt="Jiaqing Xie" width="178" height="178">
+          <p class="email-mono">26113050148 [at] m.fudan [dot] edu [dot] cn</p>
+          <div class="margin-links">
+            <a href="https://scholar.google.com/citations?user=Tfg7A2AAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://github.com/jiaqingxie" target="_blank" rel="noopener">GitHub</a>
+            <a href="cv/jiaqing_xie_cv.pdf" target="_blank" rel="noopener">CV</a>
+            <a href="mailto:26113050148@m.fudan.edu.cn">Email</a>
+          </div>
+          <div class="logos" aria-label="Affiliations">
+            <a href="https://www.fudan.edu.cn/" title="Fudan University"><img src="images/logos/fudan.png" alt="Fudan University" style="height:25px;"></a>
+            <a href="https://ethz.ch/en.html" title="ETH Zurich"><img src="images/logos/eth_zurich.png" alt="ETH Zurich" style="height:16px;"></a>
+            <a href="https://www.ed.ac.uk/" title="University of Edinburgh"><img src="images/logos/edinburgh.png" alt="University of Edinburgh" style="height:25px;"></a>
+            <a href="https://web.mit.edu/" title="MIT"><img src="images/logos/mit_wordmark.png" alt="MIT" style="height:18px;"></a>
+          </div>
+        </aside>
+      </header>
 
-            <!-- UltraMS -->
-            <tr class="paper-row" data-cats="spec">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/ultrams.jpg" width="220" style="height:auto" alt="UltraMS: Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data</span>
-                <br>
-                Yifan Li, Yunhua Zhong, Pan Liu, Zikun Wang, <strong>Jiaqing Xie</strong>, Hongxin Xiang, Zihan Chen, Yuqiang Li, Jun Xia
-                <br>
-                <em><strong>Preprint</strong></em>, 2026
-                <br>
-                <a href="https://github.com/Dsadd4/UltraMS">Code</a>
-                <p>TL;DR: Community repositories such as GNPS and MassIVE aggregate massive tandem-MS corpora whose chemical meaning remains largely untapped. UltraMS is the first dual-polarity foundation model, pretrained on more than 160 million positive- and negative-ion-mode spectra to decipher the molecular language latent in tandem mass spectra via self-supervised learning on unannotated data. It advances elemental detection, molecular identification with peak-by-peak substructural attributions via annotation transfer, molecular property profiling, and metabolic landscape characterization; on a clinical plaque cohort it discovers previously unrecognized phenotype-linked metabolites and corrects likely misannotated markers, while UltraAtlas organizes millions of experimental spectra into a unified coordinate system enabling millisecond-scale molecular profiling.</p>
-              </td>
-            </tr>
+      <!-- Representative Papers -->
+      <section id="papers">
+        <h2>Representative Papers <span class="sec-note">(<sup>&dagger;</sup>Equal contribution)</span></h2>
 
-            <!-- GSF-chi -->
-            <tr class="paper-row" data-cats="gt">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/gsf_chi.png" width="220" height="188" alt="GSF-χ: Global Stereochemical Fields for Chiral Graph Transformers" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">GSF-&chi;: Global Stereochemical Fields for Chiral Graph Transformers</span>
-                <br>
-                <strong>Jiaqing Xie</strong>, Yuxin Wang<sup>&dagger;</sup>, Xipeng Qiu<sup>&dagger;</sup>
-                <br>
-                <em><strong>arXiv preprint</strong></em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2609.12532">arXiv</a> /
-                <a href="https://github.com/OpenMOSS/GSF-chi">Code</a>
-                <p>TL;DR: Enantiomers share atoms, bonds, and pairwise distances yet behave differently in chiral environments, so molecular encoders must respect rotations without going blind to reflection. GSF-&chi; lets every stereogenic unit modulate all pairwise attention through a reflection-even phase field, while a handedness pseudoscalar &chi; reverses a Chiral-RoPE on latent query&ndash;key blocks; a C<sub>2</sub> projection keeps ECD peak counts and positions mirror-even and peak signs mirror-odd. GSF-&chi; leads every central-ECD output and improves axial Rotation and Symbol by 12.6% and 7.9% over the strongest baseline.</p>
-              </td>
-            </tr>
+        <div class="pub-filter" id="pubtabs">
+          <button class="on" data-cat="all" type="button">All</button><span class="dot">&middot;</span>
+          <button data-cat="chem" type="button">AI for Chemistry &amp; Catalysis</button><span class="dot">&middot;</span>
+          <button data-cat="spec" type="button">Spectroscopic Data Mining</button><span class="dot">&middot;</span>
+          <button data-cat="gt" type="button">Geometric Transformer</button><span class="dot">&middot;</span>
+          <button data-cat="vlm" type="button">Vision-Language Model</button><span class="dot">&middot;</span>
+          <button data-cat="df" type="button">Diffusion &amp; Flow Matching</button><span class="dot">&middot;</span>
+          <button data-cat="ds" type="button">Datasets &amp; Benchmarks</button>
+        </div>
 
-            <!-- AW-RoPE -->
-            <tr class="paper-row" data-cats="gt">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/aw_rope.jpg" width="220" style="height:auto" alt="Analytic-Walk Rotary Positional Encodings for Graphs" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Analytic-Walk Rotary Positional Encodings for Graphs</span>
-                <br>
-                <strong>Jiaqing Xie</strong>, Yuxin Wang, Xipeng Qiu
-                <br>
-                <em><strong>arXiv preprint</strong></em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2609.32178">arXiv</a> /
-                <a href="https://github.com/jiaqingxie/AW-RoPE">Code</a>
-                <p>TL;DR: Rotary position encodings make attention sensitive to relative position, but prior graph versions assign each node a rotation from spectral coordinates, so the rotary factor between two nodes cannot distinguish the routes connecting them. AW-RoPE places the rotations on edges and sums the transported features over all walks, so contributions along different routes can reinforce or cancel: an exact variant evaluates the complete sum by a differentiable linear solve, and a sparse variant truncates it at finite depth. Across five synthetic tasks both variants reduce nRMSE by 15&ndash;58% relative to the strongest baseline, and on real superpixel, peptide and OGB benchmarks the sparse recurrence attains the best mean on every dataset with Performer kernels and on twelve of thirteen datasets with GIN.</p>
-              </td>
-            </tr>
+        <!-- RxnPFN (no links per request) -->
+        <article class="pub-entry paper-row" data-cats="chem">
+          <div class="pub-fig">
+            <img src="images/rxnpfn.png" alt="RxnPFN" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">RxnPFN: Towards Universal Training-free Prediction of Reaction Properties from Enantioselectivity to Yield</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Yuxin Wang, Xiaopeng He, Ben Gao, Zihao Ye, Yuqiang Li, Tong Zhu, Zheng Ling, Xipeng Qiu</p>
+            <p class="pub-venue"><em>Preprint</em>, 2026.</p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> RxnPFN encodes multi-component reactions by chemical roles and bonds broken and formed, pairing a frozen pretrained tabular prior-fitted network with magnitude&ndash;direction decomposition for in-context reaction prediction in seconds without weight updates. Across 15,226 published asymmetric reactions it reaches pooled test R&sup2; = 0.856 (96.9% enantiomer sign accuracy on olefin hydrogenations; 90% without product stereochemistry), cuts prediction error on a withheld study by two thirds using four context measurements, and generalizes directly to ketone-reduction conversion, oxidation yield, cobalt hydrogenation, Sadphos Heck selectivity, and Buchwald&ndash;Hartwig yield.</p>
+          </div>
+        </article>
 
-            <!-- NMRTrans -->
-            <tr class="paper-row" data-cats="spec">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/nmrtrans.jpg" width="220" style="height:auto" alt="NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers</span>
-                <br>
-                Liujia Yang<sup>&dagger;</sup>, Zhuo Yang<sup>&dagger;</sup>, <strong>Jiaqing Xie</strong><sup>&dagger;</sup>, Yubin Wang<sup>&dagger;</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu
-                <br>
-                <em><strong>KDD</strong></em>, 2026
-                <br>
-                <a href="https://dl.acm.org/doi/10.1145/3770855.3818935">Paper</a> /
-                <a href="https://github.com/little1d/NMRTrans">Code</a>
-                <p>TL;DR: Recent NMR structure-elucidation models rely heavily on large corpora of computed spectra and drop sharply on experimental measurements. We build NMRSpec, a large-scale corpus of experimental <sup>1</sup>H and <sup>13</sup>C spectra mined from chemical literature, and propose NMRTrans, which models spectra as unordered peak sets and aligns the model's inductive bias with the physical nature of NMR. To our knowledge NMRTrans is the first NMR Transformer trained solely on large-scale experimental spectra, improving Top-10 Accuracy over the strongest baseline by +17.82 points (61.15% vs. 43.33%).</p>
-              </td>
-            </tr>
+        <!-- VibraTrans -->
+        <article class="pub-entry paper-row" data-cats="spec df chem">
+          <div class="pub-fig">
+            <img src="images/vibratrans.png" alt="VibraTrans" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">VibraTrans: Cross-modal Translation between Infrared and Raman Spectra with Molecular Representation Learning</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Zhuo Yang, Ben Gao, Shuaike Shen, Tianfan Fu, Yuqiang Li</p>
+            <p class="pub-venue">
+              Under Review at <em><strong>Nature Computational Science</strong></em>, 2026.
+              <span class="pub-links"><a href="https://github.com/jiaqingxie/VibraTrans" target="_blank" rel="noopener">Code</a></span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> VibraTrans is a source-conditioned diffusion Transformer that predicts either infrared or Raman vibrational spectra from the other in a single network evaluation using only the observed spectrum. Across QM9S, QMe14S, and ViBench-Full it exceeds Transformer and convolutional baselines in all six dataset&ndash;direction comparisons (mean per-spectrum R&sup2; 0.714&ndash;0.949) and raises structure-free IR-based logP and TPSA prediction R&sup2; to 0.800 and 0.908.</p>
+          </div>
+        </article>
 
-            <!-- R2-Seg -->
-            <tr class="paper-row" data-cats="vlm">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/r2seg.png" width="220" style="height:auto" alt="R2-Seg: Training-Free OOD Medical Tumor Segmentation" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">R&sup2;-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection</span>
-                <br>
-                Shuaike Shen, Ke Liu, <strong>Jiaqing Xie</strong>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao
-                <br>
-                <em><strong>CVPR</strong></em>, 2026 &nbsp;<strong>(Oral)</strong>
-                <br>
-                <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_R2-Seg_Training-Free_OOD_Medical_Tumor_Segmentation_via_Anatomical_Reasoning_and_CVPR_2026_paper.pdf">Paper</a> /
-                <a href="https://github.com/Eurekashen/R2Seg">Code</a>
-                <p>TL;DR: Foundation models for medical image segmentation struggle under out-of-distribution shifts, often producing fragmented false positives on OOD tumors. R&sup2;-Seg is a training-free Reason-and-Reject framework: an LLM-guided anatomical reasoning planner localizes organ anchors and generates multi-scale ROIs, then two-sample statistical testing rejects candidates from a frozen foundation model (BiomedParse) that are not significantly different from normal tissue. On multi-center, multi-modal tumor segmentation benchmarks, R&sup2;-Seg substantially improves Dice, specificity, and sensitivity over strong baselines with no parameter updates.</p>
-              </td>
-            </tr>
+        <!-- UltraMS -->
+        <article class="pub-entry paper-row" data-cats="spec chem">
+          <div class="pub-fig">
+            <img src="images/ultrams.jpg" alt="UltraMS" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">Deciphering Molecular Language for Spectral Interpretation with a Foundation Model Pretrained on Repository-Wide Metabolomics Data</h3>
+            <p class="pub-authors">Yifan Li, Yunhua Zhong, Pan Liu, Zikun Wang, <strong>Jiaqing Xie</strong>, Hongxin Xiang, Zihan Chen, Yuqiang Li, Jun Xia</p>
+            <p class="pub-venue">
+              Under Review at <em><strong>Nature Biotechnology</strong></em>, 2026.
+              <span class="pub-links"><a href="https://github.com/Dsadd4/UltraMS" target="_blank" rel="noopener">Code</a></span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> UltraMS is the first dual-polarity foundation model pretrained on over 160 million positive- and negative-ion-mode tandem mass spectra from GNPS and MassIVE via self-supervised learning on unannotated data, advancing molecular identification, peak-by-peak substructural attribution, property profiling, and clinical metabolomics discovery via UltraAtlas.</p>
+          </div>
+        </article>
 
-            <!-- MatVerse -->
-            <tr class="paper-row" data-cats="vlm">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/matverse.png" width="220" style="height:auto" alt="MatVerse: A Foundation Model for Materials Science" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">MatVerse: A Foundation Model for Materials Science</span>
-                <br>
-                Xuanyu Zhu<sup>&dagger;</sup>, Qian Tan<sup>&dagger;</sup>, Bo Chen, <strong>Jiaqing Xie</strong>, Yang Han, Mei Wu, Xuanze Lin, Wanhao Liu, Yuchen Zhou, Shijie Wang, Biqing Qi, Shixiang Tang, Wenwei Zhang, Tianfan Fu, Kai Yu, Lu Chen, Yuqiang Li, Xin Chen
-                <br>
-                <em><strong>Technical Report</strong></em>, 2026
-                <p>TL;DR: MatVerse is a materials foundation model built upon Intern-S2-Preview (35B-A3B) and specialized through large-scale materials-domain post-training on ~150K multimodal examples covering materials knowledge, scientific reasoning, quantitative problem solving, structural understanding, and multimodal scientific interpretation, constructed with teacher-guided reasoning distillation, scientific problem synthesis, consistency-based filtering, and retrieval-based multimodal data construction. Across OmniMatBench, MatSciBench, and MaCBench, MatVerse consistently improves over its base model, outperforming GPT-5.2 on MatSciBench (63.59% vs. 59.6%) while also improving inference efficiency on calculation-intensive problems.</p>
-              </td>
-            </tr>
+        <!-- SpecMol -->
+        <article class="pub-entry paper-row" data-cats="spec chem">
+          <div class="pub-fig">
+            <img src="images/specmol.svg" alt="SpecMol" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">SpecMol: A Spectroscopy-Grounded Foundation Model for Multi-Task Molecular Learning</h3>
+            <p class="pub-authors">Shuaike Shen<sup>&dagger;</sup>, <strong>Jiaqing Xie</strong><sup>&dagger;</sup>, Zhuo Yang, Antong Zhang, Shuzhou Sun, Ben Gao, Tianfan Fu, Biqing Qi, Yuqiang Li</p>
+            <p class="pub-venue">
+              Provisionally Accepted at <em><strong>Journal of Chemical Information and Modeling</strong></em>, 2026.
+              <span class="pub-links"><a href="https://arxiv.org/abs/2509.21861" target="_blank" rel="noopener">arXiv</a></span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> SpecMol unifies continuous experimental spectroscopy (<sup>1</sup>H/<sup>13</sup>C NMR, IR, and MS), SMILES strings, and 3D molecular conformations in a single language-model interface via numerically faithful spectral serialization, accompanied by SpecMol-Bench covering structure elucidation, spectral simulation, and 3D conformation generation.</p>
+          </div>
+        </article>
 
-            <!-- RACER -->
-            <tr class="paper-row" data-cats="df">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/racer.jpg" width="220" style="height:auto" alt="Disagree to Accelerate: Closing the Loop on Diffusion Feature Forecasts" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Disagree to Accelerate: Closing the Loop on Diffusion Feature Forecasts</span>
-                <br>
-                Yanchao Li, <strong>Jiaqing Xie</strong>, Ben Gao, Wanhao Liu, Yanbo Wang, T. Y. Tsui, Jinfei Liu, Yuqiang Li, Tianfan Fu
-                <br>
-                <em><strong>arXiv preprint</strong></em>, 2026
-                <br>
-                <a href="https://arxiv.org/abs/2608.01740">arXiv</a> /
-                <a href="https://github.com/LiZaiyuan0619/RACER">Code</a>
-                <p>TL;DR: Training-free feature forecasting accelerates diffusion sampling by predicting features at skipped denoising steps, but open-loop caches trust the forecast in full at every skipped step. We show reliability can be observed from the cache itself: two forecasts agree where the feature trajectory is smooth and diverge where prediction turns hard, and their disagreement is a free runtime signal. RACER uses it as a training-free closed-loop controller that shrinks uncertain forecasts toward the last computed feature and, at the riskiest steps, refreshes the feature while repaying the cost by skipping a later one. At equal denoiser evaluations RACER improves the strongest open-loop baseline across SD3.5-Large, FLUX.1-dev, Wan2.1-14B, and HunyuanVideo on DrawBench, VBench, and COCO.</p>
-              </td>
-            </tr>
+        <!-- GSF-chi -->
+        <article class="pub-entry paper-row" data-cats="gt chem">
+          <div class="pub-fig">
+            <img src="images/gsf_chi.png" alt="GSF-chi" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">GSF-&chi;: Global Stereochemical Fields for Chiral Graph Transformers</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Yuxin Wang, Xipeng Qiu</p>
+            <p class="pub-venue">
+              <em>arXiv preprint</em>, 2026.
+              <span class="pub-links">
+                <a href="https://arxiv.org/abs/2609.12532" target="_blank" rel="noopener">arXiv</a> &middot;
+                <a href="https://github.com/OpenMOSS/GSF-chi" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> GSF-&chi; lets every stereogenic unit modulate all pairwise attention through a reflection-even phase field while a handedness pseudoscalar &chi; reverses Chiral-RoPE on latent query&ndash;key blocks, leading every central-ECD output and improving axial Rotation and Symbol by 12.6% and 7.9% over the strongest baseline.</p>
+          </div>
+        </article>
 
-            <!-- PE Benchmark -->
-            <tr class="paper-row" data-cats="ds">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/benchmark_pe.png" width="220" style="height:auto" alt="Benchmarking Positional Encodings for GNNs and Graph Transformers" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">Benchmarking Positional Encodings for GNNs and Graph Transformers</span>
-                <br>
-                Florian Gr&ouml;tschla, <strong>Jiaqing Xie</strong>, Roger Wattenhofer
-                <br>
-                <em><strong>KDD</strong></em>, 2026 &nbsp;<strong>(Datasets &amp; Benchmarks)</strong>
-                <br>
-                <a href="https://arxiv.org/abs/2411.12732">arXiv</a> /
-                <a href="https://github.com/ETH-DISCO/Benchmarking-PEs">Code</a>
-                <p>TL;DR: Positional Encodings (PEs) are essential for injecting structural information into GNNs, particularly Graph Transformers, yet their empirical impact remains insufficiently understood. We introduce a unified benchmarking framework that decouples PEs from architectural choices, comparing 8 GNN and Transformer models, 9 PEs, and 10 synthetic and real-world datasets &mdash; over 500 model-PE-dataset configurations. Weisfeiler-Lehman distinguishability and other expressiveness proxies do not reliably predict downstream performance; highly expressive PEs can even degrade real-world tasks, while several simple, previously overlooked model-PE combinations match or outperform recent state-of-the-art methods.</p>
-              </td>
-            </tr>
+        <!-- AW-RoPE -->
+        <article class="pub-entry paper-row" data-cats="gt">
+          <div class="pub-fig">
+            <img src="images/aw_rope.jpg" alt="AW-RoPE" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">Analytic-Walk Rotary Positional Encodings for Graphs</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Yuxin Wang, Xipeng Qiu</p>
+            <p class="pub-venue">
+              <em>arXiv preprint</em>, 2026.
+              <span class="pub-links">
+                <a href="https://arxiv.org/abs/2609.32178" target="_blank" rel="noopener">arXiv</a> &middot;
+                <a href="https://github.com/jiaqingxie/AW-RoPE" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> AW-RoPE places rotary factors on edges and sums transported features over all walks via a differentiable linear solve or sparse recurrence, reducing nRMSE by 15&ndash;58% across five synthetic tasks and achieving the best mean on every real benchmark with Performer kernels and 12/13 datasets with GIN.</p>
+          </div>
+        </article>
 
-            <!-- NMRGym -->
-            <tr class="paper-row" data-cats="spec ds">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/nmrgym.jpg" width="220" style="height:auto" alt="NMRGym: A Comprehensive Benchmark for NMR Based Molecular Structure Elucidation" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation</span>
-                <br>
-                Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <strong>Jiaqing Xie</strong>, Zhuo Yang, Jun Xia
-                <br>
-                <em><strong>KDD</strong></em>, 2026
-                <br>
-                <a href="https://dl.acm.org/doi/10.1145/3770855.3817452">Paper</a> /
-                <a href="https://github.com/AIMS-Lab-HKUSTGZ/NMRGym">Code</a>
-                <p>TL;DR: Deep learning for NMR structure elucidation is impeded by reliance on synthetic datasets, which introduces domain shifts on real-world experimental spectra, and by the lack of standardized evaluation protocols. NMRGym is the largest and most comprehensive standardized benchmark from high-quality experimental NMR data to date: 269,999 unique molecules paired with high-fidelity <sup>1</sup>H and <sup>13</sup>C spectra, strict quality control, a scaffold-based split to prevent data leakage, and fine-grained peak-atom annotations, with an evaluation suite covering structure elucidation, functional group prediction, toxicity prediction, and spectral simulation.</p>
-              </td>
-            </tr>
+        <!-- NMRTrans -->
+        <article class="pub-entry paper-row" data-cats="spec chem">
+          <div class="pub-fig">
+            <img src="images/nmrtrans.jpg" alt="NMRTrans" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">NMRTrans: Structure Elucidation from Experimental NMR Spectra via Set Transformers</h3>
+            <p class="pub-authors">Liujia Yang<sup>&dagger;</sup>, Zhuo Yang<sup>&dagger;</sup>, <strong>Jiaqing Xie</strong><sup>&dagger;</sup>, Yubin Wang<sup>&dagger;</sup>, Ben Gao, Tianfan Fu, Xingjian Wei, Jiaxing Sun, Jiang Wu, Conghui He, Yuqiang Li, Qinying Gu</p>
+            <p class="pub-venue">
+              <em><strong>KDD</strong></em>, 2026.
+              <span class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3818935" target="_blank" rel="noopener">Paper</a> &middot;
+                <a href="https://github.com/little1d/NMRTrans" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> We build NMRSpec, a large-scale corpus of experimental <sup>1</sup>H and <sup>13</sup>C spectra mined from chemical literature, and propose NMRTrans, modeling spectra as unordered peak sets and improving Top-10 Accuracy over the strongest baseline by +17.82 points (61.15% vs. 43.33%).</p>
+          </div>
+        </article>
 
-            <!-- SpectrumWorld -->
-            <tr class="paper-row" data-cats="spec ds">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/spectrumworld.jpg" width="220" style="height:auto" alt="SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy</span>
-                <br>
-                Zhuo Yang<sup>&dagger;</sup>, <strong>Jiaqing Xie</strong><sup>&dagger;</sup>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Qinying Gu, Jun Jiang, Tianfan Fu, Yuqiang Li
-                <br>
-                <em><strong>KDD</strong></em>, 2026
-                <br>
-                <a href="https://dl.acm.org/doi/10.1145/3770855.3818936">Paper</a> /
-                <a href="https://github.com/little1d/SpectrumLab">Code</a>
-                <p>TL;DR: Deep learning holds immense promise for spectroscopy, yet research and evaluation in this emerging field often lack standardized formulations. SpectrumLab is a unified platform that systematizes the field: a comprehensive Python library with data processing and evaluation tools and leaderboards, a SpectrumAnnotator module that generates high-quality benchmarks from limited seed data, and SpectrumBench, a multi-layered benchmark suite covering 14 spectroscopic tasks and over 10 spectrum types with spectra from over 1.2 million substances. Empirical studies with 18 cutting-edge multimodal LLMs reveal critical limitations of current approaches.</p>
-              </td>
-            </tr>
+        <!-- R2-Seg -->
+        <article class="pub-entry paper-row" data-cats="vlm">
+          <div class="pub-fig">
+            <img src="images/r2seg.png" alt="R2-Seg" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">R&sup2;-Seg: Training-Free OOD Medical Tumor Segmentation via Anatomical Reasoning and Statistical Rejection</h3>
+            <p class="pub-authors">Shuaike Shen, Ke Liu, <strong>Jiaqing Xie</strong>, Shangde Gao, Chunhua Shen, Ge Liu, Mireia Crispin-Ortuzar, Shangqi Gao</p>
+            <p class="pub-venue">
+              <em><strong>CVPR</strong></em>, 2026 (<span class="oral-mark">Oral</span>).
+              <span class="pub-links">
+                <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_R2-Seg_Training-Free_OOD_Medical_Tumor_Segmentation_via_Anatomical_Reasoning_and_CVPR_2026_paper.pdf" target="_blank" rel="noopener">Paper</a> &middot;
+                <a href="https://github.com/Eurekashen/R2Seg" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A training-free Reason-and-Reject framework combining LLM-guided anatomical ROI planning with two-sample statistical testing over BiomedParse predictions, substantially improving OOD tumor segmentation Dice, specificity, and sensitivity without parameter updates.</p>
+          </div>
+        </article>
 
-            <!-- QCBench -->
-            <tr class="paper-row" data-cats="ds">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/qcbench.jpg" width="220" style="height:auto" alt="QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry</span>
-                <br>
-                <strong>Jiaqing Xie</strong>, Weida Wang, Ben Gao, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, Yuqiang Li
-                <br>
-                <em><strong>Journal of Chemical Information and Modeling</strong></em>, 2025
-                <br>
-                <a href="https://doi.org/10.1021/acs.jcim.5c02033">DOI</a> /
-                <a href="https://github.com/jiaqingxie/QCBench">Code</a>
-                <p>TL;DR: QCBench is a benchmark of 350 calculation-oriented chemistry questions spanning eight subfields &mdash; analytical, inorganic, organic, physical, polymer, and technical chemistry, biochemistry, and materials science &mdash; designed to test the domain-specific quantitative reasoning of large language models. Answers are scored with high-precision numerical tolerance and an answer-verification model, enabling systematic comparison across LLMs and chemistry categories.</p>
-              </td>
-            </tr>
+        <!-- MatVerse -->
+        <article class="pub-entry paper-row" data-cats="vlm chem">
+          <div class="pub-fig">
+            <img src="images/matverse.png" alt="MatVerse" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">MatVerse: A Foundation Model for Materials Science</h3>
+            <p class="pub-authors">Xuanyu Zhu<sup>&dagger;</sup>, Qian Tan<sup>&dagger;</sup>, Bo Chen, <strong>Jiaqing Xie</strong>, Yang Han, Mei Wu, Xuanze Lin, Wanhao Liu, Yuchen Zhou, Shijie Wang, Biqing Qi, Shixiang Tang, Wenwei Zhang, Tianfan Fu, Kai Yu, Lu Chen, Yuqiang Li, Xin Chen</p>
+            <p class="pub-venue"><em>Technical Report</em>, 2026.</p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A materials foundation model built on Intern-S2-Preview (35B-A3B) via large-scale materials-domain post-training on ~150K multimodal examples, outperforming GPT-5.2 on MatSciBench (63.59% vs. 59.6%).</p>
+          </div>
+        </article>
 
-            <!-- DeepProtein -->
-            <tr class="paper-row" data-cats="ds">
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <img src="images/deep_protein.jpg" width="220" style="height:auto" alt="DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning" loading="lazy" decoding="async">
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle">DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning</span>
-                <br>
-                <strong>Jiaqing Xie</strong>, Tianfan Fu
-                <br>
-                <em><strong>Bioinformatics</strong></em>, 2025
-                <br>
-                <a href="https://arxiv.org/abs/2410.02023">arXiv</a> /
-                <a href="https://github.com/jiaqingxie/DeepProtein">Code</a>
-                <p>TL;DR: A comprehensive and user-friendly deep learning library for protein-related tasks, with a benchmark evaluating CNNs, RNNs, transformers, and GNNs across protein function prediction, subcellular localization, protein-protein interaction, and structure prediction. We also introduce DeepProt-T5, a series of fine-tuned Prot-T5-based models that achieve state-of-the-art performance on four benchmark tasks while remaining competitive on six others.</p>
-              </td>
-            </tr>
+        <!-- RACER -->
+        <article class="pub-entry paper-row" data-cats="df">
+          <div class="pub-fig">
+            <img src="images/racer.jpg" alt="RACER" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">Disagree to Accelerate: Closing the Loop on Diffusion Feature Forecasts</h3>
+            <p class="pub-authors">Yanchao Li, <strong>Jiaqing Xie</strong>, Ben Gao, Wanhao Liu, Yanbo Wang, T. Y. Tsui, Jinfei Liu, Yuqiang Li, Tianfan Fu</p>
+            <p class="pub-venue">
+              <em>arXiv preprint</em>, 2026.
+              <span class="pub-links">
+                <a href="https://arxiv.org/abs/2608.01740" target="_blank" rel="noopener">arXiv</a> &middot;
+                <a href="https://github.com/LiZaiyuan0619/RACER" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> RACER turns disagreement between two cached feature forecasts into a free runtime reliability signal for a training-free closed-loop controller, improving diffusion acceleration across SD3.5-Large, FLUX.1-dev, Wan2.1-14B, and HunyuanVideo at equal denoiser evaluations.</p>
+          </div>
+        </article>
 
-          </tbody></table>
+        <!-- PE Benchmark -->
+        <article class="pub-entry paper-row" data-cats="gt ds">
+          <div class="pub-fig">
+            <img src="images/benchmark_pe.png" alt="Benchmarking Positional Encodings" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">Benchmarking Positional Encodings for GNNs and Graph Transformers</h3>
+            <p class="pub-authors">Florian Gr&ouml;tschla, <strong>Jiaqing Xie</strong>, Roger Wattenhofer</p>
+            <p class="pub-venue">
+              <em><strong>KDD</strong></em>, 2026 (Datasets &amp; Benchmarks).
+              <span class="pub-links">
+                <a href="https://arxiv.org/abs/2411.12732" target="_blank" rel="noopener">arXiv</a> &middot;
+                <a href="https://github.com/ETH-DISCO/Benchmarking-PEs" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A unified benchmark decoupling positional encodings from architectures across 8 models, 9 PEs, and 10 datasets (&gt;500 configurations), showing WL expressiveness proxies do not reliably predict downstream performance.</p>
+          </div>
+        </article>
 
-          <!-- Software Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Software</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- NMRGym -->
+        <article class="pub-entry paper-row" data-cats="spec ds chem">
+          <div class="pub-fig">
+            <img src="images/nmrgym.jpg" alt="NMRGym" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">NMRGym: A Comprehensive Benchmark for Nuclear Magnetic Resonance Based Molecular Structure Elucidation</h3>
+            <p class="pub-authors">Zheng Fang, Chen Yang, Hai-tao Yu, Haoming Luo, Haitao He, <strong>Jiaqing Xie</strong>, Zhuo Yang, Jun Xia</p>
+            <p class="pub-venue">
+              <em><strong>KDD</strong></em>, 2026.
+              <span class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3817452" target="_blank" rel="noopener">Paper</a> &middot;
+                <a href="https://github.com/AIMS-Lab-HKUSTGZ/NMRGym" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> The largest standardized experimental NMR benchmark to date (269,999 unique molecules with <sup>1</sup>H and <sup>13</sup>C spectra, scaffold splits, and peak&ndash;atom annotations) covering structure elucidation, functional group prediction, toxicity, and simulation.</p>
+          </div>
+        </article>
 
-            <tr>
-              <td style="padding:16px;width:30%;vertical-align:middle">
-                <a href="https://github.com/AI4Chem/ChemClaw"><img src="images/chemclaw_og.png" width="220" style="height:auto" alt="ChemClaw" loading="lazy" decoding="async"></a>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <span class="papertitle"><a href="https://github.com/AI4Chem/ChemClaw">ChemClaw</a></span>
-                &nbsp;
-                <a href="https://github.com/AI4Chem/ChemClaw/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AI4Chem/ChemClaw?style=social"></a>
-                <a href="https://github.com/AI4Chem/ChemClaw/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AI4Chem/ChemClaw?style=social"></a>
-                <br>
-                A public skills package for chemistry-focused AI workflows &mdash; a chemistry-native AI agent skill library, installable with a single command (<code>npx skills add AI4Chem/ChemClaw</code>).
-                <br>
-                <a href="https://github.com/AI4Chem/ChemClaw">GitHub</a>
-              </td>
-            </tr>
+        <!-- SpectrumWorld -->
+        <article class="pub-entry paper-row" data-cats="spec ds chem">
+          <div class="pub-fig">
+            <img src="images/spectrumworld.jpg" alt="SpectrumWorld" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy</h3>
+            <p class="pub-authors">Zhuo Yang<sup>&dagger;</sup>, <strong>Jiaqing Xie</strong><sup>&dagger;</sup>, Shuaike Shen, Daolang Wang, Yeyun Chen, Ben Gao, Shuzhou Sun, Biqing Qi, Dongzhan Zhou, Lei Bai, Linjiang Chen, Shufei Zhang, Qinying Gu, Jun Jiang, Tianfan Fu, Yuqiang Li</p>
+            <p class="pub-venue">
+              <em><strong>KDD</strong></em>, 2026.
+              <span class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3770855.3818936" target="_blank" rel="noopener">Paper</a> &middot;
+                <a href="https://github.com/little1d/SpectrumLab" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A unified spectroscopy AI platform comprising SpectrumLab, SpectrumAnnotator, and SpectrumBench across 14 tasks, 10+ spectrum types, and 1.2M+ substances, evaluating 18 multimodal LLMs.</p>
+          </div>
+        </article>
 
-          </tbody></table>
+        <!-- QCBench -->
+        <article class="pub-entry paper-row" data-cats="ds chem">
+          <div class="pub-fig">
+            <img src="images/qcbench.jpg" alt="QCBench" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">QCBench: Evaluating Large Language Models on Domain-Specific Quantitative Chemistry</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Weida Wang, Ben Gao, Zhuo Yang, Haiyuan Wan, Shufei Zhang, Tianfan Fu, Yuqiang Li</p>
+            <p class="pub-venue">
+              <em><strong>Journal of Chemical Information and Modeling</strong></em>, 2025.
+              <span class="pub-links">
+                <a href="https://doi.org/10.1021/acs.jcim.5c02033" target="_blank" rel="noopener">DOI</a> &middot;
+                <a href="https://github.com/jiaqingxie/QCBench" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A benchmark of 350 calculation-oriented chemistry questions across eight subfields evaluating domain-specific quantitative reasoning of LLMs with high-precision numerical tolerance and answer verification.</p>
+          </div>
+        </article>
 
-          <!-- News Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>News</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- DeepProtein -->
+        <article class="pub-entry paper-row" data-cats="ds">
+          <div class="pub-fig">
+            <img src="images/deep_protein.jpg" alt="DeepProtein" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3 class="pub-title">DeepProtein: Deep Learning Library and Benchmark for Protein Sequence Learning</h3>
+            <p class="pub-authors"><strong>Jiaqing Xie</strong>, Tianfan Fu</p>
+            <p class="pub-venue">
+              <em><strong>Bioinformatics</strong></em>, 2025.
+              <span class="pub-links">
+                <a href="https://arxiv.org/abs/2410.02023" target="_blank" rel="noopener">arXiv</a> &middot;
+                <a href="https://github.com/jiaqingxie/DeepProtein" target="_blank" rel="noopener">Code</a>
+              </span>
+            </p>
+            <p class="pub-tldr"><span class="tldr-mark">tl;dr</span> A unified deep learning library and benchmark evaluating CNNs, RNNs, Transformers, and GNNs across protein function, localization, PPI, and structure tasks, introducing DeepProt-T5.</p>
+          </div>
+        </article>
+      </section>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.11</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                New preprints: <a href="https://github.com/jiaqingxie/VibraTrans">VibraTrans</a> (cross-modal translation between IR and Raman spectra) and <a href="https://github.com/Dsadd4/UltraMS">UltraMS</a> (dual-polarity tandem-MS foundation model).
-              </td>
-            </tr>
+      <!-- Software -->
+      <section id="software">
+        <h2>Software</h2>
+        <div class="pub-entry">
+          <div class="pub-fig">
+            <a href="https://github.com/AI4Chem/ChemClaw" target="_blank" rel="noopener" style="border-bottom:none;"><img src="images/chemclaw_og.png" alt="ChemClaw" loading="lazy" decoding="async"></a>
+          </div>
+          <div>
+            <h3 class="pub-title">
+              <a href="https://github.com/AI4Chem/ChemClaw" target="_blank" rel="noopener">ChemClaw</a>
+              &nbsp;
+              <a href="https://github.com/AI4Chem/ChemClaw/stargazers" target="_blank" rel="noopener" style="border-bottom:none;"><img alt="GitHub stars" src="https://img.shields.io/github/stars/AI4Chem/ChemClaw?style=social" style="vertical-align:middle;"></a>
+              <a href="https://github.com/AI4Chem/ChemClaw/forks" target="_blank" rel="noopener" style="border-bottom:none;"><img alt="GitHub forks" src="https://img.shields.io/github/forks/AI4Chem/ChemClaw?style=social" style="vertical-align:middle;"></a>
+            </h3>
+            <p class="pub-tldr" style="margin-top:6px;">
+              A public skills package for chemistry-focused AI workflows &mdash; a chemistry-native AI agent skill library, installable with <code>npx skills add AI4Chem/ChemClaw</code>.
+              <a href="https://github.com/AI4Chem/ChemClaw" target="_blank" rel="noopener">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.10</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                Our MatVerse technical report is released. MatVerse is a materials foundation model built on Intern-S2-Preview and specialized through large-scale materials-domain post-training.
-              </td>
-            </tr>
+      <!-- News -->
+      <section id="news">
+        <h2>News</h2>
+        <ul class="editorial-list">
+          <li>
+            <span class="list-key">2026.11</span>
+            <span>New preprint: <strong>RxnPFN</strong> (training-free in-context reaction property prediction); <a href="https://arxiv.org/abs/2509.21861">SpecMol</a> is provisionally accepted at <em>Journal of Chemical Information and Modeling</em>; <a href="https://github.com/jiaqingxie/VibraTrans">VibraTrans</a> is under review at <em>Nature Computational Science</em> and <a href="https://github.com/Dsadd4/UltraMS">UltraMS</a> is under review at <em>Nature Biotechnology</em>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.10</span>
+            <span>Our MatVerse technical report is released (materials foundation model built on Intern-S2-Preview).</span>
+          </li>
+          <li>
+            <span class="list-key">2026.09</span>
+            <span>Joined <a href="https://www.shlab.org.cn/">Shanghai Artificial Intelligence Laboratory</a> and <a href="https://www.fudan.edu.cn/">Fudan University</a> as a Ph.D. student. Two new preprints on arXiv: <a href="https://arxiv.org/abs/2609.12532">GSF-&chi;</a> and <a href="https://arxiv.org/abs/2609.32178">AW-RoPE</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.08</span>
+            <span>Four papers accepted at KDD: <a href="https://dl.acm.org/doi/10.1145/3770855.3818935">NMRTrans</a>, <a href="https://dl.acm.org/doi/10.1145/3770855.3817452">NMRGym</a>, <a href="https://dl.acm.org/doi/10.1145/3770855.3818936">SpectrumWorld</a>, and <a href="https://arxiv.org/abs/2411.12732">Benchmarking Positional Encodings</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.06</span>
+            <span>Two papers accepted at CVPR: R&sup2;-Seg (<strong>Oral</strong>) and PolyReal.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.05</span>
+            <span>New preprint on arXiv: <a href="https://arxiv.org/abs/2605.29833">OmniMatBench</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.04</span>
+            <span>New preprint on arXiv: <a href="https://arxiv.org/abs/2604.02934">PolyReal</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.02</span>
+            <span>New preprint on arXiv: <a href="https://arxiv.org/abs/2602.10158">NMRTrans</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2026.01</span>
+            <span>DeepResearch Arena accepted at AAAI. New preprint on arXiv: <a href="https://arxiv.org/abs/2601.15763">NMRGym</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2025.11</span>
+            <span><a href="https://doi.org/10.1021/acs.jcim.5c02033">QCBench</a> was published in <em>Journal of Chemical Information and Modeling</em>.</span>
+          </li>
+          <li>
+            <span class="list-key">2025.08</span>
+            <span>New preprint on arXiv: <a href="https://arxiv.org/abs/2508.01188">SpectrumWorld</a>.</span>
+          </li>
+          <li>
+            <span class="list-key">2025.05</span>
+            <span><a href="https://arxiv.org/abs/2410.02023">DeepProtein</a> was published in <em>Bioinformatics</em>.</span>
+          </li>
+        </ul>
+      </section>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.09</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                I joined <a href="https://www.shlab.org.cn/">Shanghai Artificial Intelligence Laboratory</a> and <a href="https://www.fudan.edu.cn/">Fudan University</a> as a PhD student.
-              </td>
-            </tr>
+      <!-- Academic Services -->
+      <section id="service">
+        <h2>Academic Services</h2>
+        <ul class="editorial-list">
+          <li><span class="list-key">2026</span><span>Reviewer for NeurIPS, CVPR, ICLR, ACL ARR, JCIM.</span></li>
+          <li><span class="list-key">2025</span><span>Reviewer for NeurIPS, CVPR, ACL, EMNLP, ICONIP, JCIM.</span></li>
+          <li><span class="list-key">2024</span><span>Reviewer for NeurIPS, ACML.</span></li>
+        </ul>
+      </section>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.09</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                Two new preprints on arXiv: <a href="https://arxiv.org/abs/2609.12532">GSF-&chi;</a> and <a href="https://arxiv.org/abs/2609.32178">AW-RoPE</a>.
-              </td>
-            </tr>
+      <!-- Blog -->
+      <section id="blog">
+        <h2>Notes &amp; Blog</h2>
+        <ul class="editorial-list">
+          <li>
+            <span class="list-key">Oct 2026</span>
+            <span>
+              <a href="blog/approximate-elimination-graph-learning.html">从近似高消到图学习：Laplacian 理论、可迁移的定理与 Graph DeltaNet 的接口</a>
+              &mdash; 20 页笔记的展开导读：Schur 补与星形&ndash;团消元的动图演示、谱稀疏采样、可微求解的梯度公式，以及哪些定理能迁移到多前驱 DAG Graph DeltaNet。
+              <a href="blog/pdf/approximate-elimination-graph-learning-notes.pdf" target="_blank" rel="noopener">Full PDF</a>
+            </span>
+          </li>
+          <li>
+            <span class="list-key">Oct 2026</span>
+            <span>
+              <a href="blog/kyng-dissertation.html">Reading Notes: <em>Approximate Gaussian Elimination</em> (Rasmus Kyng, Yale PhD 2017)</a>
+              &mdash; Cholesky by random sampling, the first nearly-linear solver for directed Laplacians, faster random spanning trees, and connections to graph learning.
+            </span>
+          </li>
+        </ul>
+      </section>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.08</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                Four papers accepted at KDD: <a href="https://dl.acm.org/doi/10.1145/3770855.3818935">NMRTrans</a>, <a href="https://dl.acm.org/doi/10.1145/3770855.3817452">NMRGym</a>, <a href="https://dl.acm.org/doi/10.1145/3770855.3818936">SpectrumWorld</a>, and <a href="https://arxiv.org/abs/2411.12732">Benchmarking Positional Encodings</a>.
-              </td>
-            </tr>
+      <footer class="footer">
+        <span>&copy; 2026 Jiaqing Xie</span>
+        <span>Last updated: November 2026</span>
+      </footer>
+    </div>
 
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.06</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                Two papers accepted at CVPR: R&sup2;-Seg (<strong>Oral</strong>) and PolyReal.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.05</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                New preprint on arXiv: <a href="https://arxiv.org/abs/2605.29833">OmniMatBench</a>, a human-calibrated multimodal reasoning benchmark across 19 materials-science subfields.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.04</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                New preprint on arXiv: <a href="https://arxiv.org/abs/2604.02934">PolyReal</a>, a benchmark for real-world polymer science workflows.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.02</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                New preprint on arXiv: <a href="https://arxiv.org/abs/2602.10158">NMRTrans</a>, structure elucidation from experimental NMR spectra via set transformers.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2026.01</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                DeepResearch Arena accepted at AAAI. New preprint on arXiv: <a href="https://arxiv.org/abs/2601.15763">NMRGym</a>.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2025.11</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                <a href="https://doi.org/10.1021/acs.jcim.5c02033">QCBench</a> was published in the Journal of Chemical Information and Modeling.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2025.08</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                New preprint on arXiv: <a href="https://arxiv.org/abs/2508.01188">SpectrumWorld</a>, an artificial intelligence foundation for spectroscopy.
-              </td>
-            </tr>
-
-            <tr>
-              <td style="padding:8px;width:15%;vertical-align:top">
-                <span style="font-weight:bold;">2025.05</span>
-              </td>
-              <td style="padding:8px;width:85%;vertical-align:top">
-                <a href="https://arxiv.org/abs/2410.02023">DeepProtein</a> was published in Bioinformatics.
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!-- Academic Services Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Academic Services</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px 16px 8px;width:100%;vertical-align:middle">
-                <p class="lead" style="margin:0 0 6px 0;">
-                  Reviewer: <strong>2026</strong> ICLR, ACL ARR, JCIM &ndash;
-                  <strong>2025</strong> ACL, CVPR, EMNLP, ICONIP, NeurIPS, JCIM &ndash;
-                  <strong>2024</strong> ACML, NeurIPS
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!-- Blog Section -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Blog</h2>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px 16px 8px;width:100%;vertical-align:middle">
-                <p class="lead" style="margin:0 0 6px 0;">
-                  <strong>Oct 2026</strong> &ndash; <a href="blog/approximate-elimination-graph-learning.html">从近似高消到图学习：Laplacian 理论、可迁移的定理与 Graph DeltaNet 的接口</a>
-                  &mdash; 20 页笔记的展开导读：Schur 补与星形–团消元的动图演示、谱稀疏采样、可微求解的梯度公式，
-                  以及哪些定理能迁移到多前驱 DAG Graph DeltaNet、哪些桥不存在。附 <a href="blog/pdf/approximate-elimination-graph-learning-notes.pdf" target="_blank">完整 PDF</a>。
-                </p>
-                <p class="lead" style="margin:0 0 6px 0;">
-                  <strong>Oct 2026</strong> &ndash; <a href="blog/kyng-dissertation.html">Reading Notes: <i>Approximate Gaussian Elimination</i> (Rasmus Kyng, Yale PhD 2017)</a>
-                  &mdash; Cholesky by random sampling, the first nearly-linear solver for directed Laplacians,
-                  faster random spanning trees, and what this line of work offers graph learning and theory.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!-- Footer -->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <p style="text-align:center;font-size:small;">
-                  &copy; 2026 Jiaqing Xie
-                </p>
-                <p style="text-align:right;font-size:x-small;">
-                  Design adapted from <a style="text-decoration: underline; font-size:x-small;" href="https://ryanboldi.github.io/">Ryan Bahlous-Boldi</a> &times; <a style="text-decoration: underline; font-size:x-small;" href="https://jonbarron.info">Jon Barron</a>
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </tbody></table>
-  </body>
-
-  <script>
-    // Selectable publication columns: tabs filter paper rows by data-cats.
-    (function () {
-      var tabs = document.querySelectorAll('#pubtabs button');
-      var rows = document.querySelectorAll('.paper-row');
-      tabs.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          tabs.forEach(function (b) { b.classList.remove('on'); });
-          btn.classList.add('on');
-          var cat = btn.getAttribute('data-cat');
-          rows.forEach(function (row) {
-            var cats = (row.getAttribute('data-cats') || '').split(/\s+/);
-            row.style.display = (cat === 'all' || cats.indexOf(cat) !== -1) ? '' : 'none';
+    <script>
+      (function () {
+        var tabs = document.querySelectorAll('#pubtabs button');
+        var rows = document.querySelectorAll('.paper-row');
+        tabs.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            tabs.forEach(function (b) { b.classList.remove('on'); });
+            btn.classList.add('on');
+            var cat = btn.getAttribute('data-cat');
+            rows.forEach(function (row) {
+              var cats = (row.getAttribute('data-cats') || '').split(/\s+/);
+              row.style.display = (cat === 'all' || cats.indexOf(cat) !== -1) ? '' : 'none';
+            });
           });
         });
-      });
-    })();
-  </script>
+      })();
+    </script>
+  </body>
 </html>

@@ -1,177 +1,372 @@
-a {
-  color: #1772d0;
-  text-decoration: none;
+/* ==========================================================================
+   Jiaqing Xie — Edward Tufte-inspired Academic Manuscript Homepage
+   Warm ivory paper (#fffff8), Lora + Marcellus SC typography (Cambridge Notes
+   style), generous margins, classic understated underlines, zero clutter.
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
-  font-size: 15px;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  color: #111;
+  margin: 0;
+  padding: 52px 28px 80px;
+  background-color: #fffff8;
+  color: #111111;
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.68;
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
 }
 
-strong {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #9d998c;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover, a:focus-visible {
+  color: #7c2128;
+  border-bottom-color: #7c2128;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Top understated anchor bar */
+.mini-nav {
+  font-family: 'Marcellus SC', 'Lora', serif;
   font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #6b685f;
+  margin: 0 0 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
 }
 
-h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
+.mini-nav a {
+  color: #525048;
+  border-bottom: none;
 }
 
-.papertitle {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 1.25;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  display: inline-block;
-  margin-bottom: 2px;
+.mini-nav a:hover {
+  color: #111111;
+  border-bottom: 1px solid #111111;
 }
 
-/* Paper meta that follows titles */
-span.papertitle ~ strong {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
-  font-size: 13px;
-  color: inherit;
-  font-weight: 600;
-  display: inline-block;
-  margin-top: 2px;
+/* Tufte asymmetric header: main text column + margin sidenote column */
+.tufte-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 248px;
+  gap: 54px;
+  align-items: start;
 }
 
-span.papertitle ~ em {
-  font-size: 15px;
-  color: inherit;
+h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.12;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+  color: #111111;
 }
 
-span.papertitle ~ a {
-  font-size: 12px;
+.subtitle {
+  font-style: italic;
+  font-size: 17px;
+  color: #4a4840;
+  margin: 0 0 22px;
 }
 
-/* TL;DR blurb: smaller and tighter so entries stack in less vertical space */
-span.papertitle ~ p {
-  font-size: 13px;
-  line-height: 1.4;
-  margin: 6px 0 0;
+.tufte-header p {
+  margin: 0 0 14px;
 }
 
-.name {
-  padding-top: 20px;
-  margin: 0;
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
-  font-size: 32px;
+/* Right margin / sidenote column */
+.margin-col {
+  font-size: 14px;
+  line-height: 1.58;
+  color: #4a4840;
+  padding-top: 6px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.portrait {
+  width: 178px;
+  height: 178px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 14px;
+  border: 1px solid #dedad0;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.email-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11.8px;
+  color: #5c5950;
+  margin: 0 0 10px;
+  word-break: break-word;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-/* Selectable publication columns */
-.pubtabs button {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+.margin-links {
+  margin: 0 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
   font-size: 14.5px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+  padding-top: 10px;
+  border-top: 1px solid #e6e2d6;
+}
+
+.logos a {
+  border-bottom: none;
+  opacity: 0.88;
+}
+
+.logos a:hover {
+  opacity: 1;
+}
+
+.logos img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Section headings in Marcellus SC (Cambridge Notes style) */
+h2 {
+  font-family: 'Marcellus SC', 'Lora', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin: 54px 0 16px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e2ded2;
+  color: #111111;
+}
+
+.sec-note {
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  font-size: 13.5px;
+  letter-spacing: 0;
+  color: #6b685f;
+  margin-left: 10px;
+}
+
+/* Small-caps publication filter */
+.pub-filter {
+  margin: 0 0 20px;
+  font-family: 'Marcellus SC', 'Lora', serif;
+  font-size: 13.5px;
+  letter-spacing: 0.03em;
+  color: #777368;
+  line-height: 1.95;
+}
+
+.pub-filter button {
   background: none;
   border: none;
   padding: 0;
-  margin: 0 16px 0 0;
-  color: #1772d0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 13.5px;
+  letter-spacing: 0.03em;
+  color: #555249;
   cursor: pointer;
 }
 
-.pubtabs button:hover {
-  color: #f09228;
+.pub-filter button:hover {
+  color: #7c2128;
 }
 
-.pubtabs button.on {
-  color: #111;
+.pub-filter button.on {
+  color: #111111;
+  border-bottom: 1.5px solid #111111;
+}
+
+.pub-filter .dot {
+  margin: 0 8px;
+  color: #b8b3a6;
+}
+
+/* Publication rows */
+.pub-entry {
+  display: grid;
+  grid-template-columns: 214px 1fr;
+  gap: 26px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid #ece8dc;
+}
+
+.pub-entry:last-of-type {
+  border-bottom: none;
+}
+
+.pub-fig {
+  background: #ffffff;
+  border: 1px solid #e4e0d4;
+  padding: 5px;
+}
+
+.pub-fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pub-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 16.5px;
   font-weight: 600;
-  border-bottom: 2px solid #f09228;
-  padding-bottom: 1px;
+  line-height: 1.38;
+  margin: 0 0 5px;
+  color: #111111;
 }
 
-/* Headings in Computer Modern (serif) */
-h1, h3 {
-  font-family: 'CMS', Georgia, 'Times New Roman', Times, serif;
+.pub-authors {
+  font-size: 14.2px;
+  color: #35332d;
+  margin: 0 0 4px;
+  line-height: 1.52;
 }
 
-/* Larger intro paragraphs on home */
-.lead {
-  font-size: 15.3px;
-  line-height: 1.5;
+.pub-authors strong {
+  font-weight: 600;
+  color: #111111;
 }
 
-@media (max-width: 768px) {
-  table,
-  tbody,
-  tr,
-  td {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
+.pub-venue {
+  font-size: 14.2px;
+  color: #24221e;
+  margin: 0 0 7px;
+}
+
+.pub-links {
+  margin-left: 6px;
+  font-size: 13.5px;
+}
+
+.pub-links a {
+  margin-right: 4px;
+}
+
+.pub-tldr {
+  margin: 0;
+  font-size: 13.8px;
+  line-height: 1.62;
+  color: #44423b;
+}
+
+.tldr-mark {
+  font-family: 'Marcellus SC', 'Lora', serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #7c2128;
+  margin-right: 4px;
+}
+
+.oral-mark {
+  color: #7c2128;
+  font-weight: 600;
+}
+
+/* Plain editorial lists for News, Services, Blog */
+.editorial-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.editorial-list li {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 16px;
+  padding: 7px 0;
+  border-bottom: 1px dotted #e6e2d6;
+  align-items: baseline;
+  font-size: 14.8px;
+  line-height: 1.6;
+}
+
+.editorial-list li:last-child {
+  border-bottom: none;
+}
+
+.list-key {
+  font-size: 13.8px;
+  font-weight: 600;
+  color: #5c5950;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.8px;
+  background: #f5f2e8;
+  padding: 1px 5px;
+  border: 1px solid #e2ded2;
+}
+
+.footer {
+  margin-top: 64px;
+  padding-top: 16px;
+  border-top: 1px solid #e2ded2;
+  font-size: 13.5px;
+  font-style: italic;
+  color: #6b685f;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  body {
+    padding: 32px 20px 56px;
+    font-size: 15.5px;
   }
 
-  td {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
+  .tufte-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-  .name {
-    font-size: 26px !important;
+  .margin-col {
+    padding-top: 0;
   }
 
-  .papertitle {
-    font-size: 17px !important;
+  .pub-entry {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
-  img[style*="border-radius"] {
-    width: 200px !important;
-    height: 200px !important;
-    display: block !important;
-    margin: 0 auto 14px !important;
+  .pub-fig {
+    max-width: 280px;
+  }
+
+  .editorial-list li {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 }
